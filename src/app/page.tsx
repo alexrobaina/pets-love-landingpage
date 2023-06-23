@@ -31,7 +31,7 @@ export default function Home () {
                   <li>
                     <a
                       href='#'
-                      className='block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-gray-400 lg:hover:text-white hover:bg-gray-700 hover:text-white lg:hover:bg-transparent border-gray-700'
+                      className='block py-2 pr-4 pl-3 border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 lg:hover:text-white  hover:text-white '
                     >
                       About me
                     </a>
@@ -39,7 +39,7 @@ export default function Home () {
                   <li>
                     <a
                       href='#'
-                      className='block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 text-gray-400 lg:hover:text-white hover:bg-gray-700 hover:text-white lg:hover:bg-transparent border-gray-700'
+                      className='block py-2 pr-4 pl-3 border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 lg:hover:text-white  hover:text-white '
                     >
                       Contact
                     </a>
@@ -49,7 +49,7 @@ export default function Home () {
               <div className='flex items-center lg:order-2'>
                 <a
                   href='#'
-                  className='text-indigo-950 text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 hover:bg-gray-700 focus:outline-none focus:ring-indigo-950'
+                  className=' text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 focus:outline-none '
                 >
                   Log in
                 </a>
@@ -62,7 +62,7 @@ export default function Home () {
                 <button
                   data-collapse-toggle='mobile-menu-2'
                   type='button'
-                  className='inline-flex items-center p-2 ml-1 text-sm  rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 text-gray-400 hover:bg-gray-700 focus:ring-gray-600'
+                  className='inline-flex items-center p-2 ml-1 text-sm  rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-600'
                   aria-controls='mobile-menu-2'
                   aria-expanded='false'
                 >
@@ -112,7 +112,7 @@ export default function Home () {
             </p>
             <a
               href='#'
-              className='inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-indigo-950 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 text-white border-gray-700 hover:bg-gray-700 focus:ring-indigo-950'
+              className='inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center rounded-lg border border-gray-300 focus:ring-4 0 text-white hover:bg-gray-700 focus:ring-indigo-950'
             >
               DONATE
             </a>
@@ -125,13 +125,13 @@ export default function Home () {
 
       <section className='bg-indigo-950'>
         <div className='py-8 4 mx-auto max-w-screen-xl lg:py-16'>
-          <h2 className='mb-8 text-3xl font-extrabold tracking-tight leading-tight text-center text-indigo-950 lg:mb-16 text-white md:text-4xl'>
+          <h2 className='mb-8 text-3xl font-extrabold tracking-tight leading-tight text-center lg:mb-16 text-white md:text-4xl'>
             Our sponsors
           </h2>
           <div className='grid grid-cols-2 gap-8  sm:gap-12 md:grid-cols-3 lg:grid-cols-6 text-gray-400'>
             <a href='#' className='flex justify-center items-center'>
               <svg
-                className='h-9 hover:text-indigo-950 hover:text-white'
+                className='h-9  hover:text-white'
                 viewBox='0 0 125 35'
                 fill='currentColor'
                 xmlns='http://www.w3.org/2000/svg'
@@ -146,7 +146,7 @@ export default function Home () {
             </a>
             <a href='#' className='flex justify-center items-center'>
               <svg
-                className='h-9 hover:text-indigo-950 hover:text-white'
+                className='h-9 hover:text-white'
                 viewBox='0 0 86 29'
                 fill='currentColor'
                 xmlns='http://www.w3.org/2000/svg'
@@ -161,7 +161,7 @@ export default function Home () {
             </a>
             <a href='#' className='flex justify-center items-center'>
               <svg
-                className='h-8 hover:text-indigo-950 hover:text-white'
+                className='h-8 hover:text-white'
                 viewBox='0 0 151 34'
                 fill='currentColor'
                 xmlns='http://www.w3.org/2000/svg'
@@ -187,7 +187,7 @@ export default function Home () {
 
             <a href='#' className='flex justify-center items-center'>
               <svg
-                className='h-9 hover:text-indigo-950 hover:text-white'
+                className='h-9 hover:text-white'
                 viewBox='0 0 124 38'
                 fill='currentColor'
                 xmlns='http://www.w3.org/2000/svg'
@@ -200,7 +200,7 @@ export default function Home () {
             </a>
             <a href='#' className='flex justify-center items-center'>
               <svg
-                className='h-9 hover:text-indigo-950 hover:text-white'
+                className='h-9 hover:text-white'
                 viewBox='0 0 137 37'
                 fill='currentColor'
                 xmlns='http://www.w3.org/2000/svg'
@@ -281,7 +281,7 @@ export default function Home () {
             </a>
             <a href='#' className='flex justify-center items-center'>
               <svg
-                className='h-6 hover:text-indigo-950 hover:text-white'
+                className='h-6  hover:text-white'
                 viewBox='0 0 124 21'
                 fill='currentColor'
                 xmlns='http://www.w3.org/2000/svg'
@@ -340,10 +340,10 @@ export default function Home () {
         </div>
       </section>
 
-      <section className='bg-gray-50 bg-indigo-950'>
+      <section className=' bg-indigo-950'>
         <div className='py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6'>
           <div className='mb-8 max-w-screen-md lg:mb-16'>
-            <h2 className='mb-4 text-4xl font-extrabold text-indigo-950 text-white'>
+            <h2 className='mb-4 text-4xl font-extrabold text-indigo-950'>
               Designed for business teams like yours
             </h2>
             <p className=' sm:text-xl text-gray-400'>
@@ -480,7 +480,7 @@ export default function Home () {
       <section className='bg-indigo-950'>
         <div className='gap-16 center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6'>
           <div className='font-light  sm:text-lg text-gray-400'>
-            <h2 className='mb-4 text-4xl font-extrabold text-indigo-950 text-white'>
+            <h2 className='mb-4 text-4xl font-extrabold text-indigo-950 '>
               We reinvent the wheel
             </h2>
             <p className='mb-4'>
@@ -509,10 +509,10 @@ export default function Home () {
         </div>
       </section>
 
-      <section className='bg-gray-50 bg-indigo-950 bg-indigo-950'>
+      <section className=' bg-indigo-950'>
         <div className='py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6'>
           <div className='max-w-screen-lg  sm:text-lg text-gray-400'>
-            <h2 className='mb-4 text-4xl font-bold text-indigo-950 text-white'>
+            <h2 className='mb-4 text-4xl font-bold text-indigo-950 '>
               Powering innovation at <span className='font-extrabold'>200,000+</span>{' '}
               companies worldwide
             </h2>
@@ -568,7 +568,7 @@ export default function Home () {
         </div>
       </section>
 
-      <footer className='p-4 bg-gray-50 sm:p-6 bg-indigo-950'>
+      <footer className='p-4  sm:p-6 bg-indigo-950'>
         <div className='mx-auto max-w-screen-xl'>
           <div className='md:flex md:justify-between'>
             <div className='mb-6 md:mb-0'>
@@ -585,10 +585,10 @@ export default function Home () {
             </div>
             <div className='grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3'>
               <div>
-                <h2 className='mb-6 text-sm font-semibold text-indigo-950 uppercase text-white'>
+                <h2 className='mb-6 text-sm font-semibold text-indigo-950 uppercase'>
                   Resources
                 </h2>
-                <ul className='text-gray-600 text-gray-400'>
+                <ul className='text-gray-400'>
                   <li className='mb-4'>
                     <a href='https://flowbite.com' className='hover:underline'>
                       Pets love
@@ -602,10 +602,10 @@ export default function Home () {
                 </ul>
               </div>
               <div>
-                <h2 className='mb-6 text-sm font-semibold text-indigo-950 uppercase text-white'>
+                <h2 className='mb-6 text-sm font-semibold text-indigo-950 uppercase '>
                   Follow us
                 </h2>
-                <ul className='text-gray-600 text-gray-400'>
+                <ul className='text-gray-400'>
                   <li className='mb-4'>
                     <a
                       href='https://github.com/themesberg/flowbite'
@@ -622,10 +622,10 @@ export default function Home () {
                 </ul>
               </div>
               <div>
-                <h2 className='mb-6 text-sm font-semibold text-indigo-950 uppercase text-white'>
+                <h2 className='mb-6 text-sm font-semibold text-indigo-950 uppercas'>
                   Legal
                 </h2>
-                <ul className='text-gray-600 text-gray-400'>
+                <ul className=' text-gray-400'>
                   <li className='mb-4'>
                     <a href='#' className='hover:underline'>
                       Privacy Policy
@@ -640,7 +640,7 @@ export default function Home () {
               </div>
             </div>
           </div>
-          <hr className='my-6 border-gray-200 sm:mx-auto border-gray-700 lg:my-8' />
+          <hr className='my-6 border-gray-200 sm:mx-auto lg:my-8' />
           <div className='sm:flex sm:items-center sm:justify-between'>
             <span className='text-sm  sm:text-center text-gray-400'>
               © 2022{' '}
@@ -650,7 +650,7 @@ export default function Home () {
               . All Rights Reserved.
             </span>
             <div className='flex mt-4 space-x-6 sm:justify-center sm:mt-0'>
-              <a href='#' className=' hover:text-indigo-950 hover:text-white'>
+              <a href='#' className=' hover:text-indigo-950'>
                 <svg
                   className='w-5 h-5'
                   fill='currentColor'
@@ -664,7 +664,7 @@ export default function Home () {
                   />
                 </svg>
               </a>
-              <a href='#' className=' hover:text-indigo-950 hover:text-white'>
+              <a href='#' className=' hover:text-indigo-950'>
                 <svg
                   className='w-5 h-5'
                   fill='currentColor'
@@ -678,7 +678,7 @@ export default function Home () {
                   />
                 </svg>
               </a>
-              <a href='#' className=' hover:text-indigo-950 hover:text-white'>
+              <a href='#' className=' hover:text-indigo-950 '>
                 <svg
                   className='w-5 h-5'
                   fill='currentColor'
@@ -688,7 +688,7 @@ export default function Home () {
                   <path d='M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84' />
                 </svg>
               </a>
-              <a href='#' className=' hover:text-indigo-950 hover:text-white'>
+              <a href='#' className=' hover:text-indigo-950 '>
                 <svg
                   className='w-5 h-5'
                   fill='currentColor'
@@ -702,7 +702,7 @@ export default function Home () {
                   />
                 </svg>
               </a>
-              <a href='#' className=' hover:text-indigo-950 hover:text-white'>
+              <a href='#' className=' hover:text-indigo-950 '>
                 <svg
                   className='w-5 h-5'
                   fill='currentColor'
