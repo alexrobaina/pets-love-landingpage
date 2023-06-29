@@ -1,0 +1,65 @@
+{
+    "hero": {
+      "title": "Bienvenido a la aplicación Pets Love comprometida con salvar y proteger a los animales.",
+      "text":"¿Listo para presenciar el poder de nuestra aplicación de primera mano? Haga clic a continuación para obtener una vista previa exclusiva del prototipo de la aplicación Pets Love. Explore sus características, navegue a través de los perfiles de animales y vea cómo estamos revolucionando la forma en que los animales encuentran sus hogares para siempre.",
+      "buttonName": "DONACIONES"
+    },
+    "sponsors": {
+      "title": "Nuestros patrocinantes"
+    },
+    "features":{
+      "title1": "Comprehensive Profiles",
+      "text1":"Create detailed profiles for your pets, including their medical history, vaccination records, and adorable photos.",
+      "title2": "QR Code Integration",
+      "text2":"Generate a unique QR code for each pet, making it easy to share their profile and contact information with others.",
+      "title3": "Adoption Center",
+      "text3":"Browse through a wide selection of animals available for adoption, connect with shelters, and find your perfect furry companion.",
+      "title4": "Veterinary",
+      "text4":"Connect with trusted veterinarians, schedule appointments, and access important medical information for your pets, all in one place.",
+      "title5": "Volunteer",
+      "text5":" Get involved and make a difference by offering temporary foster care for animals in need, and track their progress within the app.",
+      "title6": "Analytics",
+      "text6":" Gain valuable insights into your pet's activity, health trends, and behavior patterns through our advanced analytics feature."
+    },
+    "prototype":{
+      "title": "Experience the future of animal adoption with Pets Love!",
+      "text": "Ready to witness the power of our app firsthand? Click below to get an exclusive preview of the Pets Love app prototype. Explore its features, navigate through animal profiles, and see how we're revolutionizing the way animals find their forever homes.",
+      "buttonName": "Go to Proptype"
+    },
+    "shelter":{
+      "title": "Refugios",
+      "text1":"Centralized Animal Registry: Maintain a comprehensive and organized registry of animals in your shelter. Capture essential details such as medical history, behavior traits, and photos to create compelling profiles for each animal.",
+      "text2":"Adoption Management: Streamline the adoption process by easily tracking potential adopters and managing their applications within the app. Stay informed about the status of each adoption and ensure a smooth transition",
+      "text3":"Medical Profile Creation: Create detailed medical profiles for each animal, including vaccination records, treatments, and any specific medical needs. This information is accessible to veterinarians, adopters, and volunteers, ensuring that every animal receives proper care and attention. "
+    },
+
+    "adopt":{
+      "title":"Adopción",
+      "text1":"Ready to open your heart and home to a lovable pet? Pets Love is here to help you find your ideal match. Our app connects you with animal shelters worldwide, making it easier than ever to adopt a pet in need.",
+      "text2":"Explore profiles of adorable animals, complete with detailed medical information and captivating photos. With Pets Love, you can make an informed decision and provide a loving home to a deserving animal."
+
+    },
+      "veterinary":{
+      "title":"Veterinaria",
+      "text1":"With Pets Love, you can create and maintain comprehensive medical profiles, streamline communication with pet owners, and stay up-to-date with the latest advancements in veterinary care.",
+      "text2":"Effortlessly manage appointments, access medical records, and collaborate with other veterinary professionals, all in one secure platform. Pets Love empowers you to provide top-notch care to pets while ensuring seamless communication with their owners."
+    },
+    "aboutme":{
+      "title": "Acerca de Mi",
+      "text1": "I'm super excited to share my passion project with you: Pets Love! As an animal lover and a full-time dream chaser, I've poured my heart and soul into creating this incredible app dedicated to saving and protecting animals.",
+      "text2": "Pets Love is not just an app, it's a mission. My goal is to connect animal shelters, veterinarians, volunteers, and pet adopters in a seamless and fun way. With Pets Love, we can ensure that every furry friend finds their perfect forever home and receives the care they deserve.",
+      "text3": "I've been working tirelessly to bring this app to life, combining my web development skills with my love for animals. Together, we can make a real difference and create a world where animals are loved, cherished, and protected."
+    },
+    "colaborate":{
+      "title":"How to collaborate",
+      "text1":"Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.",
+      "text2":"Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil, and deploy changes with ease.",
+      "buttonName": "Buy a coffee"
+  },
+    "footer":{
+      "privacy":"poliza de privacidad",
+      "terms": "Terminos & Condiciones",
+      "rights": "Todos los derechos reservados",
+      "followUs":"Siguenos"
+    }
+  }
