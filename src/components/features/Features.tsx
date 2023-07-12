@@ -5,36 +5,36 @@ export const Features = () => {
   const t = useTranslations('features')
 
   return (
-    <section className=" bg-indigo-950">
+    <section>
       <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
         <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
           <div>
-            <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 bg-primary-900"></div>
+            <div className="flex justify-center items-center  w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 bg-primary-900"></div>
             <h3 className="mb-2 text-xl font-bold text-white"> {t('title1')}</h3>
             <p className=" text-gray-400">{t('text1')}</p>
           </div>
           <div>
-            <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 bg-primary-900"></div>
+            <div className="flex justify-center items-center  w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 bg-primary-900"></div>
             <h3 className="mb-2 text-xl font-bold text-white"> {t('title2')}</h3>
             <p className=" text-gray-400">{t('text2')}</p>
           </div>
           <div>
-            <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 bg-primary-900"></div>
+            <div className="flex justify-center items-center  w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 bg-primary-900"></div>
             <h3 className="mb-2 text-xl font-bold text-white"> {t('title3')}</h3>
             <p className=" text-gray-400">{t('text3')}</p>
           </div>
           <div>
-            <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 bg-primary-900"></div>
+            <div className="flex justify-center items-center w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 bg-primary-900"></div>
             <h3 className="mb-2 text-xl font-bold text-white"> {t('title4')}</h3>
             <p className=" text-gray-400">{t('text4')}</p>
           </div>
           <div>
-            <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 bg-primary-900"></div>
+            <div className="flex justify-center items-center w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 bg-primary-900"></div>
             <h3 className="mb-2 text-xl font-bold text-white"> {t('title5')}</h3>
             <p className=" text-gray-400">{t('text5')}</p>
           </div>
           <div>
-            <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 bg-primary-900"></div>
+            <div className="flex justify-center items-center  w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12 bg-primary-900"></div>
             <h3 className="mb-2 text-xl font-bold text-white"> {t('title6')}</h3>
             <p className=" text-gray-400">{t('text6')}</p>
           </div>

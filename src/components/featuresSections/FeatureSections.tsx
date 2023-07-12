@@ -12,7 +12,7 @@ export const FeatureSections = () => {
   const t1 = useTranslations('adopt')
   const t2 = useTranslations('veterinary')
   return (
-    <section className="bg-indigo-950">
+    <section id="features">
       <FeatureComponent
         title={t('title')}
         text1={t('text1')}

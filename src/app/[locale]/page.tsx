@@ -23,3 +23,7 @@ export default function Home() {
     </>
   )
 }
+
+{
+  /* <div className="bg-petLove w-full z-10 h-screen bg-cover bg-no-repeat"></div> */
+}
