@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   //   notFound();
   // }
   return (
-    <html lang={locale}>
+    <html className="px-4 bg-indigo-950" lang={locale}>
       <body className={inter.className}>{children}</body>
     </html>
   )

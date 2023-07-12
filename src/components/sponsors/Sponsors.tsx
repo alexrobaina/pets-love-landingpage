@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl'
 export const Sponsors = () => {
   const t = useTranslations('sponsors')
   return (
-    <section className="bg-indigo-950">
+    <section>
       <div className="py-8 4 mx-auto max-w-screen-xl lg:py-16">
         <h2 className="mb-8 text-3xl font-extrabold tracking-tight leading-tight text-center lg:mb-16 text-white md:text-4xl">
           {t('title')}

@@ -8,6 +8,7 @@ import Logo from './logo.svg'
 import Indiegogo from './indiegogo-logo.svg'
 import TelegramIcon from './telegram-icon.svg'
 import WhatsappIcon from './whatsapp-icon.svg'
+import Background from './background.svg'
 
 export {
   AstronautCatSitting,
@@ -20,4 +21,5 @@ export {
   Indiegogo,
   TelegramIcon,
   WhatsappIcon,
+  Background,
 }
