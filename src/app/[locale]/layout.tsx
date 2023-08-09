@@ -2,7 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import { useLocale } from 'next-intl'
 import { notFound } from 'next/navigation'
-
+import Footer from '@/components/footer/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -18,8 +18,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   //   notFound();
   // }
   return (
-    <html className="px-4 bg-indigo-950" lang={locale}>
-      <body className={inter.className}>{children}</body>
+    <html className="bg-[#D6F1E9]" lang={locale}>
+      <body className={inter.className}>
+        <div className="px-8">{children}</div>
+        <Footer />
+      </body>
     </html>
   )
 }

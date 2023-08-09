@@ -12,17 +12,17 @@ const AboutMe = () => {
         <div className="w-60 sm:mb-10">
           <Image src={Avatar} alt="mockup" />
         </div>
-        <div className="flex flex-col justify-center justify-items-center ">
-          <h1 className="lg:mb-20  py-8 marker: text-3xl font-extrabold leading-none md:text-5xl xl:text-6xl text-white">
+        <div className="flex flex-col justify-center justify-items-center text-primary-950 ">
+          <h1 className="lg:mb-20  py-8 marker: text-3xl font-extrabold leading-none md:text-5xl xl:text-6xl">
             {t('title')}
           </h1>
-          <p className="mb-4 max-w-2xl font-light  lg:mb-8 md:text-lg lg:text-xl text-gray-400">
+          <p className="mb-4 max-w-2xl font-light  lg:mb-8 md:text-lg lg:text-xl">
             {t('text1')}
           </p>
-          <p className="mb-4 max-w-2xl font-light  lg:mb-8 md:text-lg lg:text-xl text-gray-400">
+          <p className="mb-4 max-w-2xl font-light  lg:mb-8 md:text-lg lg:text-xl">
             {t('text2')}
           </p>
-          <p className="mb-4 max-w-2xl font-light  lg:mb-8 md:text-lg lg:text-xl text-gray-400">
+          <p className="mb-4 max-w-2xl font-light  lg:mb-8 md:text-lg lg:text-xl">
             {t('text3')}
           </p>
         </div>

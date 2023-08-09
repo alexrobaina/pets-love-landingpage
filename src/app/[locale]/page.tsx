@@ -1,25 +1,20 @@
 import Header from '@/components/header/Header'
-import Footer from '@/components/footer/Footer'
 import Hero from '@/components/hero/Hero'
-import { Sponsors } from '@/components/sponsors/Sponsors'
 import { Features } from '@/components/features/Features'
 import Prototype from '@/components/prototype/Prototype'
 import { FeatureSections } from '@/components/featuresSections/FeatureSections'
-import AboutMe from '@/components/aboutme/AboutMe'
 import Colaborate from '@/components/colaborate/Colaborate'
+import JointUp from '@/components/joinup/JointUp'
 
 export default function Home() {
   return (
     <>
-      <Header />
       <Hero />
-      <Sponsors />
       <Features />
       <Prototype />
+      <JointUp />
       <FeatureSections />
-      <AboutMe />
-      <Colaborate />
-      <Footer />
+      {/* <Colaborate /> */}
     </>
   )
 }
