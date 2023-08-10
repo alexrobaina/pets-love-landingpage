@@ -1,0 +1,25 @@
+@import '../../styles/mixings.scss';
+.modalContainer {
+  position: relative;
+  width: 620px;
+  @include media-breakpoint-only(xs) {
+    width: 310px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px !important;
+}
+
+.close {
+  color: var(--primary-color-text) !important;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.network {
+  border-bottom: 1px solid rgb(254, 254, 255);
+}

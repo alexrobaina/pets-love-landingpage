@@ -10,7 +10,7 @@ const Colaborate = () => {
   const t = useTranslations('colaborate')
 
   return (
-    <section>
+    <section id='collaborators' >
       <article>
         <div className="w-full py-8 mx-auto max-w-screen-xl lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className=" place-self-center mr-auto text-primary-950">

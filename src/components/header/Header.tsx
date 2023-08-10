@@ -2,82 +2,83 @@
 import React from 'react'
 import Image from 'next/image'
 import { Logo } from '@/assets/illustrations'
-import Link from 'next/link'
 
-const Header = () => {
-  const handleClick = (anchor: string) => () => {
-    const id = `${anchor}-section`
-    console.log(id)
-    const element = document.getElementById(id)
-    if (element) {
-      element.scrollIntoView({
+export const Header = ({ navigationLinks, appName }: any) => {
+  const scrollToSection = (e: any, sectionId: string) => {
+    e.preventDefault()
+
+    const target: any = document.querySelector(sectionId)
+    if (target) {
+      window.scrollTo({
+        top: target.offsetTop,
         behavior: 'smooth',
-        block: 'start',
       })
     }
   }
+
+  const editTags = (addresses: any) => {
+    // const promise = box.custom(
+    //   <div>asd</div>,
+    //   // <ModalTags addresses={addresses} onClose={() => promise.close()} />,
+    // )
+  }
+
   return (
     <header>
-      <nav className="border-gray-200 px-4 lg:px-6 py-2.5">
-        <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-          <a href="./" className="flex items-center">
-            <Image width={30} src={Logo} alt="Pets love Logo" />
-            <span className="ml-5 self-center text-xl font-semibold whitespace-nowrap text-white">
-              Pets-love
+      <nav className='bg-primary-100 w-full top-0 fixed border-gray-200 px-4 py-2.5 pl-35 pr-20'>
+        <div className='flex flex-wrap justify-between items-center mx-auto max-w-screen-xl'>
+          <a href='./' className='flex items-center'>
+            <Image width={30} src={Logo} alt='Pets love Logo' />
+            <span className='ml-5 self-center text-xl font-semibold whitespace-nowrap text-primary-950'>
+              {appName}
             </span>
           </a>
-          <div className="flex gap-28">
+          <div className='flex gap-8'>
             <div
-              className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
-              id="mobile-menu-2"
+              className='flex justify-between items-center w-full  lg:order-1'
+              id='mobile-menu-2'
             >
-              <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+              <ul className='flex flex-col font-medium lg:flex-row lg:space-x-8 lg:mt-0'>
                 <li>
                   <a
-                    href="#"
-                    className="block py-2 pr-4 pl-3 text-white rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0"
-                    aria-current="page"
+                    href={navigationLinks.github.href}
+                    className='hidden lg:flex cursor-pointer py-2 pr-4 pl-3 rounded text-primary-950 hover:text-primary-400  lg:p-0'
+                    aria-current='page'
                   >
-                    Github
+                    {navigationLinks.github.routeName}
                   </a>
                 </li>
-                <Link href="#aboutme">
-                  <li
-                    onClick={() => handleClick('aboutme')}
-                    className="block py-2 pr-4 pl-3 border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 lg:hover:text-white  hover:text-white "
-                  >
-                    About me
-                  </li>
-                </Link>
-                <Link href="#contact">
-                  <li
-                    onClick={() => handleClick('contact')}
-                    className="block py-2 pr-4 pl-3 border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 lg:hover:text-white  hover:text-white "
-                  >
-                    Contact
-                  </li>
-                </Link>
+                <li
+                  onClick={e => scrollToSection(e, '#collaborators')}
+                  className='hidden lg:flex cursor-pointer py-2 pr-4 pl-3 text-primary-950  hover:text-primary-400  lg:border-0 lg:p-0'
+                >
+                  {navigationLinks.collaborators.routeName}
+                </li>
+                <li
+                  onClick={e => scrollToSection(e, '#prototype')}
+                  className='hidden lg:flex cursor-pointer py-2 pr-4 pl-3 text-primary-950 lg:p-0 hover:text-primary-400'
+                >
+                  {navigationLinks.prototype.routeName}
+                </li>
+                <a
+                  href={navigationLinks.login.href}
+                  className='cursor-pointer py-2 pr-4 pl-3 text-primary-950 lg:hover:bg-transparent lg:border-0 lg:p-0 hover:text-primary-400'
+                >
+                  {navigationLinks.login.routeName}
+                </a>
               </ul>
             </div>
-            <div className="flex items-center lg:order-2">
-              <a
-                href="#"
-                className=" text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 focus:outline-none "
-              >
-                Log in
-              </a>
-              <a
-                href="#"
-                className="text-white bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-primary-800"
-              >
-                DONATE
-              </a>
-            </div>
+            <button
+              onClick={e => scrollToSection(e, '#donate')}
+              className='flex items-center lg:order-2'
+            >
+              <div className='text-white bg-primary-400 hover:bg-primary-800 focus:ring-4font-medium rounded-lg text-sm px-5 py-2.5 mr-2 focus:outline-none focus:ring-primary-800'>
+                {navigationLinks.donate.routeName}
+              </div>
+            </button>
           </div>
         </div>
       </nav>
     </header>
   )
 }
-
-export default Header
