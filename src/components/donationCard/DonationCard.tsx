@@ -30,43 +30,43 @@ const DonationCard: FC<Props> = ({
   return (
     <>
       <article>
-        <div className="w-[392px] px-4 bg-white rounded-md shadow-sm">
-          <Image className="pt-4 pb-4" src={image} alt={'cardImage'} width={380} />
-          <h5 className=" h-28 py-2 marker: text-xl font-bold leading-none md:text-xl xl:text-2xl">
+        <div className='w-[392px] px-4 bg-white rounded-md shadow-sm'>
+          <Image className='pt-4 pb-4' src={image} alt={'cardImage'} width={380} />
+          <h5 className=' text-primary-950 h-28 py-2 marker: text-xl font-bold leading-none md:text-xl xl:text-2xl'>
             {title}
           </h5>
-          <div className="flex flex-col">
-            <label className="lg:mb-2 py-2 marker: text-xl font-bold leading-none md:text-xl xl:text-2xl">
+          <div className='flex flex-col'>
+            <label className='text-primary-950 lg:mb-2 py-2 marker: text-xl font-bold leading-none md:text-xl xl:text-2xl'>
               ${inputValue}
             </label>
             <input
-              type="range"
-              id="donation"
-              name="donation"
-              min="0"
-              max="100"
+              type='range'
+              id='donation'
+              name='donation'
+              min='0'
+              max='100'
               onChange={handleInput}
-              className="accent-primary-900 bg-primary-200 appearance-none h-1"
+              className='accent-primary-900 bg-primary-200 appearance-none h-1'
             />
           </div>
-          <p className="mb-2 text-md py-4">{description}</p>
-          <p className="text-primary-900 lg:mb-2 marker: text-sm font-bold leading-none md:text-sm xl:text-md">
+          <p className='text-primary-900 mb-2 text-md py-4'>{description}</p>
+          <p className='text-primary-900 lg:mb-2 marker: text-sm font-bold leading-none md:text-sm xl:text-md'>
             {description2}
           </p>
-          <hr className="w-80 my-2 border-neutral-200 sm:mx-auto lg:my-8" />
+          <hr className='w-80 my-2 border-neutral-200 sm:mx-auto lg:my-8' />
 
           {reward.map((rewards, index) => {
             return (
               <ul
                 key={index}
-                className="flex gap-4 py-2 justify-start items-start w-full"
+                className='flex gap-4 py-2 justify-start items-start w-full'
               >
                 <Image src={icon} alt={'reward image'} width={80} />
-                <li className="text-neutral-500 text-md">{rewards}</li>
+                <li className='text-neutral-500 text-md'>{rewards}</li>
               </ul>
             )
           })}
-          <div className="flex justify-center p-8">
+          <div className='flex justify-center p-8'>
             <Button ButtonName={'Donar'} />
           </div>
         </div>
