@@ -4,8 +4,7 @@ export const PayPalButton = ({ amount }: any) => {
   return (
     <PayPalScriptProvider
       options={{
-        clientId:
-          'AVfzHHTOClrYN5HMMqvvg_WwziOKNpMI1T0PSmecm0I45vRSRsXzJQ1jKa7NEAtrYULVg785GlFb-Wof',
+        clientId: process.env.PAYPAL_CLIENT_ID || '',
       }}
     >
       <PayPalButtons

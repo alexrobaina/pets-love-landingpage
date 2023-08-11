@@ -21,7 +21,7 @@ const Hero = () => {
             {t('heroSlogan')}
           </p>
           <div className='pb-5'>
-            <Button ButtonName={t('heroButtonName')} />
+            <Button type='primary' text={t('heroButtonName')} />
           </div>
         </div>
         <div className='lg:mt-0 lg:col-span-5 lg:flex sm:col-span-1'>

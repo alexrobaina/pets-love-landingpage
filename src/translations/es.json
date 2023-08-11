@@ -31,7 +31,6 @@
         "featuresTitle6": "Refugios",
         "featuresDescription6": "En la aplicación, los refugios tienen herramientas para gestionar eficientemente las mascotas, evaluar a posibles adoptantes y asegurar que se cumplan los estándares de adopción responsables."
     },
-
     "joinUp": {
         "joinUpTitle": "🌟 Únete a la Revolución de Amor por las Mascotas: ¡Colabora con Pets Love! 🌟",
         "joinUpDescription1": "En Pets Love, aseguramos una transparencia total en la administración de tus fondos. Tu contribución nos posibilitará dedicarnos por completo y trabajar con expertos para mejorar nuestra aplicación. Únete hoy y sé parte del cambio positivo para las mascotas necesitadas. ¡Donemos juntos por su bienestar! 🐾🌟",
@@ -92,23 +91,27 @@
         "collaboratebuttonName": "Buy a coffee",
         "Countributors": "colaboradores"
     },
-    "donationCard1":{
-        "title":"¡Muchas Gracias por Ser Parte de Nuestro Equipo!",
-        "description":"Tu apoyo es invaluable para nosotros. Queremos expresar nuestro sincero agradecimiento por ser parte activa de Pets Love. Como muestra de nuestra gratitud, recibirás nuestro boletín mensual exclusivo donde te mantendremos al tanto de los avances, novedades y logros de nuestra aplicación. Juntos, estamos creando un impacto positivo en el mundo de las mascotas. ",
-        "description2":"¡Gracias por tu compromiso! 🐾❤"
+    "donationCard": {
+        "total": "Total",
+        "donationCard1": {
+            "title": "¡Muchas Gracias por Ser Parte de Nuestro Equipo!",
+            "description1": "Tu apoyo es invaluable para nosotros. Queremos expresar nuestro sincero agradecimiento por ser parte activa de Pets Love. Como muestra de nuestra gratitud, recibirás nuestro boletín mensual exclusivo donde te mantendremos al tanto de los avances, novedades y logros de nuestra aplicación. Juntos, estamos creando un impacto positivo en el mundo de las mascotas. ",
+            "description2": "¡Gracias por tu compromiso! 🐾❤",
+            "reward1": "Recibiras un boletín mensual exclusivo donde te mantendremos al tanto de los avances, novedades y logros de nuestra aplicación.",
+            "reward2": "Recibiras un boletín mensual exclusivo donde te mantendremos al tanto de los avances, novedades y logros de nuestra aplicación."
+        }
+    },
+    "donationCard2": {
+        "title": "¡Obtén un retrato de ti mismo hecho con IA!",
+        "description": "!Recibe un retrato de ti mismo hecho con IA! La imagen será de 1024x2024 px y se subirá a nuestras redes sociales, donde te etiquetaremos agradeciéndote por colaborar en Pets Love.",
+        "description2": "¡Gracias por tu compromiso! 🐾❤"
+
     },
 
-    "donationCard2":{
-        "title":"¡Obtén un retrato de ti mismo hecho con IA!",
-        "description":"!Recibe un retrato de ti mismo hecho con IA! La imagen será de 1024x2024 px y se subirá a nuestras redes sociales, donde te etiquetaremos agradeciéndote por colaborar en Pets Love.",
-        "description2":"¡Gracias por tu compromiso! 🐾❤"
-       
-    },
-
-    "donationCard3":{
-        "title":"🎨 '¡Disfruta de una taza única con mascotas increíbles, creadas por IA!' 🎨 ",
-        "description":"Eleva tu experiencia con Pets Love y lleva a casa una taza excepcional. Cada diseño, creado por inteligencia artificial, captura la esencia de mascotas asombrosas en una obra de arte única. Disfruta de tu bebida favorita mientras apoyas la causa del bienestar animal. ",
-        "description2":"¡Obtén tu taza exclusiva y lleva contigo la magia de las mascotas y la tecnología! 🐾🎨☕"
+    "donationCard3": {
+        "title": "🎨 '¡Disfruta de una taza única con mascotas increíbles, creadas por IA!' 🎨 ",
+        "description": "Eleva tu experiencia con Pets Love y lleva a casa una taza excepcional. Cada diseño, creado por inteligencia artificial, captura la esencia de mascotas asombrosas en una obra de arte única. Disfruta de tu bebida favorita mientras apoyas la causa del bienestar animal. ",
+        "description2": "¡Obtén tu taza exclusiva y lleva contigo la magia de las mascotas y la tecnología! 🐾🎨☕"
     },
     "footer": {
         "privacy": "poliza de privacidad",

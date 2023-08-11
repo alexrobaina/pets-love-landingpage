@@ -3,6 +3,9 @@ import Image, { StaticImageData } from 'next/image'
 import React from 'react'
 import { FC, useState } from 'react'
 import Button from '../button/Button'
+import { ReactModal } from '../ReactModal'
+import { PayPalButton } from '@/utils/paypalActions'
+import { useTranslations } from 'next-intl'
 
 interface Props {
   image: string | StaticImageData
@@ -21,12 +24,19 @@ const DonationCard: FC<Props> = ({
   reward,
   icon,
 }) => {
+  const [isOpenDonationModal, setIsOpenDonationModal] = useState(false)
   const [inputValue, setInputValue] = useState(0)
+  const t = useTranslations('donationCard')
 
   const handleInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     event.preventDefault()
     setInputValue(parseInt(event.target.value))
   }
+
+  const handleOpenDonationModal = () => {
+    setIsOpenDonationModal(!isOpenDonationModal)
+  }
+
   return (
     <>
       <article>
@@ -67,10 +77,35 @@ const DonationCard: FC<Props> = ({
             )
           })}
           <div className='flex justify-center p-8'>
-            <Button ButtonName={'Donar'} />
+            <Button
+              wFull
+              text={'Donar'}
+              type='secondary'
+              onClick={handleOpenDonationModal}
+            />
           </div>
         </div>
       </article>
+      <ReactModal
+        buttonClose
+        height='80%'
+        title='Donar'
+        isOpen={isOpenDonationModal}
+        closeModal={() => handleOpenDonationModal()}
+      >
+        <div className='w-full mt-10'>
+          <Image className='w-full' src={image} alt={'cardImage'} width={380} />
+          <h5 className=' text-primary-950  py-2 marker: text-xl font-bold leading-none md:text-xl xl:text-2xl'>
+            {title}
+          </h5>
+          <p className='text-primary-900 mb-2 text-md py-4'>{description}</p>
+
+          <label className='flex justify-end text-primary-950 lg:mb-2 py-2 marker: text-xl font-bold leading-none md:text-xl xl:text-2xl'>
+            {t('total')} ${inputValue}
+          </label>
+          {PayPalButton(100)}
+        </div>
+      </ReactModal>
     </>
   )
 }

@@ -1,31 +1,27 @@
 'use client'
 
-import { Catcard1, Catcard2, CupCard, FoodCard } from '@/assets/images'
+import { Catcard1 } from '@/assets/images'
 import { CheckIcon } from '@/assets/icons'
 import React from 'react'
 import DonationCard from './DonationCard'
 import { useTranslations } from 'next-intl'
 
-const REWARDS = [
-  'Recibiras un boletín mensual exclusivo donde te mantendremos al tanto de los avances, novedades y logros de nuestra aplicación.',
-]
-
 const DonationMain = () => {
-  const t = useTranslations('donationCard1')
-  const t1 = useTranslations('donationCard2')
-  const t2 = useTranslations('donationCard3')
+  const t = useTranslations('donationCard')
+  const REWARD_THANKS = [t('donationCard1.reward1'), t('donationCard1.reward2')]
+
   return (
     <>
-      <section className="flex justify-around py-8">
+      <section className='flex justify-around py-8'>
         <DonationCard
           image={Catcard1}
-          title={t('title')}
-          description={t('description')}
+          title={t('donationCard1.title')}
+          description={t('donationCard1.description1')}
           description2={t('description2')}
-          reward={REWARDS}
+          reward={REWARD_THANKS}
           icon={CheckIcon}
         />
-        <DonationCard
+        {/* <DonationCard
           image={Catcard2}
           title={t1('title')}
           description={t1('description')}
@@ -40,7 +36,7 @@ const DonationMain = () => {
           description2={t2('description2')}
           reward={REWARDS}
           icon={CheckIcon}
-        />
+        /> */}
       </section>
     </>
   )

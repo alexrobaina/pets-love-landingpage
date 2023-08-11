@@ -1,34 +1,39 @@
 'use client'
 import { FC, MouseEventHandler } from 'react'
-import Image from 'next/image'
 
 interface Props {
+  wFull?: boolean
   text: string
-  onClick?: MouseEventHandler<HTMLButtonElement>
   type?: string
-  primary?: boolean
   icon?: string
+  primary?: boolean
+  onClick?: MouseEventHandler<HTMLButtonElement>
 }
 
-const Button: FC<Props> = ({ text, onClick = () => {}, type, icon, primary }) => {
-  const primaryStyle = ''
-  const secundary = ''
+const Button: FC<Props> = ({ text, onClick = () => {}, type, icon, wFull }) => {
+  let buttonClasses = ''
 
-  const setStyles = () => {
-    if (primary) {
-      return primaryStyle
-    } else {
-      return secundary
-    }
-    return ''
+  switch (type) {
+    case 'primary':
+      buttonClasses = 'hover:bg-primary-600 bg-primary-800 text-primary-50'
+      break
+    case 'secondary':
+      buttonClasses = 'hover:bg-primary-300 bg-primary-100 text-primary-900'
+      break
+    case 'tertiary':
+      buttonClasses = 'bg-transparent hover:bg-gray-100 text-gray-600'
+      break
+    default:
+      buttonClasses = 'bg-blue-500 hover:bg-blue-700 text-white'
   }
 
   return (
-    <button onClick={onClick} type={type === 'submit' ? 'submit' : 'button'} className=''>
-      <div className={primary && primaryStyle}>
-        {icon && <Image src={icon} alt='icon-button' />}
-        {text}
-      </div>
+    <button
+      onClick={onClick}
+      className={` ${wFull && 'w-full'} py-2 px-4 rounded ${buttonClasses}`}
+    >
+      {icon && icon}
+      {text && text}
     </button>
   )
 }
