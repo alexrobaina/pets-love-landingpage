@@ -95,8 +95,7 @@
     "donationCard1":{
         "title":"¡Muchas Gracias por Ser Parte de Nuestro Equipo!",
         "description":"Tu apoyo es invaluable para nosotros. Queremos expresar nuestro sincero agradecimiento por ser parte activa de Pets Love. Como muestra de nuestra gratitud, recibirás nuestro boletín mensual exclusivo donde te mantendremos al tanto de los avances, novedades y logros de nuestra aplicación. Juntos, estamos creando un impacto positivo en el mundo de las mascotas. ",
-        "description2":"¡Gracias por tu compromiso! 🐾❤",
-        "reward":[{"reward1":"Recibiras un boletín mensual exclusivo donde te mantendremos al tanto de los avances, novedades y logros de nuestra aplicación."}]
+        "description2":"¡Gracias por tu compromiso! 🐾❤"
     },
 
     "donationCard2":{
