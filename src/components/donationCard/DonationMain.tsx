@@ -1,4 +1,5 @@
 'use client'
+
 import { Catcard1, Catcard2, CupCard, FoodCard } from '@/assets/images'
 import { CheckIcon } from '@/assets/icons'
 import React from 'react'
