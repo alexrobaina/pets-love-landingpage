@@ -2,31 +2,12 @@ import { FC } from 'react'
 import Image from 'next/image'
 
 interface Props {
-  title: string
-  text1: string
-  text3: string
-  text2: string
-  description1: string
-  description2?: string
-  description3?: string
-  subtitle1?: string
-  subtitle2?: string
-  subtitle3?: string
+  content: any
   img: string
   order: boolean
 }
 
-const FeatureSections: FC<Props> = ({
-  title,
-  subtitle1,
-  subtitle2,
-  text1,
-  text3,
-  text2,
-  subtitle3,
-  img,
-  order,
-}) => {
+const FeatureSections: FC<Props> = ({ content, img, order }) => {
   return (
     <article
       className={
@@ -38,7 +19,8 @@ const FeatureSections: FC<Props> = ({
       <div>
         <Image src={img} alt='mockup' width={650} />
       </div>
-      <div className='text-primary-950'>
+      <div>{content}</div>
+      {/* <div className='text-primary-950'>
         <h1 className='mb-10 max-w-2xl text-2xl font-extrabold leading-none md:text-4xl xl:text-5xl'>
           {title}
         </h1>
@@ -60,7 +42,7 @@ const FeatureSections: FC<Props> = ({
         <p className='mb-4 max-w-2xl font-light  lg:mb-8 md:text-lg lg:text-xl '>
           {text3}
         </p>
-      </div>
+      </div> */}
     </article>
   )
 }

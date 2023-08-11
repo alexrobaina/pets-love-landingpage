@@ -9,18 +9,24 @@ export const FeatureSections = () => {
   const t2 = useTranslations('veterinary')
   const t3 = useTranslations('voluntaries')
   return (
-    <section id="features">
+    <section id='features'>
       <FeatureComponent
-        title={t('shelterTitle')}
-        subtitle1={t('shelterSubtitle1')}
-        description1={t('shelterDescription1')}
-        subtitle2={t('shelterSubtitle2')}
-        description2={t('shelterDescription2')}
+        content={
+          <div>
+            <div>{t('shelterTitle')}</div>
+            <div>{t('shelterSubtitle1')}</div>
+          </div>
+        }
+        // title={t('shelterTitle')}
+        // subtitle1={t('shelterSubtitle1')}
+        // description1={t('shelterDescription1')}
+        // subtitle2={t('shelterSubtitle2')}
+        // description2={t('shelterDescription2')}
         img={Refugios}
         order={false}
       />
 
-      <FeatureComponent
+      {/* <FeatureComponent
         title={t1('adoptTitle')}
         description1={t1('adoptDescription1')}
         subtitle2={t1('adoptSubtitle2')}
@@ -50,7 +56,7 @@ export const FeatureSections = () => {
         description2={t3('voluntariesDescription2')}
         img={Voluntarios}
         order={true}
-      />
+      /> */}
     </section>
   )
 }
