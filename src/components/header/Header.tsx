@@ -1,9 +1,13 @@
 'use client'
-import React from 'react'
+import { useState } from 'react'
 import Image from 'next/image'
 import { Logo } from '@/assets/illustrations'
+import { ReactModal } from '../ReactModal'
+import { usePaypalPaymentGateway } from '@/hooks/usePaypalPaymentGateway'
 
 export const Header = ({ navigationLinks, appName }: any) => {
+  const { results, paypalButton } = usePaypalPaymentGateway()
+  const [isOpenDonationModal, setIsOpenDonationModal] = useState(false)
   const scrollToSection = (e: any, sectionId: string) => {
     e.preventDefault()
 
@@ -15,12 +19,14 @@ export const Header = ({ navigationLinks, appName }: any) => {
       })
     }
   }
+  console.log(results)
 
-  const editTags = (addresses: any) => {
-    // const promise = box.custom(
-    //   <div>asd</div>,
-    //   // <ModalTags addresses={addresses} onClose={() => promise.close()} />,
-    // )
+  const donate = () => {
+    alert(1)
+  }
+
+  const handleOpenDonationModal = () => {
+    setIsOpenDonationModal(!isOpenDonationModal)
   }
 
   return (
@@ -69,7 +75,8 @@ export const Header = ({ navigationLinks, appName }: any) => {
               </ul>
             </div>
             <button
-              onClick={e => scrollToSection(e, '#donate')}
+              // onClick={e => scrollToSection(e, '#donate')}
+              onClick={() => handleOpenDonationModal()}
               className='flex items-center lg:order-2'
             >
               <div className='text-white bg-primary-400 hover:bg-primary-800 focus:ring-4font-medium rounded-lg text-sm px-5 py-2.5 mr-2 focus:outline-none focus:ring-primary-800'>
@@ -79,6 +86,15 @@ export const Header = ({ navigationLinks, appName }: any) => {
           </div>
         </div>
       </nav>
+      <ReactModal
+        buttonClose
+        height='80%'
+        title='Donar'
+        isOpen={isOpenDonationModal}
+        closeModal={() => handleOpenDonationModal()}
+      >
+        <div className='w-full mt-10'>{paypalButton(100)}</div>
+      </ReactModal>
     </header>
   )
 }

@@ -14,11 +14,6 @@ export const metadata = {
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const locale = useLocale()
 
-  // Show a 404 error if the user requests an unknown locale
-  // if (params.locale !== locale) {
-  //   notFound();
-  // }
-
   let messages
   try {
     messages = (await import(`../../translations/${locale}.json`)).default
@@ -26,7 +21,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
     notFound()
   }
   return (
-    <html className="bg-[#D6F1E9]" lang={locale}>
+    <html className='bg-[#D6F1E9]' lang={locale}>
       <body className={inter.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div className="px-8">{children}</div>
