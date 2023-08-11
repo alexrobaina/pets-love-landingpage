@@ -1,16 +1,13 @@
-'use client'
-
-import Image from 'next/image'
-import { useTranslations } from 'next-intl'
+import Image, { StaticImageData } from 'next/image'
 import React from 'react'
 import { FC, useState } from 'react'
 import Button from '../button/Button'
 
 interface Props {
-  image: string
+  image: string | StaticImageData
   title: string
   description: string
-  greeting?: string
+  description2?: string
   reward: string[]
   icon: string
 }
@@ -19,7 +16,7 @@ const DonationCard: FC<Props> = ({
   image,
   title,
   description,
-  greeting,
+  description2,
   reward,
   icon,
 }) => {
@@ -34,7 +31,7 @@ const DonationCard: FC<Props> = ({
       <article>
         <div className="w-[392px] px-4 bg-white rounded-md shadow-sm">
           <Image className="pt-4 pb-4" src={image} alt={'cardImage'} width={380} />
-          <h5 className="py-2 marker: text-xl font-bold leading-none md:text-xl xl:text-2xl">
+          <h5 className=" h-28 py-2 marker: text-xl font-bold leading-none md:text-xl xl:text-2xl">
             {title}
           </h5>
           <div className="flex flex-col">
@@ -48,14 +45,14 @@ const DonationCard: FC<Props> = ({
               min="0"
               max="100"
               onChange={handleInput}
-              className="accent-primary-900 bg-primary-200"
+              className="accent-primary-900 bg-primary-200 appearance-none h-1"
             />
           </div>
           <p className="mb-2 text-md py-4">{description}</p>
           <p className="text-primary-900 lg:mb-2 marker: text-sm font-bold leading-none md:text-sm xl:text-md">
-            {greeting}
+            {description2}
           </p>
-          <hr className="w-80 my-2 border-b-neutral-900 sm:mx-auto lg:my-8" />
+          <hr className="w-80 my-2 border-neutral-200 sm:mx-auto lg:my-8" />
 
           {reward.map((rewards, index) => {
             return (
