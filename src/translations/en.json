@@ -92,32 +92,7 @@
         "collaboratebuttonName": "Buy a coffee",
         "Countributors": "colaboradores"
     },
-    "donationCard1":{
-        "title":"¡Muchas Gracias por Ser Parte de Nuestro Equipo!",
-        "description":"Tu apoyo es invaluable para nosotros. Queremos expresar nuestro sincero agradecimiento por ser parte activa de Pets Love. Como muestra de nuestra gratitud, recibirás nuestro boletín mensual exclusivo donde te mantendremos al tanto de los avances, novedades y logros de nuestra aplicación. Juntos, estamos creando un impacto positivo en el mundo de las mascotas. ",
-        "description2":"¡Gracias por tu compromiso! 🐾❤",
-        "reward":[{"reward1":"Recibiras un boletín mensual exclusivo donde te mantendremos al tanto de los avances, novedades y logros de nuestra aplicación."}]
-    },
 
-    "donationCard2":{
-        "title":"¡Obtén un retrato de ti mismo hecho con IA!",
-        "description":"!Recibe un retrato de ti mismo hecho con IA! La imagen será de 1024x2024 px y se subirá a nuestras redes sociales, donde te etiquetaremos agradeciéndote por colaborar en Pets Love.",
-        "reward":[
-        {"reward1":"1 retrato en forma del animal que quieras de 1024x1024px."},
-        {"reward2":"El retrato se creará utilizando tecnología de IA avanzada."},
-        {"reward3":"El retrato se personalizará para que se parezca a ti."},
-        {"reward4":"Te enviaremos por correo electrónico en formato digital."},
-        {"reward5":"Lo subiremos a nuestras redes sociales, donde te etiquetaremos agradeciéndote por colaborar en Pets Love."}]
-    },
-
-    "donationCard3":{
-        "title":"🎨 '¡Disfruta de una taza única con mascotas increíbles, creadas por IA!' 🎨 ",
-        "description":"Eleva tu experiencia con Pets Love y lleva a casa una taza excepcional. Cada diseño, creado por inteligencia artificial, captura la esencia de mascotas asombrosas en una obra de arte única. Disfruta de tu bebida favorita mientras apoyas la causa del bienestar animal. ",
-        "description2":"¡Obtén tu taza exclusiva y lleva contigo la magia de las mascotas y la tecnología! 🐾🎨☕",
-        "reward":[
-            {"reward1":"Te enviarémos una taza con la imagen de tu animal favorito hecha con IA"},
-            {"reward2":"Recibiras un boletín mensual exclusivo donde te mantendremos al tanto de los avances, novedades y logros de nuestra aplicación"}]
-        },
 
     "footer": {
         "privacy": "privacy Policy",
