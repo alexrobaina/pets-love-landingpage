@@ -2,19 +2,19 @@ import { FC, ReactNode } from 'react'
 import { motion } from 'framer-motion'
 import Modal from 'react-modal'
 
-import styles from './ReactModal.module.scss'
-
 interface Props {
   title?: string
   isOpen: boolean
   children: ReactNode
   buttonClose?: boolean
   width?: string | number
+  height?: string | number
   closeModal?: () => void
 }
 
-const ReactModal: FC<Props> = ({
+export const ReactModal: FC<Props> = ({
   title,
+  height,
   width,
   isOpen,
   children,
@@ -30,7 +30,9 @@ const ReactModal: FC<Props> = ({
       border: 'none',
       marginRight: '-50%',
       borderRadius: '4px',
-      backgroundColor: neutral1000,
+      width: width || '50%',
+      height: height || '50%',
+      backgroundColor: '#f3faf8',
       transform: 'translate(-50%, -50%)',
     },
     overlay: {
@@ -58,20 +60,18 @@ const ReactModal: FC<Props> = ({
         variants={variants}
         transition={{ ease: 'easeOut' }}
       >
-        <div style={{ maxWidth: width }} className={styles.modalContainer}>
-          <div className={styles.header}>
-            <BaseText headingS weightMedium text={title} />
+        <div className='flex flex-col'>
+          <div className='flex justify-between'>
+            <h2 className='text-primary-950 '>{title}</h2>
             {buttonClose && (
-              <div className={styles.close} role='button' onClick={closeModal}>
-                <IoMdClose size={22} />
+              <div className='text-primary-950' role='button' onClick={closeModal}>
+                X
               </div>
             )}
           </div>
-          <div className={styles.children}>{children}</div>
+          <>{children}</>
         </div>
       </motion.div>
     </Modal>
   )
 }
-
-export default ReactModal
