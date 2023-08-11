@@ -10,6 +10,7 @@ import IconGithub from './icon-gitHub.svg'
 import IconDiscord from './icon-discord.svg'
 import IconInstagram from './icon-instagram.svg'
 import IconLinkedIn from './icon-linkedin.svg'
+import CheckIcon from './Icon-check.svg'
 export {
   IconCodeBranch,
   IconFood,
@@ -23,4 +24,5 @@ export {
   IconDiscord,
   IconInstagram,
   IconLinkedIn,
+  CheckIcon,
 }

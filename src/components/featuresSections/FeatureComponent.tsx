@@ -3,9 +3,9 @@ import Image from 'next/image'
 
 interface Props {
   title: string
-  text1: string
-  text2?: string
-  text3?: string
+  description1: string
+  description2?: string
+  description3?: string
   subtitle1?: string
   subtitle2?: string
   subtitle3?: string
@@ -18,9 +18,9 @@ const FeatureSections: FC<Props> = ({
   subtitle1,
   subtitle2,
   subtitle3,
-  text1,
-  text2,
-  text3,
+  description1,
+  description2,
+  description3,
   img,
   order,
 }) => {
