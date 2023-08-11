@@ -88,12 +88,12 @@ export const Header = ({ navigationLinks, appName }: any) => {
       </nav>
       <ReactModal
         buttonClose
-        height='auto'
+        height='80%'
         title='Donar'
         isOpen={isOpenDonationModal}
         closeModal={() => handleOpenDonationModal()}
       >
-        <div className='mt-10'>{paypalButton(100)}</div>
+        <div className='w-full mt-10'>{paypalButton(100)}</div>
       </ReactModal>
     </header>
   )

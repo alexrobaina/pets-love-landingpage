@@ -60,7 +60,7 @@ export const ReactModal: FC<Props> = ({
         variants={variants}
         transition={{ ease: 'easeOut' }}
       >
-        <div className='flex flex-col'>
+        <div className='flex flex-col justify-center '>
           <div className='flex justify-between'>
             <h2 className='text-primary-950 '>{title}</h2>
             {buttonClose && (
