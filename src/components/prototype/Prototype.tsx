@@ -17,7 +17,7 @@ const Prototype = () => {
           <h2 className='mb-4 text-4xl font-extrabold '>{t('prototypeTitle')}</h2>
           <p className='mb-4 '>{t('prototypeDescription')}</p>
           <div className='mb-4 '>
-            <Button ButtonName={t('prototypeButtonName')} />
+            <Button text={t('prototypeButtonName')} primary />
           </div>
         </div>
       </div>

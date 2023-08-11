@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import { Home } from '@/assets/illustrations'
-import { TelegramIcon, WhatsappIcon } from '@/assets/illustrations'
 import { useTranslations } from 'next-intl'
 import Button from '../button/Button'
 
@@ -15,18 +14,18 @@ const Hero = () => {
           <h1 className='mb-4 lg:max-w-2xl text-4xl font-semibold md:text-4xl xl:text-5xl text-primary-950 sm:max-w-screen-sm'>
             {t('heroTitle')}
           </h1>
-          <p className="mb-6 lg:max-w-2xl font-light lg:mb-8 md:text-lg lg:text-xl text-primary-950 sm: text-sm sm:max-w-sm">
+          <p className='mb-6 lg:max-w-2xl font-light lg:mb-8 md:text-lg lg:text-xl text-primary-950 sm: text-sm sm:max-w-sm'>
             {t('heroDescription')}
           </p>
-          <p className="mb-6 lg:max-w-2xl font-light lg:mb-8 md:text-lg lg:text-xl sm: text-sm sm:max-w-sm">
+          <p className='mb-6 text-primary-900 lg:max-w-2xl font-light lg:mb-8 md:text-lg lg:text-xl sm: text-sm sm:max-w-sm'>
             {t('heroSlogan')}
           </p>
-          <div className="pb-5">
+          <div className='pb-5'>
             <Button ButtonName={t('heroButtonName')} />
           </div>
         </div>
-        <div className="lg:mt-0 lg:col-span-5 lg:flex sm:col-span-1">
-          <Image src={Home} alt="mockup" />
+        <div className='lg:mt-0 lg:col-span-5 lg:flex sm:col-span-1'>
+          <Image src={Home} alt='mockup' />
         </div>
       </div>
     </section>
@@ -34,4 +33,3 @@ const Hero = () => {
 }
 
 export default Hero
-
