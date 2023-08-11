@@ -9,24 +9,24 @@ const Hero = () => {
   const t = useTranslations('hero')
 
   return (
-    <section className='mt-20' id='hero'>
-      <div className='lg: grid py-8  mx-auto lg:max-w-screen-xl lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12'>
-        <div className='place-self-center mr-auto pb-10 lg:col-span-7 sm:col-span-3 '>
-          <h1 className='mb-4 lg:max-w-2xl text-4xl font-semibold md:text-5xl xl:text-6xl text-primary-950 sm:max-w-screen-sm sm:text-sm'>
-            {t('title')}
+    <section className="mt-20" id="hero">
+      <div className="lg: grid py-8  mx-auto lg:max-w-screen-xl lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div className="place-self-center mr-auto pb-10 lg:col-span-7 sm:col-span-3 ">
+          <h1 className="mb-4 lg:max-w-2xl text-4xl font-semibold md:text-5xl xl:text-6xl text-primary-950 sm:max-w-screen-sm sm:text-sm">
+            {t('heroTitle')}
           </h1>
-          <p className='mb-6 lg:max-w-2xl font-light lg:mb-8 md:text-lg lg:text-xl text-primary-950 sm: text-sm sm:max-w-sm'>
-            {t('text')}
+          <p className="mb-6 lg:max-w-2xl font-light lg:mb-8 md:text-lg lg:text-xl text-primary-950 sm: text-sm sm:max-w-sm">
+            {t('heroDescription')}
           </p>
-          <p className='mb-6 lg:max-w-2xl font-light lg:mb-8 md:text-lg lg:text-xl sm: text-sm sm:max-w-sm'>
-            {t('text2')}
+          <p className="mb-6 lg:max-w-2xl font-light lg:mb-8 md:text-lg lg:text-xl sm: text-sm sm:max-w-sm">
+            {t('heroSlogan')}
           </p>
-          <div className='pb-5'>
-            <Button ButtonName={t('buttonName')} />
+          <div className="pb-5">
+            <Button ButtonName={t('heroButtonName')} />
           </div>
         </div>
-        <div className='lg:mt-0 lg:col-span-5 lg:flex sm:col-span-1'>
-          <Image src={Home} alt='mockup' />
+        <div className="lg:mt-0 lg:col-span-5 lg:flex sm:col-span-1">
+          <Image src={Home} alt="mockup" />
         </div>
       </div>
     </section>

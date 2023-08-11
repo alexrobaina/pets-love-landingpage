@@ -11,43 +11,43 @@ export const FeatureSections = () => {
   return (
     <section id="features">
       <FeatureComponent
-        title={t('title')}
-        subtitle1={t('subtitle1')}
-        text1={t('text1')}
-        subtitle2={t('subtitle2')}
-        text2={t('text2')}
+        title={t('shelterTitle')}
+        subtitle1={t('shelterSubtitle1')}
+        description1={t('shelterDescription1')}
+        subtitle2={t('shelterSubtitle2')}
+        description2={t('shelterDescription2')}
         img={Refugios}
         order={false}
       />
 
       <FeatureComponent
-        title={t1('title')}
-        text1={t1('text1')}
-        subtitle2={t('subtitle2')}
-        text2={t1('text2')}
-        subtitle3={t1('subtitle3')}
-        text3={t1('text3')}
+        title={t1('adoptTitle')}
+        description1={t1('adoptDescription1')}
+        subtitle2={t1('adoptSubtitle2')}
+        description2={t1('adoptDescription2')}
+        subtitle3={t1('adoptSubtitle3')}
+        description3={t1('adoptDescription3')}
         img={Adopcion}
         order={true}
       />
 
       <FeatureComponent
-        title={t2('title')}
-        subtitle1={t2('subtitle1')}
-        text1={t2('text1')}
-        subtitle2={t2('subtitle2')}
-        text2={t2('text2')}
-        subtitle3={t2('subtitle3')}
-        text3={t2('text3')}
+        title={t2('veterinaryTitle')}
+        subtitle1={t2('veterinarySubtitle1')}
+        description1={t2('veterinaryDescription1')}
+        subtitle2={t2('veterinarySubtitle2')}
+        description2={t2('veterinaryDescription2')}
+        subtitle3={t2('veterinarySubtitle3')}
+        description3={t2('veterinaryDescription3')}
         img={Veterinarios}
         order={false}
       />
       <FeatureComponent
-        title={t3('title')}
-        subtitle1={t3('subtitle1')}
-        text1={t3('text1')}
-        subtitle2={t3('subtitle2')}
-        text2={t3('text2')}
+        title={t3('voluntariesTitle')}
+        subtitle1={t3('voluntariesSubtitle1')}
+        description1={t3('voluntariesDescription1')}
+        subtitle2={t3('voluntariesSubtitle2')}
+        description2={t3('voluntariesDescription2')}
         img={Voluntarios}
         order={true}
       />

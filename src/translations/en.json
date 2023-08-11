@@ -8,85 +8,110 @@
         "donate": "DONATE"
     },
     "hero": {
-        "title": "Welcome to Pets Love app committed to saving and protecting animals.",
-        "text": "Ready to witness the power of our app firsthand? Click below to get anexclusive preview of the Pets Love app prototype. Explore its features, navigate through animal profiles, and see how we're revolutionizing the way animals find their forever homes.",
-        "buttonName": "DONATE"
+        "heroTitle": "Welcome to Pets Love app committed to saving and protecting animals.",
+        "heroText": "Ready to witness the power of our app firsthand? Click below to get anexclusive preview of the Pets Love app prototype. Explore its features, navigate through animal profiles, and see how we're revolutionizing the way animals find their forever homes.",
+        "heroText2": "❤  Únete y Cambia Vidas Peludas Hoy  ❤",
+        "heroButtonName": "DONATE"
     },
     "sponsors": {
-        "title": "Our sponsors"
+        "sponsorsTitle": "Our sponsors"
     },
     "features": {
-        "title1": "Comprehensive Profiles",
-        "text1": "Create detailed profiles for your pets, including their medical history, vaccination records, and adorable photos.",
-        "title2": "QR Code Integration",
-        "text2": "Generate a unique QR code for each pet, making it easy to share their profile and contact information with others.",
-        "title3": "Adoption Center",
-        "text3": "Browse through a wide selection of animals available for adoption, connect with shelters, and find your perfect furry companion.",
-        "title4": "Veterinary",
-        "text4": "Connect with trusted veterinarians, schedule appointments, and access important medical information for your pets, all in one place.",
-        "title5": "Volunteer",
-        "text5": " Get involved and make a difference by offering temporary foster care for animals in need, and track their progress within the app.",
-        "title6": "Analytics",
-        "text6": " Gain valuable insights into your pet's activity, health trends, and behavior patterns through our advanced analytics feature."
+        "featuresMainTitle": "Comprehensive Profiles",
+        "featuresTitle1": "Código abierto",
+        "featuresDescription1": "Create detailed profiles for your pets, including their medical history, vaccination records, and adorable photos.",
+        "featuresTitle2": "QR Code Integration",
+        "featuresDescription2": "Generate a unique QR code for each pet, making it easy to share their profile and contact information with others.",
+        "featuresTitle3": "Adoption Center",
+        "featuresDescription3": "Browse through a wide selection of animals available for adoption, connect with shelters, and find your perfect furry companion.",
+        "featuresTitle4": "Veterinary",
+        "featuresDescription4": "Connect with trusted veterinarians, schedule appointments, and access important medical information for your pets, all in one place.",
+        "featuresTitle5": "Volunteer",
+        "featuresDescription5": " Get involved and make a difference by offering temporary foster care for animals in need, and track their progress within the app.",
+        "featuresTitle6": "Analytics",
+        "featuresDescription6": " Gain valuable insights into your pet's activity, health trends, and behavior patterns through our advanced analytics feature."
     },
 
     "joinUp": {
-        "title1": "🌟 Únete a la Revolución de Amor por las Mascotas: ¡Colabora con Pets Love! 🌟",
-        "text1": "En Pets Love, aseguramos una transparencia total en la administración de tus fondos. Tu contribución nos posibilitará dedicarnos por completo y trabajar con expertos para mejorar nuestra aplicación. Únete hoy y sé parte del cambio positivo para las mascotas necesitadas. ¡Donemos juntos por su bienestar! 🐾🌟",
-        "text2": "🔍 Contribuye al desarrollo de innovadoras funcionalidades.",
-        "text3": "🔍 Contribuye al desarrollo de innovadoras funcionalidades. "
+        "joinUpTitle1": "🌟 Únete a la Revolución de Amor por las Mascotas: ¡Colabora con Pets Love! 🌟",
+        "joinUpDescription1": "En Pets Love, aseguramos una transparencia total en la administración de tus fondos. Tu contribución nos posibilitará dedicarnos por completo y trabajar con expertos para mejorar nuestra aplicación. Únete hoy y sé parte del cambio positivo para las mascotas necesitadas. ¡Donemos juntos por su bienestar! 🐾🌟",
+        "joinUpDescription2": "🔍 Contribuye al desarrollo de innovadoras funcionalidades.",
+        "joinUpDescription3": "🔍 Contribuye al desarrollo de innovadoras funcionalidades. "
     },
+
     "prototype": {
-        "title": "Experience the future of animal adoption with Pets Love!",
-        "text": "Ready to witness the power of our app firsthand? Click below to get an exclusive preview of the Pets Love app prototype. Explore its features, navigate through animal profiles, and see how we're revolutionizing the way animals find their forever homes.",
-        "buttonName": "Go to Prototype"
+        "prototypeTitle": "Adelántate al Futuro de las Adopciones de Mascotas con Nuestro Prototipo",
+        "prototypeDescription1": "Explora nuestro prototipo de Pets Love y descubre cómo estamos construyendo una plataforma aún más poderosa para conectar mascotas con hogares amorosos. Tu participación temprana marca la diferencia en la evolución de la adopción. ¡No te lo pierdas! ¡Explora el Prototipo Ahora! 🐾🚀",
+        "prototypeButtonName": "Ver prototipo"
     },
     "shelter": {
-        "title": "Refugios",
-        "subtitle1": "Guardianes del Amor Peludo y Hogares en Formación 🏠🐾",
-        "text1": "Los refugios son el corazón de nuestra comunidad. Al colaborar con refugios, conectamos a mascotas necesitadas con hogares amorosos. Los refugios son los guardianes que brindan cuidado, amor y una segunda oportunidad a estas almas peludas. ¡Tu apoyo a los refugios es fundamental para crear historias de adopción felices en Pets Love! 💙",
-        "subtitle2": "Empoderando a los Refugios con Pets Love 🏠🐾",
-        "text2": "Pets Love es un recurso invaluable para refugios de animales. Centraliza detalles médicos y comportamentales, creando perfiles atractivos. Veterinarios, adoptantes y voluntarios acceden a información vital para el bienestar y cuidado de cada animal. En resumen, Pets Love optimiza la gestión, promueve adopciones responsables y asegura la felicidad de cada mascota bajo su cuidado. 💙🐕🐈"
+        "shelterTitle": "Refugios",
+        "shelterSubtitle1": "Guardianes del Amor Peludo y Hogares en Formación 🏠🐾",
+        "shelterDescription1": "Los refugios son el corazón de nuestra comunidad. Al colaborar con refugios, conectamos a mascotas necesitadas con hogares amorosos. Los refugios son los guardianes que brindan cuidado, amor y una segunda oportunidad a estas almas peludas. ¡Tu apoyo a los refugios es fundamental para crear historias de adopción felices en Pets Love! 💙",
+        "shelterSubtitle2": "Empoderando a los Refugios con Pets Love 🏠🐾",
+        "shelterDescription2": "Pets Love es un recurso invaluable para refugios de animales. Centraliza detalles médicos y comportamentales, creando perfiles atractivos. Veterinarios, adoptantes y voluntarios acceden a información vital para el bienestar y cuidado de cada animal. En resumen, Pets Love optimiza la gestión, promueve adopciones responsables y asegura la felicidad de cada mascota bajo su cuidado. 💙🐕🐈"
     },
 
     "adopt": {
-        "title": "Adoptar",
-        "subtitle2": "El Valor del Historial Médico: Cuidado Informado y Amor Duradero ",
-        "subtitle3": "QR para el Perfil de Tu Mascota: Siempre Conectados y Seguros 📲🐶 ",
-        "text1": "Descubre la alegría de dar un hogar a una mascota necesitada. Al adoptar, no solo ganas un amigo peludo, sino también un compañero para aventuras, risas y amor incondicional. Juntos, crearemos recuerdos que durarán toda la vida. ¡Bienvenido a la familia Pets Love! ❤️🏠",
-        "text2": "El historial médico de tu mascota es más que registros, es un vínculo entre su pasado y un futuro saludable. Mantén su bienestar en alto al conocer sus necesidades únicas y proporcionar el cuidado adecuado. En Pets Love, creemos que un historial completo es la clave para un amor duradero y saludable",
-        "text3": "Generamos un QR único para el perfil de tu mascota. Esta herramienta invaluable asegura que, en caso de pérdida, quien la encuentre pueda acceder a su perfil y contactarte rápidamente. Mantén a tu compañero peludo seguro y conectado con la tecnología de Pets Love. 🐾🔗"
+        "adoptTitle": "Adoptar",
+        "adoptSubtitle2": "El Valor del Historial Médico: Cuidado Informado y Amor Duradero ",
+        "adoptSubtitle3": "QR para el Perfil de Tu Mascota: Siempre Conectados y Seguros 📲🐶 ",
+        "adoptDescription1": "Descubre la alegría de dar un hogar a una mascota necesitada. Al adoptar, no solo ganas un amigo peludo, sino también un compañero para aventuras, risas y amor incondicional. Juntos, crearemos recuerdos que durarán toda la vida. ¡Bienvenido a la familia Pets Love! ❤️🏠",
+        "adoptDescription2": "El historial médico de tu mascota es más que registros, es un vínculo entre su pasado y un futuro saludable. Mantén su bienestar en alto al conocer sus necesidades únicas y proporcionar el cuidado adecuado. En Pets Love, creemos que un historial completo es la clave para un amor duradero y saludable",
+        "adoptDescription3": "Generamos un QR único para el perfil de tu mascota. Esta herramienta invaluable asegura que, en caso de pérdida, quien la encuentre pueda acceder a su perfil y contactarte rápidamente. Mantén a tu compañero peludo seguro y conectado con la tecnología de Pets Love. 🐾🔗"
 
     },
     "veterinary": {
-        "title": "Voluntarios",
-        "subtitle1": "Historiales Médicos Detallados:",
-        "text1": "En Pets Love, valoramos tu papel crucial en la vida de las mascotas. El historial médico es una guía para ofrecer atención precisa y amorosa. Nuestra plataforma facilita la interacción con refugios y adoptantes, asegurando que cada visita sea informada y eficiente. Juntos, aseguramos que los peludos reciban el cuidado que merecen. 💙🐕🐈",
-        "subtitle2": "Colaboración Eficiente:",
-        "text2": "Clave para la Atención Precisa 📋❤️ Los historiales médicos completos son pilares de una atención de calidad. Con Pets Love, accedes a perfiles detallados, desde vacunas hasta tratamientos anteriores. Esta visión integral permite decisiones informadas y resultados positivos para cada paciente peludo. 🏥📝",
-        "text3": "Veterinarios, Adoptantes y Refugios Unidos 🤝 Pets Love crea un ecosistema colaborativo. Interactúa con refugios y adoptantes, garantizando un enfoque completo en el bienestar. Tu experiencia y conocimiento son esenciales para asegurar vidas saludables y felices. 🐾🌟"
+        "veterinaryTitle": "Voluntarios",
+        "veterinarySubtitle1": "Guardianes de la Salud y el Bienestar Animal 🏥🐾",
+        "veterinaryDescription1": "En Pets Love, valoramos tu papel crucial en la vida de las mascotas. El historial médico es una guía para ofrecer atención precisa y amorosa. Nuestra plataforma facilita la interacción con refugios y adoptantes, asegurando que cada visita sea informada y eficiente. Juntos, aseguramos que los peludos reciban el cuidado que merecen. 💙🐕🐈",
+        "veterinarySubtitle2": "Historiales Médicos Detallados:",
+        "veterinaryDescription2": "Clave para la Atención Precisa 📋❤️ Los historiales médicos completos son pilares de una atención de calidad. Con Pets Love, accedes a perfiles detallados, desde vacunas hasta tratamientos anteriores. Esta visión integral permite decisiones informadas y resultados positivos para cada paciente peludo. 🏥📝",
+        "veterinarySubtitle3": "Colaboración Eficiente:",
+        "veterinaryDescription3": "Veterinarios, Adoptantes y Refugios Unidos 🤝 Pets Love crea un ecosistema colaborativo. Interactúa con refugios y adoptantes, garantizando un enfoque completo en el bienestar. Tu experiencia y conocimiento son esenciales para asegurar vidas saludables y felices. 🐾🌟"
     },
 
     "voluntaries": {
-        "title": "Veterinarios",
-        "subtitle1": "🤝 Compromiso Impulsado por el Corazón 🐾",
-        "text1": "Eres parte esencial en el mundo de las mascotas. En Pets Love, conectamos tu dedicación con refugios y veterinarios, facilitando el tránsito de mascotas y el intercambio de información. Tu labor amorosa crea un impacto real en la vida de cada animal. ¡Juntos, hacemos que sus colitas alegres nunca dejen de moverse! 💙🐕🐈",
-        "subtitle2": "🐶🐱Gestión de Mascotas con Amor y Cuidado Personal 🐶🐱",
-        "text2": "Podras administra las mascotas que has cuidado con cariño y mantén su información actualizada. Además, refugios y veterinarios pueden otorgarte acceso para agregar datos importantes. Tu compromiso y esfuerzo son fundamentales para garantizar un futuro brillante para cada peludo amigo. 🏠🌟"
+        "voluntariesTitle": "Veterinarios",
+        "voluntariesSubtitle1": "🤝 Compromiso Impulsado por el Corazón 🐾",
+        "voluntariesDescription1": "Eres parte esencial en el mundo de las mascotas. En Pets Love, conectamos tu dedicación con refugios y veterinarios, facilitando el tránsito de mascotas y el intercambio de información. Tu labor amorosa crea un impacto real en la vida de cada animal. ¡Juntos, hacemos que sus colitas alegres nunca dejen de moverse! 💙🐕🐈",
+        "voluntariesSubtitle2": "🐶🐱Gestión de Mascotas con Amor y Cuidado Personal 🐶🐱",
+        "voluntariesDescription2": "Podras administra las mascotas que has cuidado con cariño y mantén su información actualizada. Además, refugios y veterinarios pueden otorgarte acceso para agregar datos importantes. Tu compromiso y esfuerzo son fundamentales para garantizar un futuro brillante para cada peludo amigo. 🏠🌟"
     },
+
     "aboutme": {
-        "title": "About me",
-        "text1": "I'm super excited to share my passion project with you: Pets Love! As an animal lover and a full-time dream chaser, I've poured my heart and soul into creating this incredible app dedicated to saving and protecting animals.",
-        "text2": "Pets Love is not just an app, it's a mission. My goal is to connect animal shelters, veterinarians, volunteers, and pet adopters in a seamless and fun way. With Pets Love, we can ensure that every furry friend finds their perfect forever home and receives the care they deserve.",
-        "text3": "I've been working tirelessly to bring this app to life, combining my web development skills with my love for animals. Together, we can make a real difference and create a world where animals are loved, cherished, and protected."
+        "aboutmeTitle": "Acerca de Mi",
+        "aboutmeDescription1": "I'm super excited to share my passion project with you: Pets Love! As an animal lover and a full-time dream chaser, I've poured my heart and soul into creating this incredible app dedicated to saving and protecting animals.",
+        "aboutmeDescription2": "Pets Love is not just an app, it's a mission. My goal is to connect animal shelters, veterinarians, volunteers, and pet adopters in a seamless and fun way. With Pets Love, we can ensure that every furry friend finds their perfect forever home and receives the care they deserve.",
+        "aboutmeDescription3": "I've been working tirelessly to bring this app to life, combining my web development skills with my love for animals. Together, we can make a real difference and create a world where animals are loved, cherished, and protected."
     },
-    "colaborate": {
-        "title": "How to collaborate",
-        "text1": "Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.",
-        "text2": "Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil, and deploy changes with ease.",
-        "buttonName": "Buy a coffee",
-        "countributors": "Countributors"
+    "collaborate": {
+        "collaborateTitle": "How to collaborate",
+        "collaborateDescription1": "Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.",
+        "collaborateDescription2": "Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil, and deploy changes with ease.",
+        "collaboratebuttonName": "Buy a coffee",
+        "Countributors": "colaboradores"
     },
+    "donationCard1":{
+        "title":"¡Muchas Gracias por Ser Parte de Nuestro Equipo!",
+        "description":"Tu apoyo es invaluable para nosotros. Queremos expresar nuestro sincero agradecimiento por ser parte activa de Pets Love. Como muestra de nuestra gratitud, recibirás nuestro boletín mensual exclusivo donde te mantendremos al tanto de los avances, novedades y logros de nuestra aplicación. Juntos, estamos creando un impacto positivo en el mundo de las mascotas. ",
+        "description2":"¡Gracias por tu compromiso! 🐾❤"
+    },
+
+    "donationCard2":{
+        "title":"¡Obtén un retrato de ti mismo hecho con IA!",
+        "description":"!Recibe un retrato de ti mismo hecho con IA! La imagen será de 1024x2024 px y se subirá a nuestras redes sociales, donde te etiquetaremos agradeciéndote por colaborar en Pets Love.",
+        "description2":"¡Gracias por tu compromiso! 🐾❤"
+
+    },
+
+    "donationCard3":{
+        "title":"🎨 '¡Disfruta de una taza única con mascotas increíbles, creadas por IA!' 🎨 ",
+        "description":"Eleva tu experiencia con Pets Love y lleva a casa una taza excepcional. Cada diseño, creado por inteligencia artificial, captura la esencia de mascotas asombrosas en una obra de arte única. Disfruta de tu bebida favorita mientras apoyas la causa del bienestar animal. ",
+        "description2":"¡Obtén tu taza exclusiva y lleva contigo la magia de las mascotas y la tecnología! 🐾🎨☕"
+    },
+
+
     "footer": {
         "privacy": "privacy Policy",
         "terms": "Terms & Conditions",
