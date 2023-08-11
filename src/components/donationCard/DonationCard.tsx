@@ -57,9 +57,12 @@ const DonationCard: FC<Props> = ({
           </p>
           <hr className="w-80 my-2 border-b-neutral-900 sm:mx-auto lg:my-8" />
 
-          {reward.map((rewards) => {
+          {reward.map((rewards, index) => {
             return (
-              <ul className="flex gap-4 py-2 justify-start items-start w-full">
+              <ul
+                key={index}
+                className="flex gap-4 py-2 justify-start items-start w-full"
+              >
                 <Image src={icon} alt={'reward image'} width={80} />
                 <li className="text-neutral-500 text-md">{rewards}</li>
               </ul>
