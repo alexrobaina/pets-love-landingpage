@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Image from 'next/image'
 import { Home } from '@/assets/illustrations'
@@ -6,6 +7,18 @@ import Button from '../button/Button'
 
 const Hero = () => {
   const t = useTranslations('hero')
+
+  const scrollToSection = (e: any, sectionId: string) => {
+    e.preventDefault()
+
+    const target: any = document.querySelector(sectionId)
+    if (target) {
+      window.scrollTo({
+        top: target.offsetTop,
+        behavior: 'smooth',
+      })
+    }
+  }
 
   return (
     <section className='mt-20' id='hero'>
@@ -21,7 +34,11 @@ const Hero = () => {
             {t('heroSlogan')}
           </p>
           <div className='pb-5'>
-            <Button type='primary' text={t('heroButtonName')} />
+            <Button
+              type='primary'
+              text={t('heroButtonName')}
+              onClick={e => scrollToSection(e, '#donate')}
+            />
           </div>
         </div>
         <div className='lg:mt-0 lg:col-span-5 lg:flex sm:col-span-1'>

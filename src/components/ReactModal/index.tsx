@@ -1,6 +1,8 @@
 import { FC, ReactNode } from 'react'
 import { motion } from 'framer-motion'
 import Modal from 'react-modal'
+import useScreenWidth from '@/hook/useScreenWidth'
+import { GrClose } from 'react-icons/gr'
 
 interface Props {
   title?: string
@@ -21,6 +23,8 @@ export const ReactModal: FC<Props> = ({
   closeModal,
   buttonClose = false,
 }) => {
+  const isScreenSmall = useScreenWidth(780)
+
   const customStyles = {
     content: {
       top: '50%',
@@ -30,7 +34,7 @@ export const ReactModal: FC<Props> = ({
       border: 'none',
       marginRight: '-50%',
       borderRadius: '4px',
-      width: width || '50%',
+      width: width || isScreenSmall ? '95%' : '50%',
       height: height || '50%',
       backgroundColor: '#f3faf8',
       transform: 'translate(-50%, -50%)',
@@ -59,16 +63,17 @@ export const ReactModal: FC<Props> = ({
         animate='visible'
         variants={variants}
         transition={{ ease: 'easeOut' }}
+        className='flex flex-col p-4 h-full justify-center'
       >
+        <div className='flex justify-between'>
+          <h2 className='text-primary-950 font-medium '>{title}</h2>
+          {buttonClose && (
+            <div className='text-primary-950' role='button' onClick={closeModal}>
+              <GrClose />
+            </div>
+          )}
+        </div>
         <div className='flex flex-col justify-center '>
-          <div className='flex justify-between'>
-            <h2 className='text-primary-950 '>{title}</h2>
-            {buttonClose && (
-              <div className='text-primary-950' role='button' onClick={closeModal}>
-                X
-              </div>
-            )}
-          </div>
           <>{children}</>
         </div>
       </motion.div>
