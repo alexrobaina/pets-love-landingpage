@@ -11,7 +11,7 @@ import IconDiscord from './icon-discord.svg'
 import IconInstagram from './icon-instagram.svg'
 import IconLinkedIn from './icon-linkedin.svg'
 import CheckIcon from './Icon-check.svg'
-import IconClose from './icon-close.svg'
+import IconClose from './Icon-close.svg'
 export {
   IconClose,
   IconCodeBranch,
