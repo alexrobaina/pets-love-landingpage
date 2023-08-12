@@ -17,7 +17,12 @@ const Prototype = () => {
           <h2 className='mb-4 text-4xl font-extrabold '>{t('prototypeTitle')}</h2>
           <p className='mb-4 '>{t('prototypeDescription')}</p>
           <div className='mb-4 '>
-            <Button text={t('prototypeButtonName')} type='primary' />
+            <a
+              target='_blank'
+              href='https://www.figma.com/proto/MK1mSVutBHbVXEo4VyfzVf/Pets-love-system-design?type=design&node-id=3128-20360&t=MgjD73vm1cgGAxns-1&scaling=min-zoom&page-id=3128%3A20335&starting-point-node-id=3128%3A20360&show-proto-sidebar=1&mode=design'
+            >
+              <Button text={t('prototypeButtonName')} type='primary' />
+            </a>
           </div>
         </div>
       </div>
