@@ -6,6 +6,7 @@ import { FC } from 'react'
 import { ReactModal } from '../../ReactModal'
 import { useTranslations } from 'next-intl'
 import useScreenWidth from '@/hook/useScreenWidth'
+import Button from '@/components/button/Button'
 
 interface Props {
   title: string
@@ -26,6 +27,7 @@ export const PaymentModal: FC<Props> = ({
 }) => {
   const isScreenSmall = useScreenWidth(780)
   const t = useTranslations('donationCard')
+  const t1 = useTranslations('collaborate')
   const PayPalButton = ({ amount }: any) => {
     return (
       <PayPalScriptProvider
@@ -53,15 +55,15 @@ export const PaymentModal: FC<Props> = ({
   return (
     <ReactModal
       buttonClose
-      height='80%'
+      height="90%"
       title={t('titleModal')}
       isOpen={isOpenDonationModal}
       closeModal={() => handleOpenDonationModal()}
     >
-      <div className='flex flex-col w-full mt-10'>
-        <div className='xs:flex-col flex gap-12'>
+      <div className="flex flex-col w-full mt-10">
+        <div className="xs:flex-col flex gap-12">
           {title && (
-            <h5 className='text-primary-950  py-2 marker: text-xl font-bold leading-none md:text-xl xl:text-2xl'>
+            <h5 className="text-primary-950  py-2 marker: text-xl font-bold leading-none md:text-xl xl:text-2xl">
               {title}
             </h5>
           )}
@@ -70,17 +72,22 @@ export const PaymentModal: FC<Props> = ({
               src={image}
               width={isScreenSmall ? 150 : 380}
               alt={'cardImage'}
-              className='rounded-3xl border-primary-100 '
+              className="rounded-3xl border-primary-100 "
             />
           )}
         </div>
-        <p className='text-primary-900 mb-2 text-md py-4'>{description}</p>
+        <p className="text-primary-900 mb-2 text-md py-4">{description}</p>
         {inputValue && (
           <>
-            <label className='flex justify-end text-primary-950 lg:mb-2 py-2 marker: text-xl font-bold leading-none md:text-xl xl:text-2xl'>
+            <label className="flex justify-end text-primary-950 lg:mb-2 py-2 marker: text-xl font-bold leading-none md:text-xl xl:text-2xl">
               {t('total')} ${inputValue}
             </label>
             <PayPalButton amount={inputValue} />
+            <h1 className="text-center">or</h1>
+
+            <a href="https://cafecito.app/petslove" rel="noopener" target="_blank">
+              <Button text={t1('collaboratebuttonName')} type="primary" wFull />
+            </a>
           </>
         )}
       </div>
