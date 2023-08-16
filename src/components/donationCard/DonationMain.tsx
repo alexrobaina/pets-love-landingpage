@@ -8,19 +8,21 @@ import { useTranslations } from 'next-intl'
 
 const DonationMain = () => {
   const t = useTranslations('donationCard')
-  const REWARD_THANKS = [t('donationCard1.reward1'), t('donationCard1.reward2')]
+  const REWARD_THANKS = [t('donationCard1.reward1')]
   const REWARD_AI_IMAGES = [
     t('donationCard2.reward1'),
     t('donationCard2.reward2'),
     t('donationCard2.reward3'),
-    t('donationCard2.reward4'),
-    t('donationCard2.reward5'),
   ]
-  const REWARD_FOOD = [t('donationCard2.reward1'), t('donationCard2.reward2')]
+  const REWARD_FOOD = [
+    t('donationCard3.reward1'),
+    t('donationCard3.reward2'),
+    t('donationCard3.reward3'),
+  ]
 
   return (
     <>
-      <section className='flex flex-wrap gap-10 justify-around py-8'>
+      <section className="flex flex-wrap gap-10 justify-around py-8">
         <DonationCard
           minValue={5}
           image={Catcard1}
@@ -31,7 +33,7 @@ const DonationMain = () => {
           description={t('donationCard1.description1')}
         />
         <DonationCard
-          minValue={14}
+          minValue={15}
           image={Catcard2}
           icon={CheckIcon}
           reward={REWARD_AI_IMAGES}
@@ -40,10 +42,10 @@ const DonationMain = () => {
           description2={t('donationCard2.description2')}
         />
         <DonationCard
-          minValue={27}
+          minValue={30}
           image={PetFood}
           icon={CheckIcon}
-          reward={REWARD_THANKS}
+          reward={REWARD_FOOD}
           title={t('donationCard3.title')}
           description={t('donationCard3.description1')}
           description2={t('donationCard3.description2')}
