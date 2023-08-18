@@ -6,6 +6,7 @@ import { FC } from 'react'
 import { ReactModal } from '../../ReactModal'
 import { useTranslations } from 'next-intl'
 import useScreenWidth from '@/hook/useScreenWidth'
+import Button from '@/components/button/Button'
 
 interface Props {
   title: string
@@ -26,6 +27,15 @@ export const PaymentModal: FC<Props> = ({
 }) => {
   const isScreenSmall = useScreenWidth(780)
   const t = useTranslations('donationCard')
+
+  const handlePaymentSuccess = (details: any, data: any) => {
+    console.log('Payment successful:', details)
+  }
+
+  const handlePaymentError = (error: any) => {
+    console.error('Payment error:', error)
+  }
+
   const PayPalButton = ({ amount }: any) => {
     return (
       <PayPalScriptProvider
@@ -36,15 +46,15 @@ export const PaymentModal: FC<Props> = ({
         <PayPalButtons
           createOrder={(data, actions) => {
             return actions.order.create({
-              purchase_units: [
-                {
-                  amount: {
-                    value: amount,
-                  },
-                },
-              ],
+              purchase_units: [{ amount: { value: amount } }],
             })
           }}
+          onApprove={(data, actions: any) => {
+            return actions.order.capture().then((details: any) => {
+              handlePaymentSuccess(details, data)
+            })
+          }}
+          onError={handlePaymentError}
         />
       </PayPalScriptProvider>
     )
@@ -74,15 +84,17 @@ export const PaymentModal: FC<Props> = ({
             />
           )}
         </div>
-        <p className='text-primary-900 mb-2 text-md py-4'>{description}</p>
-        {inputValue && (
+        <p className='text-primary-900 mb-2 text-md py-4'>{'description'}</p>
+        <Button onClick={() => pay()} text='Donar' />
+
+        {/* {inputValue && (
           <>
             <label className='flex justify-end text-primary-950 lg:mb-2 py-2 marker: text-xl font-bold leading-none md:text-xl xl:text-2xl'>
               {t('total')} ${inputValue}
             </label>
             <PayPalButton amount={inputValue} />
           </>
-        )}
+        )} */}
       </div>
     </ReactModal>
   )

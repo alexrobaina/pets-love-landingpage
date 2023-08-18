@@ -9,7 +9,7 @@ import { useTranslations } from 'next-intl'
 import { navigation } from '../constants/navigation'
 import DonationMain from '@/components/donationCard/DonationMain'
 
-export default function Home() {
+export default function Home () {
   const t = useTranslations('navbar')
   const NAVIGATION = navigation(t)
 
