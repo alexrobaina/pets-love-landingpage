@@ -7,6 +7,7 @@ import { ReactModal } from '../../ReactModal'
 import { useTranslations } from 'next-intl'
 import useScreenWidth from '@/hook/useScreenWidth'
 import Button from '@/components/button/Button'
+import { MercadoPagoButton } from '@/components/mercadopagoButton/MercadopagoButton'
 
 interface Props {
   title: string
@@ -85,9 +86,18 @@ export const PaymentModal: FC<Props> = ({
             <PayPalButton amount={inputValue} />
             <h1 className="text-center">or</h1>
 
-            <a href="https://cafecito.app/petslove" rel="noopener" target="_blank">
+            {/* <a href="https://cafecito.app/petslove" rel="noopener" target="_blank">
               <Button text={t1('collaboratebuttonName')} type="primary" wFull />
-            </a>
+            </a> */}
+            <MercadoPagoButton
+              product={{
+                title,
+                description,
+                inputValue,
+                image:
+                  'https://cdn.midjourney.com/f662c1c3-5dcc-4323-b5e5-378be369c633/0_0_384_N.webp',
+              }}
+            />
           </>
         )}
       </div>
