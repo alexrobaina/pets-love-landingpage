@@ -11,7 +11,7 @@ export async function POST(req: NextRequest, res: NextApiResponse) {
   const request = await req.json()
 
   const product = request.product
-  const URL =  request.headers.host;
+  const URL =  process.env.HOST;
 
   try {
     const preference: CreatePreferencePayload = {
@@ -25,7 +25,7 @@ export async function POST(req: NextRequest, res: NextApiResponse) {
       ],
       auto_return: 'approved',
       back_urls: {
-        success: `${URL}`,
+        success: `${URL}/thanks`,
         failure: `${URL}`,
       },
     }
