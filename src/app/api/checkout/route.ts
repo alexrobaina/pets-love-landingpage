@@ -11,7 +11,7 @@ export async function POST(req: NextRequest, res: NextApiResponse) {
   const request = await req.json()
 
   const product = request.product
-  const URL = 'http://localhost:3000'
+  const URL =  request.headers.host;
 
   try {
     const preference: CreatePreferencePayload = {
