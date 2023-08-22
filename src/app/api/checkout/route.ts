@@ -1,3 +1,4 @@
+import prisma from '@/prisma/prisma'
 import mercadopago from 'mercadopago'
 import { CreatePreferencePayload } from 'mercadopago/models/preferences/create-payload.model'
 import { NextApiResponse } from 'next'
@@ -12,6 +13,14 @@ export async function POST(req: NextRequest, res: NextApiResponse) {
     const product = request.product;
     const URL = process.env.HOST;
 
+    const data = {
+      email: product.email,
+      productId: product.id
+    }
+
+    const donation = await prisma.donation.create({data})
+
+
     const preference: CreatePreferencePayload = {
       items: [
         {
@@ -25,12 +34,14 @@ export async function POST(req: NextRequest, res: NextApiResponse) {
       ],
       auto_return: 'approved',
       back_urls: {
-        success: `${URL}/paySuccess?productId=${product.id}&title=${product.title}&price=${product.inputValue}&email=${product.email}`,
+        success: `${URL}/paySuccess?productId=${product.id}&title=${product.title}&price=${product.inputValue}&email=${product.email}&donationId=${donation.id}&payType=mercadopago`,
         failure: `${URL}/payError`,
       },
     };
 
     const response = await mercadopago.preferences.create(preference);
+
+
     return new NextResponse(JSON.stringify(response), {
       status: 200,
       headers: {

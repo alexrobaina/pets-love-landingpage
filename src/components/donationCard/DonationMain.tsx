@@ -37,14 +37,15 @@ const DonationMain = () => {
         {products &&
           products.map((product: Product, index: number) => (
             <DonationCard
+              id={product.id}
               key={product.id}
               icon={CheckIcon}
               image={product.image}
               reward={product.peaks}
               minValue={product.price}
-              title={t(`donationCard${index + 1}.title`)}
-              description={t(`donationCard${index + 1}.description1`)}
-              description2={t(`donationCard${index + 1}.description2`)}
+              title={t(`donationCard${product.id}.title`)}
+              description={t(`donationCard${product.id}.description1`)}
+              description2={t(`donationCard${product.id}.description2`)}
             />
           ))}
       </section>

@@ -31,9 +31,9 @@ export const MercadoPagoButton = ({ product }: MercadoPagoButtonProps) => {
       type='primary'
       isLoading={isLoading}
       backgroundColor='#039FE3'
+      icon={IconMercadopagoLogo}
       text='Donar con Mercado Pago'
       onClick={() => generateLink()}
-      icon={IconMercadopagoLogo}
     />
   )
 }

@@ -10,6 +10,7 @@ import useScreenWidth from '@/hook/useScreenWidth'
 import { MercadoPagoButton } from '@/components/mercadopagoButton/MercadopagoButton'
 
 interface Props {
+  id: string
   title: string
   image: string
   reward: String[]
@@ -20,6 +21,7 @@ interface Props {
 }
 
 export const PaymentModal: FC<Props> = ({
+  id,
   image,
   title,
   reward,
@@ -49,6 +51,13 @@ export const PaymentModal: FC<Props> = ({
   const variants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
+  }
+
+  const onApprove = async (data: any) => {
+    window.open(
+      `/paySuccess?productId=${id}&title=${title}&price=${inputValue}&email=${email}&donationId=${id}&payType=paypal`,
+      '_blank',
+    )
   }
 
   useEffect(() => {
@@ -124,6 +133,7 @@ export const PaymentModal: FC<Props> = ({
                         ],
                       })
                     }}
+                    onApprove={onApprove}
                   />
                 </motion.div>
               </PayPalScriptProvider>
@@ -141,6 +151,7 @@ export const PaymentModal: FC<Props> = ({
                 title,
                 reward,
                 email,
+                id,
                 inputValue: parseInt(inputValue) * dolarBlue,
                 description,
                 image,
