@@ -1,0 +1,13 @@
+services:
+  appDB:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: alexrobaina
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: petslove
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

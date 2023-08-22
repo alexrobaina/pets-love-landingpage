@@ -11,7 +11,10 @@ import IconDiscord from './icon-discord.svg'
 import IconInstagram from './icon-instagram.svg'
 import IconLinkedIn from './icon-linkedin.svg'
 import CheckIcon from './Icon-check.svg'
+import IconMercadopagoLogo from './iconMercadopagoLogo.svg'
+
 export {
+  IconMercadopagoLogo,
   IconCodeBranch,
   IconFood,
   IconPeople,

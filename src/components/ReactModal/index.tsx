@@ -65,15 +65,15 @@ export const ReactModal: FC<Props> = ({
         transition={{ ease: 'easeOut' }}
         className='flex flex-col p-4 h-full justify-center'
       >
-        <div className='flex justify-between'>
-          <h2 className='text-primary-950 font-medium '>{title}</h2>
+        <div className='fixed top-0 flex justify-between w-full left-0 px-8 py-8'>
+          <h2 className='text-primary-950 font-medium'>{title}</h2>
           {buttonClose && (
             <div className='text-primary-950' role='button' onClick={closeModal}>
               <GrClose />
             </div>
           )}
         </div>
-        <div className='flex flex-col justify-center '>
+        <div className='flex flex-col justify-center mt-28'>
           <>{children}</>
         </div>
       </motion.div>
