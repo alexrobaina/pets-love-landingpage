@@ -1,45 +1,39 @@
-import { useEffect, useState } from 'react'
-import { Loader } from '../loader/Loader'
+import { useState } from 'react'
 import axios from 'axios'
 import Button from '../button/Button'
+import { IconMercadopagoLogo } from '@/assets/icons'
 
 interface MercadoPagoButtonProps {
   product: any
 }
 
 export const MercadoPagoButton = ({ product }: MercadoPagoButtonProps) => {
-  const [url, setUrl] = useState<null | string>(null)
-  const [loading, setLoading] = useState<boolean>(true)
+  const [isLoading, setLoading] = useState<boolean>(false)
 
-  useEffect(() => {
-    const generateLink = async () => {
-      setLoading(true)
+  const generateLink = async () => {
+    setLoading(true)
 
-      try {
-        const { data: preference } = await axios.post('/api/checkout', {
-          product,
-        })
+    try {
+      const { data } = await axios.post('/api/checkout', {
+        product,
+      })
 
-        setUrl(preference.url)
-      } catch (error) {
-        console.error(error)
-      }
-
-      setLoading(false)
+      window.open(data.response.init_point, '_blank')
+    } catch (error) {
+      console.error(error)
     }
 
-    generateLink()
-  }, [product])
+    setLoading(false)
+  }
 
   return (
-    <div>
-      {loading ? (
-        <button disabled>
-          <Loader />
-        </button>
-      ) : (
-        <a href={url!}>comprar</a>
-      )}
-    </div>
+    <Button
+      type='primary'
+      isLoading={isLoading}
+      backgroundColor='#039FE3'
+      text='Donar con Mercado Pago'
+      onClick={() => generateLink()}
+      icon={IconMercadopagoLogo}
+    />
   )
 }

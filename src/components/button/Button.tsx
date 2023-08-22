@@ -1,16 +1,28 @@
 'use client'
+import Image from 'next/image'
+import { Loader } from '../loader/Loader'
 import { FC, MouseEventHandler } from 'react'
 
 interface Props {
   wFull?: boolean
+  isLoading?: boolean
   text: string
+  backgroundColor?: string
   type?: string
-  icon?: string
+  icon?: any
   primary?: boolean
   onClick?: MouseEventHandler<HTMLButtonElement>
 }
 
-const Button: FC<Props> = ({ text, onClick = () => {}, type, icon, wFull }) => {
+const Button: FC<Props> = ({
+  backgroundColor,
+  text,
+  isLoading,
+  onClick = () => {},
+  type,
+  icon,
+  wFull,
+}) => {
   let buttonClasses = ''
 
   switch (type) {
@@ -30,9 +42,13 @@ const Button: FC<Props> = ({ text, onClick = () => {}, type, icon, wFull }) => {
   return (
     <button
       onClick={onClick}
-      className={` ${wFull && 'w-full'} py-2 px-4 rounded ${buttonClasses}`}
+      style={{ backgroundColor }}
+      className={` ${
+        wFull && 'w-full'
+      } py-2 px-4 rounded ${buttonClasses} flex gap-3 items-center justify-center`}
     >
-      {icon && icon}
+      {isLoading && <Loader />}
+      {icon && <Image src={icon} width={30} alt='icon-button' />}
       {text && text}
     </button>
   )

@@ -9,7 +9,7 @@ import { useTranslations } from 'next-intl'
 import { navigation } from '../constants/navigation'
 import DonationMain from '@/components/donationCard/DonationMain'
 
-export default function Home() {
+export default function Home () {
   const t = useTranslations('navbar')
   const NAVIGATION = navigation(t)
 
@@ -25,8 +25,4 @@ export default function Home() {
       <Collaborate />
     </>
   )
-}
-
-{
-  /* <div className="bg-petLove w-full z-10 h-screen bg-cover bg-no-repeat"></div> */
 }

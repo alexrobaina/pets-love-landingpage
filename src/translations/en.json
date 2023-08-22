@@ -94,6 +94,7 @@
     },
     "donationCard": {
         "total": "Total",
+        "donate": "Donate",
         "titleModal": "Thank you very much for being part of our team!",
         "donationCard1": {
             "title": "Thank you very much for being part of our team!",
@@ -115,10 +116,9 @@
             "title": "🎨 Nourish Love: Donate 20kg of Food to Pet Shelters",
             "description1": "Donate 20Kg of food to Pets Love shelters and make a difference in the lives of pets in need. Your love and care are reflected in each grain. Join in filling furry hearts with joy and gratitude. 🐾❤️🍲",
             "description2": "❤️ Donate today and let's feed the love! ❤️",
-             "reward1": "We will take 20 kilos of premium food to nearby shelters.",
-             "reward2": "You will receive an exclusive monthly newsletter where we will keep you up to date with the progress, news and achievements of our application.",
-             "reward3": "1 customized portrait in the shape of the animal of your choice, 1024x1024px. The portrait will be Created using advanced AI technology."
-
+            "reward1": "We will take 20 kilos of premium food to nearby shelters.",
+            "reward2": "You will receive an exclusive monthly newsletter where we will keep you up to date with the progress, news and achievements of our application.",
+            "reward3": "1 customized portrait in the shape of the animal of your choice, 1024x1024px. The portrait will be Created using advanced AI technology."
         }
     },
     "footer": {

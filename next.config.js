@@ -1,9 +1,28 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+    reactStrictMode: true,
+    images: {
+        domains: [
+            'avatars.githubusercontent.com',
+            'lh3.googleusercontent.com',
+            'images.unsplash.com',
+            'cdn.midjourney.com',
+        ],
+    },
+    plugins: [
+        [
+            'next-intl',
+            {
+                defaultLocale: 'en',
+                locales: ['en', 'es'],
+            },
+        ],
+    ],
+}
 
 const withNextIntl = require('next-intl/plugin')(
-  // This is the default (also the `src` folder is supported out of the box)
-  './src/i18n.ts',
+    // This is the default (also the `src` folder is supported out of the box)
+    './src/i18n.ts',
 )
 
 module.exports = withNextIntl(nextConfig)
