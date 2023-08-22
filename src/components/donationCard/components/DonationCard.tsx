@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl'
 import { PaymentModal } from './PaymentModal'
 
 interface Props {
+  id: string
   icon: string
   title: string
   reward: string[]
@@ -17,6 +18,7 @@ interface Props {
 }
 
 const DonationCard: FC<Props> = ({
+  id,
   icon,
   image,
   title,
@@ -95,6 +97,7 @@ const DonationCard: FC<Props> = ({
         </div>
       </article>
       <PaymentModal
+        id={id}
         title={title}
         image={image}
         reward={reward}
