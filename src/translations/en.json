@@ -94,7 +94,11 @@
     },
     "donationCard": {
         "total": "Total",
+        "email": "Email",
+        "or": "or",
+        "donationMecadoPagoButton": "Donate with Mercado Pago",
         "donate": "Donate",
+        "emailError": "Please enter a valid email address",
         "titleModal": "Thank you very much for being part of our team!",
         "donationCard1": {
             "title": "Thank you very much for being part of our team!",

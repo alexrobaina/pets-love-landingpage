@@ -89,6 +89,10 @@
     "donationCard": {
         "total": "Total",
         "donate": "Donar",
+        "donationMecadoPagoButton": "Donar con Mercado Pago",
+        "email": "Correo",
+        "or": "ó",
+        "emailError": "Por favor ingrese un correo electrónico válido",
         "titleModal": "¡Muchas Gracias por Ser Parte de Nuestro Equipo!",
         "donationCard1": {
             "title": "¡Muchas Gracias por Ser Parte de Nuestro Equipo!",

@@ -7,6 +7,7 @@ import { NextRequest, NextResponse } from 'next/server'
 mercadopago.configure({
   access_token: process.env.NEXT_PUBLIC_MERCADO_PAGO_ACCESSS_TOKEN!,
 })
+
 export async function POST(req: NextRequest, res: NextApiResponse) {
   try {
     const request = await req.json();
@@ -20,12 +21,12 @@ export async function POST(req: NextRequest, res: NextApiResponse) {
 
     const donation = await prisma.donation.create({data})
 
-
     const preference: CreatePreferencePayload = {
       items: [
         {
           title: product.title,
-          id: product.id,
+          id: donation.order.toString(),
+          category_id: donation.id,
           description: product.description,
           unit_price: parseInt(product.inputValue),
           picture_url: product?.image || '',
@@ -34,13 +35,12 @@ export async function POST(req: NextRequest, res: NextApiResponse) {
       ],
       auto_return: 'approved',
       back_urls: {
-        success: `${URL}/paySuccess?productId=${product.id}&title=${product.title}&price=${product.inputValue}&email=${product.email}&donationId=${donation.id}&payType=mercadopago`,
-        failure: `${URL}/payError`,
+        success: `${URL}/paySuccess?productId=${product.id}&order=${donation.order}&title=${product.title}&price=${product.inputValue}&email=${product.email}&payType=mercadopago`,
+        failure: `${URL}/payError?productId=${product.id}&title=${product.title}&price=${product.inputValue}&email=${product.email}&payType=mercadopago`,
       },
     };
 
     const response = await mercadopago.preferences.create(preference);
-
 
     return new NextResponse(JSON.stringify(response), {
       status: 200,
@@ -50,7 +50,6 @@ export async function POST(req: NextRequest, res: NextApiResponse) {
     });
   } catch (error) {
     console.error('Error:', error);
-
     return new NextResponse(JSON.stringify({ error: 'Something went wrong' }), {
       status: 500,
       headers: {

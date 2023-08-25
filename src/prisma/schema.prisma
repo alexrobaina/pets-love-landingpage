@@ -24,6 +24,8 @@ model Donation {
   id        String    @id @default(uuid())
   email     String
   productId String
-  enabled   Boolean   @default(false)
+  order     Int       @default(autoincrement())
+  approved  Boolean   @default(false)
+  paymentId String?   @unique
   Products  Product[]
 }

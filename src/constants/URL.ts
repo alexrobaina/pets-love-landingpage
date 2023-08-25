@@ -1,0 +1,1 @@
+export const DOLAR_BLUE_URL = 'https://dolarapi.com/v1/dolares/blue'

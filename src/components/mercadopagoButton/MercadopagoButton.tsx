@@ -2,19 +2,23 @@ import { useState } from 'react'
 import axios from 'axios'
 import Button from '../button/Button'
 import { IconMercadopagoLogo } from '@/assets/icons'
+import { useTranslations } from 'next-intl'
 
 interface MercadoPagoButtonProps {
   product: any
+  validations: any
 }
 
-export const MercadoPagoButton = ({ product }: MercadoPagoButtonProps) => {
+export const MercadoPagoButton = ({ product, validations }: MercadoPagoButtonProps) => {
   const [isLoading, setLoading] = useState<boolean>(false)
+  const t = useTranslations('donationCard')
 
   const generateLink = async () => {
+    if (!validations()) return
     setLoading(true)
 
     try {
-      const { data } = await axios.post('/api/checkout', {
+      const { data } = await axios.post('/api/mercadoPago', {
         product,
       })
 
@@ -32,7 +36,7 @@ export const MercadoPagoButton = ({ product }: MercadoPagoButtonProps) => {
       isLoading={isLoading}
       backgroundColor='#039FE3'
       icon={IconMercadopagoLogo}
-      text='Donar con Mercado Pago'
+      text={t('donationMecadoPagoButton')}
       onClick={() => generateLink()}
     />
   )
