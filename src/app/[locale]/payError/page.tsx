@@ -1,8 +1,6 @@
 'use client'
-import axios from 'axios'
-import { useSearchParams } from 'next/navigation'
 
-export const PayError = () => {
+const PayError = () => {
   return (
     <>
       <div className='text-primary-950'>payError</div>
