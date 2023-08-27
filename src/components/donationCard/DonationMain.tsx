@@ -6,7 +6,6 @@ import DonationCard from './components/DonationCard'
 import { useTranslations } from 'next-intl'
 import axios from 'axios'
 import { Loader } from '../loader/Loader'
-import { Product } from '@prisma/client'
 
 const DonationMain = () => {
   const [isLoading, setIsloading] = useState(false)
@@ -35,7 +34,7 @@ const DonationMain = () => {
       <section className='flex flex-wrap gap-10 justify-around py-8'>
         {isLoading && <Loader />}
         {products &&
-          products.map((product: Product, index: number) => (
+          products.map((product: any, index: number) => (
             <DonationCard
               id={product.id}
               key={product.id}
