@@ -51,3 +51,5 @@ Feel free to check out the Next.js GitHub repository and contribute your feedbac
 
 Deploy on Vercel
 The easiest way to deploy your Next.js
+
+[![Run on Google Cloud](https://deploy.cloud.run/button.svg)](https://deploy.cloud.run)
