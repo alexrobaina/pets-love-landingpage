@@ -9,7 +9,7 @@
         "start": "next start",
         "lint": "next lint",
         "prebuild": "yarn add prisma && yarn prisma generate",
-        "app": "docker compose up"
+        "docker": "docker compose up"
     },
     "dependencies": {
         "@google-cloud/translate": "^8.0.1",

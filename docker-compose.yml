@@ -1,13 +1,9 @@
+version: '3'
 services:
-  appDB:
-    image: postgres
-    restart: always
-    environment:
-      POSTGRES_USER: alexrobaina
-      POSTGRES_PASSWORD: 1234
-      POSTGRES_DB: petslove
+  app:
+    build:
+      context: ./
     volumes:
-      - pgdata:/var/lib/postgresql/data
-
-volumes:
-  pgdata:
+      - .:/app
+    ports:
+      - "3000:3000"
