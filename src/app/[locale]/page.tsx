@@ -15,7 +15,9 @@ export default function Home () {
 
   return (
     <>
+      {/* <Navbar /> */}
       <Header appName={t('appName')} navigationLinks={NAVIGATION} />
+
       <Hero />
       <Features />
       <Prototype />
