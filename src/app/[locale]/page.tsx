@@ -8,6 +8,7 @@ import JointUp from '@/components/joinup/JointUp'
 import { useTranslations } from 'next-intl'
 import { navigation } from '../constants/navigation'
 import DonationMain from '@/components/donationCard/DonationMain'
+import { Navbar } from '@/components/Navbar/Navbar'
 
 export default function Home () {
   const t = useTranslations('navbar')
@@ -15,9 +16,6 @@ export default function Home () {
 
   return (
     <>
-      {/* <Navbar /> */}
-      <Header appName={t('appName')} navigationLinks={NAVIGATION} />
-
       <Hero />
       <Features />
       <Prototype />
