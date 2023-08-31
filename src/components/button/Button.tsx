@@ -8,7 +8,7 @@ interface Props {
   isLoading?: boolean
   text: string
   backgroundColor?: string
-  type?: string
+  type?: 'primary' | 'secondary' | 'tertiary'
   icon?: any
   primary?: boolean
   onClick?: MouseEventHandler<HTMLButtonElement>
@@ -27,7 +27,8 @@ const Button: FC<Props> = ({
 
   switch (type) {
     case 'primary':
-      buttonClasses = 'hover:bg-primary-600 bg-primary-800 text-primary-50'
+      buttonClasses =
+        'mt-10 block rounded-md bg-primary-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600'
       break
     case 'secondary':
       buttonClasses = 'hover:bg-primary-300 bg-primary-100 text-primary-900'

@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl'
 import axios from 'axios'
 import { Loader } from '../loader/Loader'
 
-const DonationMain = () => {
+const Donation = () => {
   const [isLoading, setIsloading] = useState(false)
   const [products, setProducts]: any = useState(null)
   const t = useTranslations('donationCard')
@@ -31,10 +31,10 @@ const DonationMain = () => {
 
   return (
     <>
-      <section className='flex flex-wrap gap-10 justify-around py-8'>
+      <section className='flex lg:flex-row flex-col gap-2 py-8'>
         {isLoading && <Loader />}
         {products &&
-          products.map((product: any, index: number) => (
+          products.map((product: any) => (
             <DonationCard
               id={product.id}
               key={product.id}
@@ -52,4 +52,4 @@ const DonationMain = () => {
   )
 }
 
-export default DonationMain
+export default Donation

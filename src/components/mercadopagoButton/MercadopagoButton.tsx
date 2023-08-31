@@ -22,7 +22,7 @@ export const MercadoPagoButton = ({ product, validations }: MercadoPagoButtonPro
         product,
       })
 
-      window.open(data.response.init_point, '_blank')
+      window.location.href = data.response.init_point
     } catch (error) {
       console.error(error)
     }

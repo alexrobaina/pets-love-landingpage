@@ -33,9 +33,9 @@
     },
 
     "joinUp": {
-        "joinUpTitle": "🌟Join the Pet Love Revolution: Support Pets Love! 🌟",
+        "joinUpTitle": "🌟Join the Pet's Love Revolution: Support Pets Love! 🌟",
         "joinUpDescription1": "At Pets Love, we ensure total transparency in the administration of your funds. Your contribution will enable us to fully dedicate ourselves and work with experts to improve our app. Join today and be part of the positive change for pets in need. Let's donate together for their welfare!🐾🌟",
-        "joinUpDescription2": "🔍Contribute to the development of innovative functionalities.",
+        "joinUpDescription2": "🔍 Contribute to the development of innovative functionalities.",
         "joinUpDescription3": "🌎 Be part of our protective community..."
     },
 
@@ -93,6 +93,7 @@
         "Countributors": "Collaborators"
     },
     "donationCard": {
+        "whatsincluded": "What's included",
         "total": "Total",
         "email": "Email",
         "or": "or",
@@ -101,7 +102,7 @@
         "emailError": "Please enter a valid email address",
         "titleModal": "Thank you very much for being part of our team!",
         "donationCard1": {
-            "title": "Thank you very much for being part of our team!",
+            "title": "Thank you very much",
             "description1": "We appreciate your invaluable support at Pets Love. You will receive our exclusive monthly newsletter, keeping you abreast of progress, news and achievements. Together, we create a positive impact in the world of pets.🐾🌟",
             "description2": "❤️ Thank you for your commitment! ❤",
             "reward1": "You will receive an exclusive monthly newsletter where we will keep you up to date with the progress, news and achievements of our application.",
@@ -117,7 +118,7 @@
             "reward3": "We will upload it to our social networks, where we will tag you thanking you for collaborating with Pets Love."
         },
         "donationCard3": {
-            "title": "🎨 Nourish Love: Donate 20kg of Food to Pet Shelters",
+            "title": "🎨 Donate 20kg of Food",
             "description1": "Donate 20Kg of food to Pets Love shelters and make a difference in the lives of pets in need. Your love and care are reflected in each grain. Join in filling furry hearts with joy and gratitude. 🐾❤️🍲",
             "description2": "❤️ Donate today and let's feed the love! ❤️",
             "reward1": "We will take 20 kilos of premium food to nearby shelters.",
@@ -131,5 +132,4 @@
         "rights": ". All rights Reserved.",
         "followUs": "  Follow us"
     }
-
 }

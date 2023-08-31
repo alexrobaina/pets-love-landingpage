@@ -1,13 +1,14 @@
 'use client'
+import { useEffect, useState } from 'react'
+import { useRouter } from 'next-intl/client'
+import { useLocale } from 'next-intl'
 import { useLocale, useTranslations } from 'next-intl'
 import { useRouter } from 'next/navigation'
-import { useState } from 'react'
 import Image from 'next/image'
 import { Logo } from '@/assets/illustrations'
 import { navigation } from '../../app/constants/navigation'
 
 export const Navbar = ({ children }: { children: React.ReactNode }) => {
-  const locale = useLocale()
   const router = useRouter()
   const [isOpenMenuLanguages, setOpenMenuLanguages] = useState(false)
   const [lng, setLng]: any = useState({
@@ -19,9 +20,7 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
   const NAVIGATION = navigation(t)
 
   const handleChangeLanguages = (lng: string, flag: string) => {
-    router.push(`/${lng}`)
     setLng({ lng, flag })
-    localStorage.setItem('lng', lng)
 
     setOpenMenuLanguages(!isOpenMenuLanguages)
   }
@@ -44,9 +43,10 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
   }
 
   return (
+
     <div>
       <nav className="bg-primary-100 fixed w-full">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 ">
+      <div className='mx-auto max-w-7xl px-4 sm:px-2'>
           <div className="flex h-16 items-center justify-between">
             <div className="flex items-center">
               <div>
@@ -248,8 +248,8 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
         </div>
       </nav>
       <main>
-        <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">{children}</div>
+        <div className='mx-auto max-w-7xl py-4 px-2 sm:px-4 lg:px-4'>{children}</div>
       </main>
-    </div>
+    </>
   )
 }

@@ -13,7 +13,7 @@ const nextConfig = {
         [
             'next-intl',
             {
-                defaultLocale: 'en',
+                defaultLocale: 'es',
                 locales: ['en', 'es'],
             },
         ],
