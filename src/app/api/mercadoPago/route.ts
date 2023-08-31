@@ -28,7 +28,7 @@ export async function POST(req: NextRequest, res: NextApiResponse) {
           id: donation.order.toString(),
           category_id: donation.id,
           description: product.description,
-          unit_price: parseInt(product.inputValue),
+          unit_price: parseInt(product.price),
           picture_url: product?.image || '',
           quantity: 1,
         },

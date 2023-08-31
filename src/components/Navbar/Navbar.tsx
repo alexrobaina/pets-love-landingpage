@@ -1,10 +1,9 @@
 'use client'
+import { useEffect, useState } from 'react'
+import { useRouter } from 'next-intl/client'
 import { useLocale } from 'next-intl'
-import { useRouter } from 'next/navigation'
-import { useState } from 'react'
 
 export const Navbar = ({ children }: { children: React.ReactNode }) => {
-  const locale = useLocale()
   const router = useRouter()
   const [isOpenMenuLanguages, setOpenMenuLanguages] = useState(false)
   const [lng, setLng]: any = useState({
@@ -14,9 +13,7 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
   const [isOpen, setIsOpen] = useState(true)
 
   const handleChangeLanguages = (lng: string, flag: string) => {
-    router.push(`/${lng}`)
     setLng({ lng, flag })
-    localStorage.setItem('lng', lng)
 
     setOpenMenuLanguages(!isOpenMenuLanguages)
   }
@@ -26,9 +23,9 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
   }
 
   return (
-    <div>
+    <>
       <nav className='bg-primary-100 fixed w-full'>
-        <div className='mx-auto max-w-7xl px-4 sm:px-6 '>
+        <div className='mx-auto max-w-7xl px-4 sm:px-2'>
           <div className='flex h-16 items-center justify-between'>
             <div className='flex items-center'>
               <div className='hidden md:block'>
@@ -140,13 +137,13 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
                   className='block h-6 w-6'
                   fill='none'
                   viewBox='0 0 24 24'
-                  stroke-width='1.5'
+                  strokeWidth='1.5'
                   stroke='currentColor'
                   aria-hidden='true'
                 >
                   <path
                     stroke-linecap='round'
-                    stroke-linejoin='round'
+                    strokeLinejoin='round'
                     d='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5'
                   />
                 </svg>
@@ -154,13 +151,13 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
                   className='hidden h-6 w-6'
                   fill='none'
                   viewBox='0 0 24 24'
-                  stroke-width='1.5'
+                  strokeWidth='1.5'
                   stroke='currentColor'
                   aria-hidden='true'
                 >
                   <path
                     stroke-linecap='round'
-                    stroke-linejoin='round'
+                    strokeLinejoin='round'
                     d='M6 18L18 6M6 6l12 12'
                   />
                 </svg>
@@ -225,13 +222,13 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
                   className='h-6 w-6'
                   fill='none'
                   viewBox='0 0 24 24'
-                  stroke-width='1.5'
+                  strokeWidth='1.5'
                   stroke='currentColor'
                   aria-hidden='true'
                 >
                   <path
                     stroke-linecap='round'
-                    stroke-linejoin='round'
+                    strokeLinejoin='round'
                     d='M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0'
                   />
                 </svg>
@@ -261,8 +258,8 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
         </div>
       </nav>
       <main>
-        <div className='mx-auto max-w-7xl py-6 sm:px-6 lg:px-8'>{children}</div>
+        <div className='mx-auto max-w-7xl py-4 px-2 sm:px-4 lg:px-4'>{children}</div>
       </main>
-    </div>
+    </>
   )
 }

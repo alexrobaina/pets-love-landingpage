@@ -35,7 +35,7 @@ export const ReactModal: FC<Props> = ({
       marginRight: '-50%',
       borderRadius: '4px',
       width: width || isScreenSmall ? '95%' : '50%',
-      height: height || '50%',
+      height: height,
       backgroundColor: '#f3faf8',
       transform: 'translate(-50%, -50%)',
     },
@@ -63,9 +63,9 @@ export const ReactModal: FC<Props> = ({
         animate='visible'
         variants={variants}
         transition={{ ease: 'easeOut' }}
-        className='flex flex-col p-2 md:p-4 h-full justify-center'
+        className='flex flex-col md:p-4'
       >
-        <div className='fixed top-0 flex justify-between w-full left-0 px-8 py-8'>
+        <div className='flex justify-between items-center'>
           <h2 className='text-primary-950 font-medium'>{title}</h2>
           {buttonClose && (
             <div className='text-primary-950' role='button' onClick={closeModal}>
@@ -73,7 +73,7 @@ export const ReactModal: FC<Props> = ({
             </div>
           )}
         </div>
-        <div className='flex flex-col justify-center'>
+        <div className='flex flex-col h-full'>
           <>{children}</>
         </div>
       </motion.div>
