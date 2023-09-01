@@ -126,6 +126,11 @@
             "reward3": "1 customized portrait in the shape of the animal of your choice, 1024x1024px. The portrait will be Created using advanced AI technology."
         }
     },
+    "succesDonation": {
+        "title": "Thank you very much for colaborate with our team!",
+        "description1": "We appreciate your invaluable support at Pets Love. You will receive our exclusive monthly newsletter, keeping you abreast of progress, news and achievements. Together, we create a positive impact in the world of pets.🐾🌟",
+        "backToHome": "Back to home"
+    },
     "footer": {
         "privacy": "privacy Policy",
         "terms": "Terms & Conditions",

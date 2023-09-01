@@ -1,6 +1,6 @@
 'use client'
 import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js'
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import { FC } from 'react'
 import { motion } from 'framer-motion'
 import { ReactModal } from '../../ReactModal'
@@ -14,7 +14,6 @@ interface Props {
   image: string
   price: number
   reward: String[]
-  location: string
   description: string
   isOpenDonationModal: boolean
   handleOpenDonationModal: Function
@@ -26,7 +25,6 @@ export const PaymentModal: FC<Props> = ({
   price,
   title,
   reward,
-  location,
   description,
   isOpenDonationModal,
   handleOpenDonationModal,
@@ -39,6 +37,12 @@ export const PaymentModal: FC<Props> = ({
     required: true,
     pattern: /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/,
   })
+
+  const checkLocation = useCallback(() => {
+    const country = localStorage.getItem('country')
+
+    return country
+  }, [])
 
   const validateEmail = (value: any) => {
     if (email.required) {
@@ -111,7 +115,7 @@ export const PaymentModal: FC<Props> = ({
           )}
         </div>
         <p className='text-primary-900 mb-2 text-md py-4 hidden md:flex'>{description}</p>
-        <div className='mt-2'>
+        {/* <div className='mt-2'>
           <label className='text-primary-800'>{t('email')}</label>
           <div className='flex rounded-md shadow-sm ring-1'>
             <input
@@ -124,7 +128,7 @@ export const PaymentModal: FC<Props> = ({
             />
           </div>
           {email.error && <p className='text-red-500 text-xs mt-1'>{email.error}</p>}
-        </div>
+        </div> */}
         {price && (
           <>
             <div className='flex justify-between mt-4'>
@@ -133,7 +137,7 @@ export const PaymentModal: FC<Props> = ({
               </h2>
               <h2 className='flex justify-end text-primary-950 lg:mb-2 marker: text-xl font-medium'>{`Total: ${price} Pesos`}</h2>
             </div>
-            {location === 'AR' && (
+            {checkLocation() === 'AR' && (
               <MercadoPagoButton
                 product={{
                   id,
@@ -147,7 +151,7 @@ export const PaymentModal: FC<Props> = ({
                 validations={() => validateEmail(email.value)}
               />
             )}
-            {location !== 'AR' && (
+            {checkLocation() !== 'AR' && (
               <>
                 <div className='relative'>
                   <hr className='my-8 h-[0.3px] border-t-0 bg-gray-400 opacity-100 dark:opacity-50' />
