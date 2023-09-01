@@ -1,60 +1,39 @@
 'use client'
-import React, { useEffect } from 'react'
+import React from 'react'
 import { FC, useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { PaymentModal } from './PaymentModal'
 import Button from '@/components/button/Button'
-import axios from 'axios'
-import { DOLAR_BLUE_URL } from '@/constants/URL'
 
 interface Props {
   id: string
   icon: string
   title: string
+  price: number
+  image: string
   reward: string[]
-  minValue?: number | string
+  currency: string
   description: string
   description2?: string
-  image: string
+  minValue?: number | string
 }
 
 const DonationCard: FC<Props> = ({
   id,
   image,
   title,
+  price,
   reward,
+  currency,
   description,
   description2,
-  minValue = 1,
 }) => {
   const [isOpenDonationModal, setIsOpenDonationModal] = useState(false)
-  const [price, setPrice]: any = useState(minValue)
   const t = useTranslations('donationCard')
-  const [country, setCountry]: any = useState('')
-  const [dolarBlue, setSolarBlue] = useState(0)
 
   const handleOpenDonationModal = () => {
     setIsOpenDonationModal(!isOpenDonationModal)
   }
-
-  const setDonationPrice = () => {
-    setCountry(localStorage.getItem('country'))
-    if (country === 'AR') return setPrice(dolarBlue * price)
-
-    setPrice(price)
-  }
-  const getDolarBluePriceArgentina = async () => {
-    const dolarBlue = await axios.get(DOLAR_BLUE_URL)
-    setSolarBlue(dolarBlue.data.venta)
-
-    setDonationPrice()
-  }
-
-  const setCurrencty = () => (country === 'AR' ? 'ARS' : 'USD')
-
-  useEffect(() => {
-    getDolarBluePriceArgentina()
-  }, [country])
 
   return (
     <>
@@ -110,7 +89,7 @@ const DonationCard: FC<Props> = ({
                   {`$${price}`}
                 </span>
                 <span className='text-sm font-semibold leading-6 tracking-wide text-gray-600'>
-                  {setCurrencty()}
+                  {currency}
                 </span>
               </p>
               <Button
@@ -130,7 +109,6 @@ const DonationCard: FC<Props> = ({
         title={title}
         image={image}
         reward={reward}
-        location={country}
         description={description}
         isOpenDonationModal={isOpenDonationModal}
         handleOpenDonationModal={handleOpenDonationModal}

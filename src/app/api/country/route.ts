@@ -4,8 +4,8 @@ import { NextResponse } from 'next/server'
 
 export async function GET() {
   try {
-    const response = await axios.get(`https://ipinfo.io?token=${process.env.IPINFO_TOKEN}}`);
-    const data = response.data;
+    const response = await axios.get(`https://ipinfo.io?token=${process.env.IPINFO_TOKEN}`);
+    const data = response?.data;
   
     return new NextResponse(JSON.stringify(data), {
       status: 200,
@@ -14,6 +14,8 @@ export async function GET() {
       },
     });
   } catch (error) {
+    console.log(error);
+    
     return new NextResponse(JSON.stringify({ error: 'Something went wrong' }), {
       status: 500,
       headers: {
