@@ -39,13 +39,15 @@ const DonationCard: FC<Props> = ({
     <>
       <div className='shadow-md w-full h-auto bg-primary-50 rounded-3xl ring-1 ring-primary-100 mt-10 flex justify-betweenflex flex-col justify-between'>
         <div className='p-8 lg:flex-auto flex flex-col '>
-          <h3 className='text-2xl font-bold tracking-tight text-primary-950'>{title}</h3>
+          <img
+            src={image}
+            alt='cardImage'
+            className='pt-4 w-full rounded-md h-[200px] object-cover'
+          />
+          <h3 className='text-2xl mt-4 font-bold tracking-tight text-primary-950'>
+            {title}
+          </h3>
           <div className='gap-5'>
-            <img
-              src={image}
-              alt='cardImage'
-              className='pt-4 w-full rounded-md h-[120px] object-cover'
-            />
             <p className='mt-6 text-base leading-7 text-gray-600'>{description}</p>
           </div>
           <div className='mt-4 items-center gap-x-4'>

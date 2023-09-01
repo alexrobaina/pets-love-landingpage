@@ -10,7 +10,7 @@ import { DOLAR_BLUE_URL } from '@/constants/URL'
 
 const Donation = () => {
   const [isLoading, setIsloading] = useState(false)
-  const country = localStorage.getItem('country')
+  const [country] = useState(localStorage.getItem('country') || 'AR' || 'US')
   const [products, setProducts]: any = useState(null)
   const [dolarBlue, setDolarBlue]: any = useState(0)
   const t = useTranslations('donationCard')
@@ -42,13 +42,16 @@ const Donation = () => {
   }
 
   const calculatePrice = (price: number) => {
-    const country = localStorage.getItem('country')
-    console.log(country)
-
-    if (country === 'AR') {
-      return price * parseInt(dolarBlue)
-    }
+    if (country === 'AR') return price * parseInt(dolarBlue)
     return price
+  }
+
+  const getCurrency = () => {
+    const country = localStorage.getItem('country')
+    if (country === 'AR') {
+      return 'ARS'
+    }
+    return 'USD'
   }
 
   useEffect(() => {
@@ -67,7 +70,7 @@ const Donation = () => {
               icon={CheckIcon}
               image={product.image}
               reward={product.peaks}
-              location={country || ''}
+              currency={getCurrency()}
               price={calculatePrice(product.price)}
               title={t(`donationCard${product.id}.title`)}
               description={t(`donationCard${product.id}.description1`)}
