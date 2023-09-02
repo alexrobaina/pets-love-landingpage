@@ -1,12 +1,12 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { useRouter } from 'next-intl/client'
-import { useLocale } from 'next-intl'
-import { useLocale, useTranslations } from 'next-intl'
-import { useRouter } from 'next/navigation'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { Logo } from '@/assets/illustrations'
 import { navigation } from '../../app/constants/navigation'
+import Button from '../button/Button'
+import { motion, AnimatePresence } from 'framer-motion'
 
 export const Navbar = ({ children }: { children: React.ReactNode }) => {
   const router = useRouter()
@@ -15,18 +15,16 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
     lng: 'es',
     flag: '🇪🇸',
   })
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
   const t = useTranslations('navbar')
   const NAVIGATION = navigation(t)
+  const HamburgerLine = `h-1 w-6 my-1 rounded-md bg-primary-600 transition ease transform duration-300`
 
   const handleChangeLanguages = (lng: string, flag: string) => {
     setLng({ lng, flag })
 
     setOpenMenuLanguages(!isOpenMenuLanguages)
-  }
-
-  const handleMenu = () => {
-    setIsOpen(!isOpen)
+    router.replace(lng)
   }
 
   const scrollToSection = (e: any, sectionId: string) => {
@@ -39,61 +37,96 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
         behavior: 'smooth',
       })
     }
-    setIsOpen(!isOpen)
+    setIsOpen(false)
+  }
+
+  const navAnimation = {
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        y: { stiffness: 1000, velocity: -100 },
+        delayChildren: 0.2,
+        staggerChildren: 0.4,
+        type: 'spring',
+        opacity: 0,
+      },
+    },
+    hidden: {
+      y: -50,
+      opacity: 0,
+      transition: {
+        type: 'spring',
+        duration: 0.5,
+        y: { stiffness: 1000, velocity: 100 },
+      },
+    },
+  }
+
+  const animatedItem = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
   }
 
   return (
-
-    <div>
+    <>
       <nav className="bg-primary-100 fixed w-full">
-      <div className='mx-auto max-w-7xl px-4 sm:px-2'>
-          <div className="flex h-16 items-center justify-between">
-            <div className="flex items-center">
+        <div className="mx-auto max-w-7xl px-4 sm:px-2">
+          <div className="flex h-16 items-center justify-between gap-5 mr-10">
+            <section className="flex items-center">
               <div>
                 <a href="./">
                   <Image width={30} src={Logo} alt="Pets love Logo" />
                 </a>
               </div>
               <div className="hidden md:block">
-                <div className="flex">
+                <ul>
                   <a
+                    target="_blank"
                     href={NAVIGATION.github.href}
-                    className="rounded-md bg-white/10 px-3 py-2 text-sm font-semibold text-primary-950 hover:bg-primary-300"
+                    className="rounded-md px-3 py-2 text-sm font-semibold text-primary-950 hover:bg-primary-300"
                     aria-current="page"
                   >
                     {NAVIGATION.github.routeName}
                   </a>
 
-                  <div
+                  <li
                     onClick={(e) => scrollToSection(e, '#collaborators')}
                     className="rounded-md px-3 py-2 text-sm font-semibold text-primary-950 hover:bg-primary-300"
                   >
                     {NAVIGATION.collaborators.routeName}
-                  </div>
-                  <div
+                  </li>
+                  <li
                     onClick={(e) => scrollToSection(e, '#prototype')}
                     className="rounded-md bg-white/10 px-3 py-2 text-sm font-semibold text-primary-950 hover:bg-primary-300"
                   >
                     {NAVIGATION.prototype.routeName}
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </div>
-            </div>
-            <div className="hidden md:block">
-              <div className="ml-4 flex items-center md:ml-6">
-                <a
-                  href={NAVIGATION.login.href}
-                  className="rounded-md px-3 py-2 text-sm font-semibold text-primary-950 hover:bg-primary-300"
-                  aria-current="page"
-                >
-                  {NAVIGATION.login.routeName}
-                </a>
-                <div className="relative ml-3">
+            </section>
+
+            {/* language and donate buttons*/}
+
+            <section className="md:block">
+              <div className="flex items-center px-5 gap-2 lg:mr-0">
+                <div className="-mt-10  md:flex">
+                  <Button
+                    type="primary"
+                    text={NAVIGATION.donate.routeName}
+                    onClick={(e) => scrollToSection(e, '#donate')}
+                  />
+                </div>
+                <div className="relative md:ml-5">
                   <div>
                     <button
                       type="button"
                       onClick={() => setOpenMenuLanguages(!isOpenMenuLanguages)}
-                      className="relative flex w-8 h-8 items-center justify-center rounded-full bg-primary-200 text-sm text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
+                      className="relative flex w-8 h-8 items-center justify-center rounded-full bg-primary-200 text-sm text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-600 hover:bg-primary-300"
                       id="user-menu-button"
                       aria-expanded="false"
                       aria-haspopup="true"
@@ -135,120 +168,86 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
 
-            <div className="flex md:hidden">
-              <button
-                type="button"
-                onClick={handleMenu}
-                className="relative right-12 top-0 inline-flex items-center justify-center rounded-md bg-primary-300 p-2 hover:bg-primary-100 hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500"
-                aria-controls="mobile-menu"
-                aria-expanded="false"
-              >
-                <span className="absolute "></span>
-                <svg
-                  className="block h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                  />
-                </svg>
-                <svg
-                  className="hidden h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className={`${isOpen ? 'md:hidden' : 'hidden'}`} id="mobile-menu">
-          <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
-            <a
-              href={NAVIGATION.github.href}
-              className="rounded-md bg-white/10 px-3 py-2 text-sm font-semibold text-primary-950 shadow-sm hover:bg-white/20"
-              aria-current="page"
-            >
-              {NAVIGATION.github.routeName}
-            </a>
-            <div
-              onClick={(e) => scrollToSection(e, '#collaborators')}
-              className=" text-primary-950 hover:bg-primary-300 hover:bg-opacity-75 block rounded-md px-3 py-2 text-base font-medium"
-            >
-              {NAVIGATION.collaborators.routeName}
-            </div>
-            <div
-              onClick={(e) => scrollToSection(e, '#prototype')}
-              className=" text-primary-950 hover:bg-primary-300 hover:bg-opacity-75 block rounded-md px-3 py-2 text-base font-medium"
-            >
-              {NAVIGATION.prototype.routeName}
-            </div>
-            <a
-              href={NAVIGATION.login.href}
-              className=" text-primary-950 hover:bg-primary-300 hover:bg-opacity-75 block rounded-md px-3 py-2 text-base font-medium"
-            >
-              {NAVIGATION.login.routeName}
-            </a>
-          </div>
-          <section className="border-t border-primary-700 pb-3 pt-4">
-            <div className="flex items-center px-5">
-              <div className="flex-shrink-0">
-                <img
-                  className="h-10 w-10 rounded-full"
-                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                  alt=""
-                />
-              </div>
-              <div className="ml-3">
-                <div className="text-base font-medium  text-primary-950 hover:bg-primary-300">
-                  Pets love
-                </div>
-                <div className="text-sm font-medium  text-primary-950 hover:bg-primary-300">
-                  PetsLove@petslove.com
+                {/* hamburguer icon*/}
+
+                <div className="flex md:hidden">
+                  <button
+                    className="flex flex-col h-10 w-10 border-2 border-primary-300 rounded-md justify-center items-center group hover:bg-primary-100 hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500"
+                    onClick={() => setIsOpen(!isOpen)}
+                    aria-controls="mobile-menu"
+                    aria-expanded="false"
+                    type="button"
+                  >
+                    <span className="absolute"></span>
+                    <div
+                      className={`${HamburgerLine} ${
+                        isOpen
+                          ? 'rotate-45 translate-y-3 opacity-50 group-hover:opacity-100'
+                          : 'opacity-50 group-hover:opacity-100'
+                      }`}
+                    />
+                    <div
+                      className={`${HamburgerLine} ${
+                        isOpen ? 'opacity-0' : 'opacity-50 group-hover:opacity-100'
+                      }`}
+                    />
+                    <div
+                      className={`${HamburgerLine} ${
+                        isOpen
+                          ? '-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100'
+                          : 'opacity-50 group-hover:opacity-100'
+                      }`}
+                    />
+                  </button>
                 </div>
               </div>
-              <button
-                type="button"
-                className="relative ml-auto flex-shrink-0 rounded-full border-2 border-transparent bg-indigo-600 p-1 text-indigo-200 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
-              ></button>
-            </div>
-            <div className="mt-3 space-y-1 px-2">
-              <a
-                href="#"
-                className="block rounded-md px-3 py-2 text-base font-medium  text-primary-950 hover:bg-primary-300 hover:bg-opacity-75"
-              >
-                Your Profile
-              </a>
-
-              <a
-                href="#"
-                className="block rounded-md px-3 py-2 text-base font-medium  text-primary-950 hover:bg-hover:bg-primary-300 hover:bg-opacity-75"
-              >
-                Sign out
-              </a>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
+
+        {/* hamburguer menu*/}
+        <AnimatePresence>
+          <motion.div
+            className={isOpen ? 'showMenuNav' : 'hidden'}
+            initial="hidden"
+            animate={isOpen ? 'visible' : 'hidden'}
+            exit="hidden"
+            variants={navAnimation}
+            custom={{ delay: 0.1 }}
+          >
+            <motion.ul className={`${isOpen ? 'md:hidden' : 'hidden'}`} id="mobile-menu">
+              <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+                <motion.li
+                  variants={animatedItem}
+                  className="rounded-md px-3 py-2 text-sm font-semibold text-primary-950 hover:bg-primary-300 hover:bg-opacity-75"
+                >
+                  <a href={NAVIGATION.github.href} aria-current="page">
+                    {NAVIGATION.github.routeName}
+                  </a>
+                </motion.li>
+                <motion.li
+                  variants={animatedItem}
+                  onClick={(e) => scrollToSection(e, '#collaborators')}
+                  className=" text-primary-950 hover:bg-primary-300 hover:bg-opacity-75 block rounded-md px-3 py-2 text-base font-medium"
+                >
+                  {NAVIGATION.collaborators.routeName}
+                </motion.li>
+                <motion.li
+                  variants={animatedItem}
+                  onClick={(e) => scrollToSection(e, '#prototype')}
+                  className=" text-primary-950 hover:bg-primary-300 hover:bg-opacity-75 block rounded-md px-3 py-2 text-base font-medium"
+                >
+                  {NAVIGATION.prototype.routeName}
+                </motion.li>
+              </div>
+              <div className="border-t border-primary-700 pb-3 pt-4"></div>
+            </motion.ul>
+          </motion.div>
+        </AnimatePresence>
       </nav>
       <main>
-        <div className='mx-auto max-w-7xl py-4 px-2 sm:px-4 lg:px-4'>{children}</div>
+        <div className="mx-auto max-w-7xl py-4 px-2 sm:px-4 lg:px-4">{children}</div>
       </main>
     </>
   )
