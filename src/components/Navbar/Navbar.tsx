@@ -9,13 +9,13 @@ import Button from '../button/Button'
 import { motion, AnimatePresence } from 'framer-motion'
 
 export const Navbar = ({ children }: { children: React.ReactNode }) => {
-  const router = useRouter()
   const [isOpenMenuLanguages, setOpenMenuLanguages] = useState(false)
   const [lng, setLng]: any = useState({
     lng: 'es',
     flag: '🇪🇸',
   })
   const [isOpen, setIsOpen] = useState(false)
+  const router = useRouter()
   const t = useTranslations('navbar')
   const NAVIGATION = navigation(t)
   const HamburgerLine = `h-1 w-6 my-1 rounded-md bg-primary-600 transition ease transform duration-300`

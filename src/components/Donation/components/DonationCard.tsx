@@ -1,72 +1,53 @@
 'use client'
-import React, { useEffect } from 'react'
+import React from 'react'
 import { FC, useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { PaymentModal } from './PaymentModal'
 import Button from '@/components/button/Button'
-import axios from 'axios'
-import { DOLAR_BLUE_URL } from '@/constants/URL'
 
 interface Props {
   id: string
   icon: string
   title: string
+  price: number
+  image: string
   reward: string[]
-  minValue?: number | string
+  currency: string
   description: string
   description2?: string
-  image: string
+  minValue?: number | string
 }
 
 const DonationCard: FC<Props> = ({
   id,
   image,
   title,
+  price,
   reward,
+  currency,
   description,
   description2,
-  minValue = 1,
 }) => {
   const [isOpenDonationModal, setIsOpenDonationModal] = useState(false)
-  const [price, setPrice]: any = useState(minValue)
   const t = useTranslations('donationCard')
-  const [country, setCountry]: any = useState('')
-  const [dolarBlue, setSolarBlue] = useState(0)
 
   const handleOpenDonationModal = () => {
     setIsOpenDonationModal(!isOpenDonationModal)
   }
 
-  const setDonationPrice = () => {
-    setCountry(localStorage.getItem('country'))
-    if (country === 'AR') return setPrice(dolarBlue * price)
-
-    setPrice(price)
-  }
-  const getDolarBluePriceArgentina = async () => {
-    const dolarBlue = await axios.get(DOLAR_BLUE_URL)
-    setSolarBlue(dolarBlue.data.venta)
-
-    setDonationPrice()
-  }
-
-  const setCurrencty = () => (country === 'AR' ? 'ARS' : 'USD')
-
-  useEffect(() => {
-    getDolarBluePriceArgentina()
-  }, [country])
-
   return (
     <>
       <div className='shadow-md w-full h-auto bg-primary-50 rounded-3xl ring-1 ring-primary-100 mt-10 flex justify-betweenflex flex-col justify-between'>
         <div className='p-8 lg:flex-auto flex flex-col '>
-          <h3 className='text-2xl font-bold tracking-tight text-primary-950'>{title}</h3>
+          <img
+            src={image}
+            alt='cardImage'
+            className='pt-4 w-full rounded-md h-[200px] object-cover'
+          />
+          <h3 className='text-2xl mt-4 font-bold tracking-tight text-primary-950'>
+            {title}
+          </h3>
           <div className='gap-5'>
-            <img
-              src={image}
-              alt='cardImage'
-              className='pt-4 w-full rounded-md h-[120px] object-cover'
-            />
             <p className='mt-6 text-base leading-7 text-gray-600'>{description}</p>
           </div>
           <div className='mt-4 items-center gap-x-4'>
@@ -110,7 +91,7 @@ const DonationCard: FC<Props> = ({
                   {`$${price}`}
                 </span>
                 <span className='text-sm font-semibold leading-6 tracking-wide text-gray-600'>
-                  {setCurrencty()}
+                  {currency}
                 </span>
               </p>
               <Button
@@ -130,7 +111,6 @@ const DonationCard: FC<Props> = ({
         title={title}
         image={image}
         reward={reward}
-        location={country}
         description={description}
         isOpenDonationModal={isOpenDonationModal}
         handleOpenDonationModal={handleOpenDonationModal}
