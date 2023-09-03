@@ -248,7 +248,7 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
         </div>
       </nav>
       <main>
-        <div className='mx-auto max-w-7xl py-4 px-2 sm:px-4 lg:px-4'>{children}</div>
+        <div className='mx-auto max-w-7xl py-4 px-2 sm:px-4 md:px-8'>{children}</div>
       </main>
     </>
   )

@@ -13,7 +13,7 @@ export const metadata = {
     'At Pets Love, we unite hearts and homes. Join our community in making a difference in the lives of pets in need. Together, we create homes full of love!️',
 }
 
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout ({ children }: { children: React.ReactNode }) {
   const locale = useLocale()
 
   let messages
@@ -24,7 +24,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
   }
 
   return (
-    <html className="bg-[#D6F1E9] px-8" lang={locale}>
+    <html className='bg-primary-100' lang={locale}>
       <body className={inter.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar>{children}</Navbar>
