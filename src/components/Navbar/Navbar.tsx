@@ -7,6 +7,7 @@ import { Logo } from '@/assets/illustrations'
 import { navigation } from '../../app/constants/navigation'
 import Button from '../button/Button'
 import { motion, AnimatePresence } from 'framer-motion'
+import Hamburguer from './components/Hamburguer/Hamburguer'
 
 export const Navbar = ({ children }: { children: React.ReactNode }) => {
   const [isOpenMenuLanguages, setOpenMenuLanguages] = useState(false)
@@ -18,7 +19,11 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
   const router = useRouter()
   const t = useTranslations('navbar')
   const NAVIGATION = navigation(t)
-  const HamburgerLine = `h-1 w-6 my-1 rounded-md bg-primary-600 transition ease transform duration-300`
+  const HamburgerLine = `h-[0.9px] w-6 my-1 rounded bg-primary-600 transition ease transform duration-300`
+
+  const handleOpenMenu = (isOpen: boolean) => {
+    setIsOpen(isOpen)
+  }
 
   const handleChangeLanguages = (lng: string, flag: string) => {
     setLng({ lng, flag })
@@ -74,9 +79,9 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <>
-      <nav className="bg-primary-100 fixed w-full">
-        <div className="mx-auto max-w-7xl px-4 sm:px-2">
-          <div className="flex h-16 items-center justify-between gap-5 mr-10">
+      <nav className="bg-primary-100 fixed w-full px-2 sm:px-4 md:px-8">
+        <div className="mx-auto max-w-7xl">
+          <div className="flex h-16 items-center justify-between gap-5">
             <section className="flex items-center">
               <div>
                 <a href="./">
@@ -84,7 +89,7 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
                 </a>
               </div>
               <div className="hidden md:block">
-                <ul>
+                <ul className="flex ml-2">
                   <a
                     target="_blank"
                     href={NAVIGATION.github.href}
@@ -113,15 +118,15 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
             {/* language and donate buttons*/}
 
             <section className="md:block">
-              <div className="flex items-center px-5 gap-2 lg:mr-0">
-                <div className="-mt-10  md:flex">
+              <div className="flex items-center gap-5">
+                <div className="md:flex">
                   <Button
-                    type="primary"
+                    type="secondary"
                     text={NAVIGATION.donate.routeName}
                     onClick={(e) => scrollToSection(e, '#donate')}
                   />
                 </div>
-                <div className="relative md:ml-5">
+                <div className="relative ">
                   <div>
                     <button
                       type="button"
@@ -153,7 +158,7 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
                       id="user-menu-item-0"
                     >
                       <p>Español</p>
-                      <div>🇪🇸</div>
+                      <div> 🇪🇸</div>
                     </div>
                     <div
                       onClick={() => handleChangeLanguages('en', '🇺🇸')}
@@ -170,10 +175,11 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
                 </div>
 
                 {/* hamburguer icon*/}
+                <Hamburguer open={isOpen} setOpen={() => handleOpenMenu(!isOpen)} />
 
-                <div className="flex md:hidden">
+                {/* <div className="flex md:hidden">
                   <button
-                    className="flex flex-col h-10 w-10 border-2 border-primary-300 rounded-md justify-center items-center group hover:bg-primary-100 hover:bg-opacity-75 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-500"
+                    className="flex flex-col h-10 w-10 rounded-md justify-center items-center group hover:bg-primary-100 hover:bg-opacity-75 focus:outline-none"
                     onClick={() => setIsOpen(!isOpen)}
                     aria-controls="mobile-menu"
                     aria-expanded="false"
@@ -200,7 +206,7 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
                       }`}
                     />
                   </button>
-                </div>
+                </div> */}
               </div>
             </section>
           </div>
@@ -241,13 +247,12 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
                   {NAVIGATION.prototype.routeName}
                 </motion.li>
               </div>
-              <div className="border-t border-primary-700 pb-3 pt-4"></div>
             </motion.ul>
           </motion.div>
         </AnimatePresence>
       </nav>
       <main>
-        <div className='mx-auto max-w-7xl py-4 px-2 sm:px-4 md:px-8'>{children}</div>
+        <div className="mx-auto max-w-7xl py-4 px-2 sm:px-4 md:px-8">{children}</div>
       </main>
     </>
   )

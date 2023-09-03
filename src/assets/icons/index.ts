@@ -12,6 +12,8 @@ import IconInstagram from './icon-instagram.svg'
 import IconLinkedIn from './icon-linkedin.svg'
 import CheckIcon from './Icon-check.svg'
 import IconMercadopagoLogo from './iconMercadopagoLogo.svg'
+import IconHambuerguer from './icon-hamburguer.svg'
+import IconClose from './icon-close.svg'
 
 export {
   IconMercadopagoLogo,
@@ -28,4 +30,6 @@ export {
   IconInstagram,
   IconLinkedIn,
   CheckIcon,
+  IconHambuerguer,
+  IconClose,
 }

@@ -28,10 +28,11 @@ const Button: FC<Props> = ({
   switch (type) {
     case 'primary':
       buttonClasses =
-        'mt-10 block rounded-md bg-primary-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600'
+        'block rounded-md bg-primary-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600'
       break
     case 'secondary':
-      buttonClasses = 'hover:bg-primary-300 bg-primary-100 text-primary-900'
+      buttonClasses =
+        'rounded px-2 py-1 text-sm font-semibold text-primary-950 shadow-sm ring-1 ring-inset ring-primary-300 hover:bg-primary-300'
       break
     case 'tertiary':
       buttonClasses = 'bg-transparent hover:bg-gray-100 text-gray-600'
@@ -49,7 +50,7 @@ const Button: FC<Props> = ({
       } py-2 px-4 rounded ${buttonClasses} flex gap-3 items-center justify-center`}
     >
       {isLoading && <Loader />}
-      {icon && <Image src={icon} width={30} alt='icon-button' />}
+      {icon && <Image src={icon} width={30} alt="icon-button" />}
       {text && text}
     </button>
   )
