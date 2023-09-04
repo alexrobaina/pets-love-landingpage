@@ -2,7 +2,7 @@ import React from 'react'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { PrototypeDemo } from '@/assets/images'
-import Button from '../button/Button'
+import Button from '../Button/Button'
 
 const Prototype = () => {
   const t = useTranslations('prototype')

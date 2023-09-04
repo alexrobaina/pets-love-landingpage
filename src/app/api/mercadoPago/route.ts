@@ -15,7 +15,7 @@ export async function POST(req: NextRequest, res: NextApiResponse) {
     const URL = process.env.HOST;
 
     const data = {
-      email: product.email,
+      email: '',
       productId: product.id
     }
 
@@ -35,8 +35,8 @@ export async function POST(req: NextRequest, res: NextApiResponse) {
       ],
       auto_return: 'approved',
       back_urls: {
-        success: `${URL}/paySuccess?productId=${product.id}&order=${donation.order}&title=${product.title}&price=${product.inputValue}&email=${product.email}&payType=mercadopago`,
-        failure: `${URL}/payError?productId=${product.id}&title=${product.title}&price=${product.inputValue}&email=${product.email}&payType=mercadopago`,
+        success: `${URL}/paySuccess?productId=${product.id}&order=${donation.order}&title=${product.title}&price=${product.inputValue}&payType=mercadopago`,
+        failure: `${URL}/payError?productId=${product.id}&title=${product.title}&price=${product.inputValue}&payType=mercadopago`,
       },
     };
 

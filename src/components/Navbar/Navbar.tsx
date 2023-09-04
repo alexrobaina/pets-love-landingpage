@@ -5,9 +5,13 @@ import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { Logo } from '@/assets/illustrations'
 import { navigation } from '../../app/constants/navigation'
-import Button from '../button/Button'
+import Button from '../Button/Button'
 import { motion, AnimatePresence } from 'framer-motion'
 import Hamburguer from './components/Hamburguer/Hamburguer'
+import Footer from '../footer/Footer'
+import { QueryClient, QueryClientProvider } from 'react-query'
+
+const queryClient = new QueryClient()
 
 export const Navbar = ({ children }: { children: React.ReactNode }) => {
   const [isOpenMenuLanguages, setOpenMenuLanguages] = useState(false)
@@ -79,35 +83,35 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <>
-      <nav className="bg-primary-100 fixed w-full px-2 sm:px-4 md:px-8">
-        <div className="mx-auto max-w-7xl">
-          <div className="flex h-16 items-center justify-between gap-5">
-            <section className="flex items-center">
+      <nav className='bg-primary-100 fixed w-full px-2 sm:px-4 md:px-8'>
+        <div className='mx-auto max-w-7xl'>
+          <div className='flex h-16 items-center justify-between gap-5'>
+            <section className='flex items-center'>
               <div>
-                <a href="./">
-                  <Image width={30} src={Logo} alt="Pets love Logo" />
+                <a href='./'>
+                  <Image width={30} src={Logo} alt='Pets love Logo' />
                 </a>
               </div>
-              <div className="hidden md:block">
-                <ul className="flex ml-2">
+              <div className='hidden md:block'>
+                <ul className='flex ml-2'>
                   <a
-                    target="_blank"
+                    target='_blank'
                     href={NAVIGATION.github.href}
-                    className="rounded-md px-3 py-2 text-sm font-semibold text-primary-950 hover:bg-primary-300"
-                    aria-current="page"
+                    className='rounded-md px-3 py-2 text-sm font-semibold text-primary-950 hover:bg-primary-300'
+                    aria-current='page'
                   >
                     {NAVIGATION.github.routeName}
                   </a>
 
                   <li
-                    onClick={(e) => scrollToSection(e, '#collaborators')}
-                    className="rounded-md px-3 py-2 text-sm font-semibold text-primary-950 hover:bg-primary-300"
+                    onClick={e => scrollToSection(e, '#collaborators')}
+                    className='rounded-md px-3 py-2 text-sm font-semibold text-primary-950 hover:bg-primary-300'
                   >
                     {NAVIGATION.collaborators.routeName}
                   </li>
                   <li
-                    onClick={(e) => scrollToSection(e, '#prototype')}
-                    className="rounded-md bg-white/10 px-3 py-2 text-sm font-semibold text-primary-950 hover:bg-primary-300"
+                    onClick={e => scrollToSection(e, '#prototype')}
+                    className='rounded-md bg-white/10 px-3 py-2 text-sm font-semibold text-primary-950 hover:bg-primary-300'
                   >
                     {NAVIGATION.prototype.routeName}
                   </li>
@@ -117,27 +121,27 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
 
             {/* language and donate buttons*/}
 
-            <section className="md:block">
-              <div className="flex items-center gap-5">
-                <div className="md:flex">
+            <section className='md:block'>
+              <div className='flex items-center gap-5'>
+                <div className='md:flex'>
                   <Button
-                    type="secondary"
+                    type='secondary'
                     text={NAVIGATION.donate.routeName}
-                    onClick={(e) => scrollToSection(e, '#donate')}
+                    onClick={e => scrollToSection(e, '#donate')}
                   />
                 </div>
-                <div className="relative ">
+                <div className='relative '>
                   <div>
                     <button
-                      type="button"
+                      type='button'
                       onClick={() => setOpenMenuLanguages(!isOpenMenuLanguages)}
-                      className="relative flex w-8 h-8 items-center justify-center rounded-full bg-primary-200 text-sm text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-600 hover:bg-primary-300"
-                      id="user-menu-button"
-                      aria-expanded="false"
-                      aria-haspopup="true"
+                      className='relative flex w-8 h-8 items-center justify-center rounded-full bg-primary-200 text-sm text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-600 hover:bg-primary-300'
+                      id='user-menu-button'
+                      aria-expanded='false'
+                      aria-haspopup='true'
                     >
-                      <span className="absolute -inset-1.5"></span>
-                      <span className="sr-only">Open user menu</span>
+                      <span className='absolute -inset-1.5'></span>
+                      <span className='sr-only'>Open user menu</span>
                       <div>{lng.flag}</div>
                     </button>
                   </div>
@@ -145,17 +149,17 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
                     className={`${
                       !isOpenMenuLanguages && 'hidden'
                     } absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none`}
-                    role="menu"
-                    aria-orientation="vertical"
-                    aria-labelledby="user-menu-button"
+                    role='menu'
+                    aria-orientation='vertical'
+                    aria-labelledby='user-menu-button'
                   >
                     <div
                       onClick={() => handleChangeLanguages('es', '🇪🇸')}
                       className={`${
                         lng.lng === 'es' && 'bg-primary-200'
                       } flex justify-between px-4 py-2 text-sm text-primary-900 hover:bg-primary-300`}
-                      role="menuitem"
-                      id="user-menu-item-0"
+                      role='menuitem'
+                      id='user-menu-item-0'
                     >
                       <p>Español</p>
                       <div> 🇪🇸</div>
@@ -165,8 +169,8 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
                       className={`${
                         lng.lng === 'en' && 'bg-primary-200'
                       } flex justify-between px-4 py-2 text-sm text-primary-900 hover:bg-primary-300`}
-                      role="menuitem"
-                      id="user-menu-item-1"
+                      role='menuitem'
+                      id='user-menu-item-1'
                     >
                       <p>English</p>
                       <div>🇺🇸</div>
@@ -216,33 +220,33 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
         <AnimatePresence>
           <motion.div
             className={isOpen ? 'showMenuNav' : 'hidden'}
-            initial="hidden"
+            initial='hidden'
             animate={isOpen ? 'visible' : 'hidden'}
-            exit="hidden"
+            exit='hidden'
             variants={navAnimation}
             custom={{ delay: 0.1 }}
           >
-            <motion.ul className={`${isOpen ? 'md:hidden' : 'hidden'}`} id="mobile-menu">
-              <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+            <motion.ul className={`${isOpen ? 'md:hidden' : 'hidden'}`} id='mobile-menu'>
+              <div className='space-y-1 px-2 pb-3 pt-2 sm:px-3'>
                 <motion.li
                   variants={animatedItem}
-                  className="rounded-md px-3 py-2 text-sm font-semibold text-primary-950 hover:bg-primary-300 hover:bg-opacity-75"
+                  className='rounded-md px-3 py-2 text-sm font-semibold text-primary-950 hover:bg-primary-300 hover:bg-opacity-75'
                 >
-                  <a href={NAVIGATION.github.href} aria-current="page">
+                  <a href={NAVIGATION.github.href} aria-current='page'>
                     {NAVIGATION.github.routeName}
                   </a>
                 </motion.li>
                 <motion.li
                   variants={animatedItem}
-                  onClick={(e) => scrollToSection(e, '#collaborators')}
-                  className=" text-primary-950 hover:bg-primary-300 hover:bg-opacity-75 block rounded-md px-3 py-2 text-base font-medium"
+                  onClick={e => scrollToSection(e, '#collaborators')}
+                  className=' text-primary-950 hover:bg-primary-300 hover:bg-opacity-75 block rounded-md px-3 py-2 text-base font-medium'
                 >
                   {NAVIGATION.collaborators.routeName}
                 </motion.li>
                 <motion.li
                   variants={animatedItem}
-                  onClick={(e) => scrollToSection(e, '#prototype')}
-                  className=" text-primary-950 hover:bg-primary-300 hover:bg-opacity-75 block rounded-md px-3 py-2 text-base font-medium"
+                  onClick={e => scrollToSection(e, '#prototype')}
+                  className=' text-primary-950 hover:bg-primary-300 hover:bg-opacity-75 block rounded-md px-3 py-2 text-base font-medium'
                 >
                   {NAVIGATION.prototype.routeName}
                 </motion.li>
@@ -252,8 +256,11 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
         </AnimatePresence>
       </nav>
       <main>
-        <div className="mx-auto max-w-7xl py-4 px-2 sm:px-4 md:px-8">{children}</div>
+        <QueryClientProvider client={queryClient}>
+          <div className='mx-auto max-w-7xl py-4 px-2 sm:px-4 md:px-8'>{children}</div>
+        </QueryClientProvider>
       </main>
+      <Footer />
     </>
   )
 }

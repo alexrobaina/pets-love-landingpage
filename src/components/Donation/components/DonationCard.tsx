@@ -3,7 +3,7 @@ import React from 'react'
 import { FC, useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { PaymentModal } from './PaymentModal'
-import Button from '@/components/button/Button'
+import Button from '@/components/Button/Button'
 
 interface Props {
   id: string
@@ -94,12 +94,14 @@ const DonationCard: FC<Props> = ({
                   {currency}
                 </span>
               </p>
-              <Button
-                onClick={handleOpenDonationModal}
-                text={t('donate')}
-                type='primary'
-                wFull
-              />
+              <div className='mt-5'>
+                <Button
+                  wFull
+                  type='primary'
+                  text={t('donate')}
+                  onClick={handleOpenDonationModal}
+                />
+              </div>
               <p className='mt-6 text-xs leading-5 text-gray-600'>{description2}</p>
             </div>
           </div>

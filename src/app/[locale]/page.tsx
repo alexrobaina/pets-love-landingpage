@@ -1,8 +1,8 @@
 import Hero from '@/components/hero/Hero'
-import { Features } from '@/components/features/Features'
+import { Features } from '@/components/Features/Features'
 import Prototype from '@/components/prototype/Prototype'
-import { FeatureSections } from '@/components/featuresSections/FeatureSections'
-import Collaborate from '@/components/collaborate/Collaborate'
+import { FeatureSections } from '@/components/FeaturesSections/FeatureSections'
+import Collaborate from '@/components/Collaborate/Collaborate'
 import JointUp from '@/components/joinup/JointUp'
 import Donation from '@/components/Donation/Donation'
 

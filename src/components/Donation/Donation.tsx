@@ -1,5 +1,4 @@
 'use client'
-
 import { CheckIcon } from '@/assets/icons'
 import React, { useEffect, useState } from 'react'
 import DonationCard from './components/DonationCard'
@@ -7,13 +6,23 @@ import { useTranslations } from 'next-intl'
 import axios from 'axios'
 import { Loader } from '../loader/Loader'
 import { DOLAR_BLUE_URL } from '@/constants/URL'
+import { initMercadoPago } from '@mercadopago/sdk-react'
+import { MercadoPagoButton } from '../mercadopagoButton/MercadopagoButton'
+
+initMercadoPago(process.env.NEXT_PUBLIC_MERCADO_PAGO_PUBLIC_KEY as string)
 
 const Donation = () => {
   const [isLoading, setIsloading] = useState(false)
-  const [country] = useState(localStorage.getItem('country') || 'AR' || 'US')
+  const [country, setCountry] = useState('AR')
   const [products, setProducts]: any = useState(null)
   const [dolarBlue, setDolarBlue]: any = useState(0)
   const t = useTranslations('donationCard')
+
+  const getLocalstorageCountry = () => {
+    if (typeof window !== 'undefined') {
+      setCountry(localStorage.getItem('country') || 'AR' || 'US')
+    }
+  }
 
   const getDolarBlue = async () => {
     try {
@@ -55,8 +64,9 @@ const Donation = () => {
   }
 
   useEffect(() => {
+    getLocalstorageCountry()
     getProducts()
-  }, [country])
+  }, [])
 
   return (
     <>

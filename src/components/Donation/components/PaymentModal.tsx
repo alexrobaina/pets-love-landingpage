@@ -115,20 +115,6 @@ export const PaymentModal: FC<Props> = ({
           )}
         </div>
         <p className='text-primary-900 mb-2 text-md py-4 hidden md:flex'>{description}</p>
-        {/* <div className='mt-2'>
-          <label className='text-primary-800'>{t('email')}</label>
-          <div className='flex rounded-md shadow-sm ring-1'>
-            <input
-              type='email'
-              name='email'
-              value={email.value}
-              onChange={handleChangeEmail}
-              placeholder='daniel48@gmail.com'
-              className='block flex-1 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400  sm:text-sm sm:leading-6'
-            />
-          </div>
-          {email.error && <p className='text-red-500 text-xs mt-1'>{email.error}</p>}
-        </div> */}
         {price && (
           <>
             <div className='flex justify-between mt-4'>
@@ -148,7 +134,6 @@ export const PaymentModal: FC<Props> = ({
                   description,
                   email: email.value,
                 }}
-                validations={() => validateEmail(email.value)}
               />
             )}
             {checkLocation() !== 'AR' && (

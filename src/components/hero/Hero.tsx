@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import { Home } from '@/assets/illustrations'
 import { useTranslations } from 'next-intl'
-import Button from '../button/Button'
+import Button from '../Button/Button'
 
 const Hero = () => {
   const t = useTranslations('hero')

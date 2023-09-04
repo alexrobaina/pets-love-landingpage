@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { IconGithub } from '@/assets/icons'
-import Button from '../button/Button'
+import Button from '../Button/Button'
 
 const Collaborate = () => {
   const t = useTranslations('collaborate')
