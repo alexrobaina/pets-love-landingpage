@@ -50,7 +50,7 @@ export async function POST(req: NextRequest, res: NextApiResponse) {
     });
   } catch (error) {
     console.error('Error:', error);
-    return new NextResponse(JSON.stringify({ error: 'Something went wrong' }), {
+    return new NextResponse(JSON.stringify({ error }), {
       status: 500,
       headers: {
         'Content-Type': 'application/json',
