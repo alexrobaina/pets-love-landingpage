@@ -15,7 +15,6 @@ export async function POST(req: NextRequest, res: NextApiResponse) {
     const URL = process.env.HOST;
 
     const data = {
-      email: '',
       productId: product.id
     }
 
