@@ -25,18 +25,15 @@ const Hero = () => {
       <div className='lg:grid py-8 mx-auto lg:max-w-screen-xl lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12'>
         <div className='place-self-center mr-auto pb-10 lg:col-span-7 sm:col-span-3 '>
           <h1 className='mb-4 lg:max-w-2xl text-4xl font-semibold md:text-4xl xl:text-5xl text-primary-950 sm:max-w-screen-sm'>
-            {t('heroTitle')}
+            {t('title')}
           </h1>
           <p className='mb-6 lg:max-w-2xl font-light lg:mb-8 md:text-lg lg:text-xl text-primary-950 sm: text-sm sm:max-w-sm'>
-            {t('heroDescription')}
-          </p>
-          <p className='mb-6 text-primary-900 lg:max-w-2xl font-light lg:mb-8 md:text-lg lg:text-xl sm: text-sm sm:max-w-sm'>
-            {t('heroSlogan')}
+            {t('description')}
           </p>
           <div className='pb-5'>
             <Button
               type='primary'
-              text={t('heroButtonName')}
+              text={t('donationButton')}
               onClick={e => scrollToSection(e, '#donate')}
             />
           </div>

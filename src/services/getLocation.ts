@@ -9,7 +9,6 @@ export const getLocation = async () => {
           )
           .then(res => res.json())
           .then(data => {
-            console.log(3);
             localStorage.setItem('country', data.countryCode)
             localStorage.setItem('city', data.principalSubdivision)
             return
@@ -23,9 +22,7 @@ export const getLocation = async () => {
       }
       
     } catch (error) {
-      console.log(6);
-      
-
     console.log(error);
+    return error
   }
 }

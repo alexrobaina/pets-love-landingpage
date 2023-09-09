@@ -10,6 +10,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Hamburguer from './components/Hamburguer/Hamburguer'
 import Footer from '../footer/Footer'
 import { QueryClient, QueryClientProvider } from 'react-query'
+import { ANIMATED_ITEM, NAV_ANIMATION } from './constants/animations'
 
 const queryClient = new QueryClient()
 
@@ -23,7 +24,6 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
   const router = useRouter()
   const t = useTranslations('navbar')
   const NAVIGATION = navigation(t)
-  const HamburgerLine = `h-[0.9px] w-6 my-1 rounded bg-primary-600 transition ease transform duration-300`
 
   const handleOpenMenu = (isOpen: boolean) => {
     setIsOpen(isOpen)
@@ -47,38 +47,6 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
       })
     }
     setIsOpen(false)
-  }
-
-  const navAnimation = {
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 1,
-        y: { stiffness: 1000, velocity: -100 },
-        delayChildren: 0.2,
-        staggerChildren: 0.4,
-        type: 'spring',
-        opacity: 0,
-      },
-    },
-    hidden: {
-      y: -50,
-      opacity: 0,
-      transition: {
-        type: 'spring',
-        duration: 0.5,
-        y: { stiffness: 1000, velocity: 100 },
-      },
-    },
-  }
-
-  const animatedItem = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-    },
   }
 
   return (
@@ -177,59 +145,24 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
                     </div>
                   </div>
                 </div>
-
-                {/* hamburguer icon*/}
                 <Hamburguer open={isOpen} setOpen={() => handleOpenMenu(!isOpen)} />
-
-                {/* <div className="flex md:hidden">
-                  <button
-                    className="flex flex-col h-10 w-10 rounded-md justify-center items-center group hover:bg-primary-100 hover:bg-opacity-75 focus:outline-none"
-                    onClick={() => setIsOpen(!isOpen)}
-                    aria-controls="mobile-menu"
-                    aria-expanded="false"
-                    type="button"
-                  >
-                    <span className="absolute"></span>
-                    <div
-                      className={`${HamburgerLine} ${
-                        isOpen
-                          ? 'rotate-45 translate-y-3 opacity-50 group-hover:opacity-100'
-                          : 'opacity-50 group-hover:opacity-100'
-                      }`}
-                    />
-                    <div
-                      className={`${HamburgerLine} ${
-                        isOpen ? 'opacity-0' : 'opacity-50 group-hover:opacity-100'
-                      }`}
-                    />
-                    <div
-                      className={`${HamburgerLine} ${
-                        isOpen
-                          ? '-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100'
-                          : 'opacity-50 group-hover:opacity-100'
-                      }`}
-                    />
-                  </button>
-                </div> */}
               </div>
             </section>
           </div>
         </div>
-
-        {/* hamburguer menu*/}
         <AnimatePresence>
           <motion.div
             className={isOpen ? 'showMenuNav' : 'hidden'}
             initial='hidden'
             animate={isOpen ? 'visible' : 'hidden'}
             exit='hidden'
-            variants={navAnimation}
+            variants={NAV_ANIMATION}
             custom={{ delay: 0.1 }}
           >
             <motion.ul className={`${isOpen ? 'md:hidden' : 'hidden'}`} id='mobile-menu'>
               <div className='space-y-1 px-2 pb-3 pt-2 sm:px-3'>
                 <motion.li
-                  variants={animatedItem}
+                  variants={ANIMATED_ITEM}
                   className='rounded-md px-3 py-2 text-sm font-semibold text-primary-950 hover:bg-primary-300 hover:bg-opacity-75'
                 >
                   <a href={NAVIGATION.github.href} aria-current='page'>
@@ -237,14 +170,14 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
                   </a>
                 </motion.li>
                 <motion.li
-                  variants={animatedItem}
+                  variants={ANIMATED_ITEM}
                   onClick={e => scrollToSection(e, '#collaborators')}
                   className=' text-primary-950 hover:bg-primary-300 hover:bg-opacity-75 block rounded-md px-3 py-2 text-base font-medium'
                 >
                   {NAVIGATION.collaborators.routeName}
                 </motion.li>
                 <motion.li
-                  variants={animatedItem}
+                  variants={ANIMATED_ITEM}
                   onClick={e => scrollToSection(e, '#prototype')}
                   className=' text-primary-950 hover:bg-primary-300 hover:bg-opacity-75 block rounded-md px-3 py-2 text-base font-medium'
                 >

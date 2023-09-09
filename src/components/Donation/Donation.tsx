@@ -6,22 +6,16 @@ import { useTranslations } from 'next-intl'
 import axios from 'axios'
 import { Loader } from '../loader/Loader'
 import { DOLAR_BLUE_URL } from '@/constants/URL'
-import { initMercadoPago } from '@mercadopago/sdk-react'
-import { MercadoPagoButton } from '../mercadopagoButton/MercadopagoButton'
-
-initMercadoPago(process.env.NEXT_PUBLIC_MERCADO_PAGO_PUBLIC_KEY as string)
+import { getLocation } from '@/services/getLocation'
+import { useQuery } from 'react-query'
 
 const Donation = () => {
-  const [isLoading, setIsloading] = useState(false)
-  const [country, setCountry] = useState('AR')
-  const [products, setProducts]: any = useState(null)
+  const { data, isLoading } = useQuery('products', () => axios.get('/api/products'))
   const [dolarBlue, setDolarBlue]: any = useState(0)
   const t = useTranslations('donationCard')
 
-  const getLocalstorageCountry = () => {
-    if (typeof window !== 'undefined') {
-      setCountry(localStorage.getItem('country') || 'AR' || 'US')
-    }
+  const getLocalstorageCountry = async () => {
+    await getLocation()
   }
 
   const getDolarBlue = async () => {
@@ -29,28 +23,16 @@ const Donation = () => {
       const result = await axios.get(DOLAR_BLUE_URL)
 
       const dolarBlue = result?.data?.compra
+      console.log(dolarBlue)
+
       setDolarBlue(dolarBlue)
-      localStorage.setItem('dolarBlue', dolarBlue)
     } catch (error) {
       console.log(error)
     }
   }
 
-  const getProducts = async () => {
-    try {
-      setIsloading(true)
-
-      const result = await axios.get('/api/products')
-      await getDolarBlue()
-
-      setProducts(result?.data)
-      setIsloading(false)
-    } catch (error) {
-      setIsloading(false)
-    }
-  }
-
   const calculatePrice = (price: number) => {
+    const country = localStorage.getItem('country')
     if (country === 'AR') return price * parseInt(dolarBlue)
     return price
   }
@@ -64,16 +46,16 @@ const Donation = () => {
   }
 
   useEffect(() => {
+    getDolarBlue()
     getLocalstorageCountry()
-    getProducts()
   }, [])
 
   return (
     <>
       <section className='flex lg:flex-row flex-col gap-2 py-8'>
         {isLoading && <Loader />}
-        {products &&
-          products.map((product: any) => (
+        {data?.data &&
+          data?.data.map((product: any) => (
             <DonationCard
               id={product.id}
               key={product.id}

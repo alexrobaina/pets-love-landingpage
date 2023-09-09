@@ -50,11 +50,13 @@ const DonationCard: FC<Props> = ({
           <div className='gap-5'>
             <p className='mt-6 text-base leading-7 text-gray-600'>{description}</p>
           </div>
-          <div className='mt-4 items-center gap-x-4'>
-            <h4 className='flex-none text-sm font-semibold leading-6 text-primary-600'>
-              {t('whatsincluded')}
-            </h4>
-          </div>
+          {reward.length > 0 && (
+            <div className='mt-4 items-center gap-x-4'>
+              <h4 className='flex-none text-sm font-semibold leading-6 text-primary-600'>
+                {t('whatsincluded')}
+              </h4>
+            </div>
+          )}
           <ul
             role='list'
             className='mt-8 grid gap-4 text-sm leading-6 text-gray-600 sm:gap-6'
@@ -83,9 +85,7 @@ const DonationCard: FC<Props> = ({
         <div className='-mt-2 p-2 lg:mt-0 w-full lg:flex-shrink-0'>
           <div className='rounded-2xl bg-primary-100 py-10 text-center ring-1 ring-inset ring-primary-950/5 lg:flex lg:flex-col lg:justify-center lg:py-16'>
             <div className='mx-auto max-w-xs px-8'>
-              <p className='text-base font-semibold text-gray-600'>
-                Pay once, own it forever
-              </p>
+              <p className='text-base font-semibold text-gray-600'>{t('titleAction')}</p>
               <p className='mt-6 flex items-baseline justify-center gap-x-2'>
                 <span className='text-5xl font-bold tracking-tight text-primary-950'>
                   {`$${price}`}
@@ -113,6 +113,7 @@ const DonationCard: FC<Props> = ({
         title={title}
         image={image}
         reward={reward}
+        currency={currency}
         description={description}
         isOpenDonationModal={isOpenDonationModal}
         handleOpenDonationModal={handleOpenDonationModal}
