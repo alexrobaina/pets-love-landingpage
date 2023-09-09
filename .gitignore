@@ -12,6 +12,9 @@
 /.next/
 /out/
 
+# ignore yaml files in the root
+*.yaml
+
 # production
 /build
 
@@ -36,3 +39,4 @@ yarn-error.log*
 next-env.d.ts
 
 documents
+app.yaml

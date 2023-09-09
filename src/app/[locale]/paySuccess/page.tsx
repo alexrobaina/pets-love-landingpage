@@ -30,7 +30,6 @@ const PaySuccess = () => {
       email,
       paymentId,
     }
-    console.log(data)
 
     await axios.put('/api/updateDonation', data)
   }

@@ -1,6 +1,6 @@
 'use client'
 import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js'
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useCallback } from 'react'
 import { FC } from 'react'
 import { motion } from 'framer-motion'
 import { ReactModal } from '../../ReactModal'
@@ -8,12 +8,19 @@ import { useTranslations } from 'next-intl'
 import useScreenWidth from '@/hook/useScreenWidth'
 import { MercadoPagoButton } from '@/components/mercadopagoButton/MercadopagoButton'
 
+import { initMercadoPago } from '@mercadopago/sdk-react'
+import Button from '@/components/Button/Button'
+import Link from 'next/link'
+
+initMercadoPago(process.env.NEXT_PUBLIC_MERCADO_PAGO_PUBLIC_KEY as string)
+
 interface Props {
   id: string
   title: string
   image: string
   price: number
   reward: String[]
+  currency: string
   description: string
   isOpenDonationModal: boolean
   handleOpenDonationModal: Function
@@ -25,18 +32,13 @@ export const PaymentModal: FC<Props> = ({
   price,
   title,
   reward,
+  currency,
   description,
   isOpenDonationModal,
   handleOpenDonationModal,
 }) => {
   const isScreenSmall = useScreenWidth(780)
   const t = useTranslations('donationCard')
-  const [email, setEmail] = useState({
-    value: '',
-    error: '',
-    required: true,
-    pattern: /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/,
-  })
 
   const checkLocation = useCallback(() => {
     const country = localStorage.getItem('country')
@@ -44,52 +46,10 @@ export const PaymentModal: FC<Props> = ({
     return country
   }, [])
 
-  const validateEmail = (value: any) => {
-    if (email.required) {
-      if (email.pattern.test(value)) {
-        setEmail({ ...email, error: '', value: value })
-        return true
-      }
-    }
-    setEmail({
-      ...email,
-      value: value,
-      error: t('emailError'),
-    })
-    return false
-  }
-
-  const handleChangeEmail = (e: any) => {
-    validateEmail(e.target.value)
-  }
-
   const variants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
   }
-
-  const onApprove = async () => {
-    window.open(
-      `/paySuccess?productId=${id}&title=${title}&price=${price}&email=${email}&donationId=${id}&payType=paypal`,
-      '_blank',
-    )
-  }
-
-  const onError = async () => {
-    window.open(
-      `/payError/?productId=${id}&title=${title}&price=${price}&email=${email}&donationId=${id}&payType=paypal`,
-      '_blank',
-    )
-  }
-
-  useEffect(() => {
-    setEmail({
-      value: '',
-      error: '',
-      required: true,
-      pattern: /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/,
-    })
-  }, [isOpenDonationModal])
 
   return (
     <ReactModal
@@ -121,7 +81,7 @@ export const PaymentModal: FC<Props> = ({
               <h2 className='flex justify-end text-primary-950 lg:mb-2 marker: text-xl font-medium'>
                 Argentina
               </h2>
-              <h2 className='flex justify-end text-primary-950 lg:mb-2 marker: text-xl font-medium'>{`Total: ${price} Pesos`}</h2>
+              <h2 className='flex justify-end text-primary-950 lg:mb-2 marker: text-xl font-medium'>{`Total: ${price} ${currency}`}</h2>
             </div>
             {checkLocation() === 'AR' && (
               <MercadoPagoButton
@@ -132,7 +92,6 @@ export const PaymentModal: FC<Props> = ({
                   price,
                   reward,
                   description,
-                  email: email.value,
                 }}
               />
             )}
@@ -150,7 +109,18 @@ export const PaymentModal: FC<Props> = ({
                   {t('total')} ${price}
                 </label>
                 <div className='min-h-[100px]'>
-                  <PayPalScriptProvider
+                  <Link
+                    target='_blank'
+                    onClick={() => handleOpenDonationModal()}
+                    href={`https://paypal.me/petsloveapp/${price}?country.x=AR&locale.x=es_XC`}
+                    className='flex bg-[#FCC439] text-white font-bold py-2 px-4 rounded-md w-full justify-center'
+                  >
+                    <div className='flex'>
+                      <p className='text-[#053087]'>Pay</p>
+                      <p className='text-[#269DDE] '>Pal</p>
+                    </div>
+                  </Link>
+                  {/* <PayPalScriptProvider
                     options={{
                       clientId: process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID as string,
                     }}
@@ -162,7 +132,6 @@ export const PaymentModal: FC<Props> = ({
                       transition={{ ease: 'easeOut' }}
                     >
                       <PayPalButtons
-                        disabled={email.error !== '' || email.value === ''}
                         createOrder={(data, actions) => {
                           return actions.order.create({
                             purchase_units: [
@@ -174,11 +143,9 @@ export const PaymentModal: FC<Props> = ({
                             ],
                           })
                         }}
-                        onApprove={onApprove}
-                        onError={onError}
                       />
                     </motion.div>
-                  </PayPalScriptProvider>
+                  </PayPalScriptProvider> */}
                 </div>
               </>
             )}
