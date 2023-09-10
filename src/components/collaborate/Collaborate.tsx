@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { IconGithub } from '@/assets/icons'
 import Button from '../Button/Button'
+import GitHubCollaborators from '../GitHubContributors/GitHubContributors'
 
 const Collaborate = () => {
   const t = useTranslations('collaborate')
@@ -37,31 +38,16 @@ const Collaborate = () => {
           </div>
           <div className='flex flex-col w-40 md:w-full lg:w-full lg:flex-row gap-12'>
             <Button
-              text={'Donar'}
               type='primary'
+              text={t('collaborateButton')}
               onClick={e => scrollToSection(e, '#donate')}
             />
-
             <a>
               <Image src={IconGithub} alt='IconGithub' />
             </a>
           </div>
         </div>
-        {/* <article className=" max-w-screen-xl py-8 mx-auto">
-          <h1 className="mb-10 marker: text-3xl mx-auto font-extrabold leading-none md:text-5xl xl:text-6xl text-primary-950">
-            {t('Countributors')}
-          </h1>
-        </article>
-        <div className="flex flex-row flex-wrap w-full gap-12 justify-center py-8 4 mx-auto ">
-          <Countributors name={'Jhon White'} title={'software engineer'} img={Avatar} />
-          <Countributors name={'Maria Flow'} title={'Devs Ops'} img={Avatar} />
-          <Countributors
-            name={'Totoro Garcia'}
-            title={'software arquitect'}
-            img={Avatar}
-          />
-          <Countributors name={'Jessica Weed'} title={'software engineer'} img={Avatar} />
-        </div> */}
+        <GitHubCollaborators />
       </article>
     </section>
   )

@@ -8,7 +8,7 @@ import { navigation } from '../../app/constants/navigation'
 import Button from '../Button/Button'
 import { motion, AnimatePresence } from 'framer-motion'
 import Hamburguer from './components/Hamburguer/Hamburguer'
-import Footer from '../footer/Footer'
+import Footer from '../Footer/Footer'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { ANIMATED_ITEM, NAV_ANIMATION } from './constants/animations'
 
@@ -102,11 +102,11 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
                   <div>
                     <button
                       type='button'
-                      onClick={() => setOpenMenuLanguages(!isOpenMenuLanguages)}
-                      className='relative flex w-8 h-8 items-center justify-center rounded-full bg-primary-200 text-sm text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-600 hover:bg-primary-300'
+                      aria-haspopup='true'
                       id='user-menu-button'
                       aria-expanded='false'
-                      aria-haspopup='true'
+                      onClick={() => setOpenMenuLanguages(!isOpenMenuLanguages)}
+                      className='relative flex w-8 h-8 items-center justify-center rounded-full bg-primary-200 text-sm text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-600 hover:bg-primary-300'
                     >
                       <span className='absolute -inset-1.5'></span>
                       <span className='sr-only'>Open user menu</span>
