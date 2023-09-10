@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import { Loader } from '../loader/Loader'
+import { Loader } from '../Loader/Loader'
 import { FC, MouseEventHandler } from 'react'
 
 interface Props {
@@ -50,7 +50,7 @@ const Button: FC<Props> = ({
       } py-2 px-4 rounded ${buttonClasses} flex gap-3 items-center justify-center`}
     >
       {isLoading && <Loader />}
-      {icon && <Image src={icon} width={30} alt="icon-button" />}
+      {icon && <Image src={icon} width={30} alt='icon-button' />}
       {text && text}
     </button>
   )

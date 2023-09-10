@@ -1,12 +1,10 @@
 'use client'
-import { PayPalScriptProvider, PayPalButtons } from '@paypal/react-paypal-js'
 import React, { useCallback } from 'react'
 import { FC } from 'react'
-import { motion } from 'framer-motion'
 import { ReactModal } from '../../ReactModal'
 import { useTranslations } from 'next-intl'
 import useScreenWidth from '@/hook/useScreenWidth'
-import { MercadoPagoButton } from '@/components/mercadopagoButton/MercadopagoButton'
+import { MercadoPagoButton } from '@/components/MercadopagoButton/MercadopagoButton'
 
 import { initMercadoPago } from '@mercadopago/sdk-react'
 import Button from '@/components/Button/Button'
