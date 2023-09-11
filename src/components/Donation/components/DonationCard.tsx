@@ -42,7 +42,7 @@ const DonationCard: FC<Props> = ({
           <img
             src={image}
             alt='cardImage'
-            className='pt-4 w-full rounded-md h-[200px] object-cover'
+            className='pt-4 w-full rounded-md h-[200px] object-top object-cover'
           />
           <h3 className='text-2xl mt-4 font-bold tracking-tight text-primary-950'>
             {title}
@@ -88,7 +88,7 @@ const DonationCard: FC<Props> = ({
               <p className='text-base font-semibold text-gray-600'>{t('titleAction')}</p>
               <p className='mt-6 flex items-baseline justify-center gap-x-2'>
                 <span className='text-5xl font-bold tracking-tight text-primary-950'>
-                  {`$${price}`}
+                  {`$${Math.round(price / 100) * 100}`}
                 </span>
                 <span className='text-sm font-semibold leading-6 tracking-wide text-gray-600'>
                   {currency}
@@ -109,12 +109,12 @@ const DonationCard: FC<Props> = ({
       </div>
       <PaymentModal
         id={id}
-        price={price}
         title={title}
         image={image}
         reward={reward}
         currency={currency}
         description={description}
+        price={Math.round(price / 100) * 100}
         isOpenDonationModal={isOpenDonationModal}
         handleOpenDonationModal={handleOpenDonationModal}
       />

@@ -1,5 +1,5 @@
-#**🐶 🐱 🦊 Pets Love 🐭 🐹 🐰**# 
-Pets Love is a global app dedicated to saving and protecting animals. It aims to assist animal shelters, veterinarians, volunteers, and individuals interested in adopting a pet.
+#**🐶 🐱 🦊 Pet's Love 🐭 🐹 🐰**# 
+Pet's Love is a global app dedicated to saving and protecting animals. It aims to assist animal shelters, veterinarians, volunteers, and individuals interested in adopting a pet.
 
 The primary objective of this app is to ensure the ongoing care and well-being of adopted animals. It achieves this by facilitating the continuous flow of information from animal shelter professionals. The app provides precise medical data and pictures of each animal, allowing for the maintenance of comprehensive medical histories and ensuring their health and security.
 
@@ -22,11 +22,11 @@ Adopters are individuals who have pets under their care. Each adopter can create
 Additionally, shelters may assign pets to adopters, establishing an unbreakable bond among pets, adopters, and shelters.
 
 😻 How to Help? 🐶
-If you are a developer or UX designer who appreciates Pets Love, you can contribute by suggesting ideas or improvements through issue submissions.
+If you are a developer or UX designer who appreciates Pet's Love, you can contribute by suggesting ideas or improvements through issue submissions.
 
 For more information on how to contribute, please refer to the CONTRIBUTING.md file.
 
-You can also support the development and growth of Pets Love by "buying me a coffee" using the following link:
+You can also support the development and growth of Pet's Love by "buying me a coffee" using the following link:
 
 Invitame un café en cafecito.app
 

@@ -26,7 +26,7 @@ export async function POST(req: NextRequest, res: NextApiResponse) {
           title: product.title,
           id: donation.order.toString(),
           category_id: donation.id,
-          description: product.description,
+          description: cutText(product.description),
           unit_price: parseInt(product.price),
           picture_url: product?.image || '',
           quantity: 1,
@@ -40,6 +40,15 @@ export async function POST(req: NextRequest, res: NextApiResponse) {
     };
 
     const response = await mercadopago.preferences.create(preference);
+     await prisma.donation.update({
+      where: {
+        id: donation.id
+      },
+      data: {
+        preferenceId: response.body.id
+      }
+    })
+
 
     return new NextResponse(JSON.stringify(response), {
       status: 200,
@@ -56,4 +65,11 @@ export async function POST(req: NextRequest, res: NextApiResponse) {
       },
     });
   }
+}
+
+function cutText(texto: string) : string {
+  if (texto.length > 200) {
+    return texto.substring(0, 200) + '...';  // Añade puntos suspensivos si el texto es más largo que 200 caracteres
+  }
+  return texto;
 }

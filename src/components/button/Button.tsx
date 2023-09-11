@@ -11,6 +11,7 @@ interface Props {
   type?: 'primary' | 'secondary' | 'tertiary'
   icon?: any
   primary?: boolean
+  className?: string
   onClick?: MouseEventHandler<HTMLButtonElement>
 }
 
@@ -18,6 +19,7 @@ const Button: FC<Props> = ({
   backgroundColor,
   text,
   isLoading,
+  className,
   onClick = () => {},
   type,
   icon,
@@ -45,8 +47,8 @@ const Button: FC<Props> = ({
     <button
       onClick={onClick}
       style={{ backgroundColor }}
-      className={` ${
-        wFull && 'w-full'
+      className={` ${wFull && 'w-full'}  ${
+        className && 'className'
       } py-2 px-4 rounded ${buttonClasses} flex gap-3 items-center justify-center`}
     >
       {isLoading && <Loader />}
