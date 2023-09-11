@@ -6,7 +6,7 @@ import Collaborate from '@/components/Collaborate/Collaborate'
 import JointUp from '@/components/Joinup/JointUp'
 import Donation from '@/components/Donation/Donation'
 
-export default function Home () {
+export default function Home() {
   return (
     <>
       <Hero />
