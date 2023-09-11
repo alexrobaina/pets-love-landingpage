@@ -9,6 +9,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Pets love',
+  image: 'https://cdn.midjourney.com/362cb41d-fba2-4c78-b6a7-01cbbbc1fd72/0_1.png',
   description:
     'At Pets love, we unite hearts and homes. Join our community in making a difference in the lives of pets in need. Together, we create homes full of love!️',
 }
@@ -20,7 +21,7 @@ export default async function RootLayout ({ children }: { children: React.ReactN
   try {
     messages = (await import(`../../locales/${locale}.json`)).default
   } catch (error) {
-    notFound()
+    https: notFound()
   }
 
   return (
