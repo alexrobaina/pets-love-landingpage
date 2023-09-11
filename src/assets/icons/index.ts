@@ -14,6 +14,8 @@ import CheckIcon from './Icon-check.svg'
 import IconMercadopagoLogo from './iconMercadopagoLogo.svg'
 import IconHambuerguer from './icon-hamburguer.svg'
 import IconClose from './icon-close.svg'
+import IconSpanishFlag from './icon-spanish-flag.svg'
+import IconEnglishFlag from './icon-english-flag.svg'
 
 export {
   IconMercadopagoLogo,
@@ -32,4 +34,6 @@ export {
   CheckIcon,
   IconHambuerguer,
   IconClose,
+  IconSpanishFlag,
+  IconEnglishFlag,
 }
