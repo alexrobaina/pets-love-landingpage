@@ -76,7 +76,7 @@ const DonationCard: FC<Props> = ({
                       clipRule='evenodd'
                     />
                   </svg>
-                  {rewards}
+                  {t(`donationCard${id}.reward${index + 1}`)}
                 </li>
               )
             })}
