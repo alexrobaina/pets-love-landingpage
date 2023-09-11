@@ -1,6 +1,6 @@
-export const Loader = ({ size = 20 }: { size?: number }) => {
+export const Loader = () => {
   return (
-    <div className='text-center'>
+    <div className='text-center flex justify-center'>
       <div role='status'>
         <svg
           aria-hidden='true'

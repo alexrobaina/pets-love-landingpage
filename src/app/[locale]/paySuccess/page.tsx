@@ -50,16 +50,12 @@ const PaySuccess = () => {
             <h1 className='text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl'>
               {t('title')}
             </h1>
-            <p className='mt-6 text-lg leading-8 text-gray-600'></p>
+            <p className='mt-6 text-lg leading-8 text-gray-600'>{t('description')}</p>
             <div className='mt-10 flex items-center justify-center gap-x-6'>
               <Button onClick={backToHome} type='primary' text={t('backToHome')} />
             </div>
           </div>
         </div>
-        <div
-          className='absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]'
-          aria-hidden='true'
-        ></div>
       </div>
     </FadeIn>
   )

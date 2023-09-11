@@ -21,11 +21,11 @@ model Product {
 }
 
 model Donation {
-  id        String    @id @default(uuid())
-  email     String?
-  productId String
-  order     Int       @default(autoincrement())
-  approved  Boolean   @default(false)
-  paymentId String?   @unique
-  Products  Product[]
+  id           String    @id @default(uuid())
+  email        String?
+  productId    String
+  order        Int       @default(autoincrement())
+  approved     Boolean   @default(false)
+  preferenceId String?   @unique
+  Products     Product[]
 }

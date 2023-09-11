@@ -8,6 +8,7 @@ import { Loader } from '../Loader/Loader'
 import { DOLAR_BLUE_URL } from '@/constants/URL'
 import { getLocation } from '@/services/getLocation'
 import { useQuery } from 'react-query'
+import HorizontalDonationCard from './components/HorizontalDonationCard'
 
 const Donation = () => {
   const { data, isLoading } = useQuery('products', () => axios.get('/api/products'))
@@ -23,7 +24,6 @@ const Donation = () => {
       const result = await axios.get(DOLAR_BLUE_URL)
 
       const dolarBlue = result?.data?.compra
-      console.log(dolarBlue)
 
       setDolarBlue(dolarBlue)
     } catch (error) {
@@ -52,23 +52,30 @@ const Donation = () => {
 
   return (
     <>
-      <section className='flex lg:flex-row flex-col gap-2 py-8'>
-        {isLoading && <Loader />}
-        {data?.data &&
-          data?.data.map((product: any) => (
-            <DonationCard
-              id={product.id}
-              key={product.id}
-              icon={CheckIcon}
-              image={product.image}
-              reward={product.peaks}
-              currency={getCurrency()}
-              price={calculatePrice(product.price)}
-              title={t(`donationCard${product.id}.title`)}
-              description={t(`donationCard${product.id}.description1`)}
-              description2={t(`donationCard${product.id}.description2`)}
-            />
-          ))}
+      <section>
+        {isLoading && (
+          <div className='w-flull flex justify-center py-32'>
+            <Loader />
+          </div>
+        )}
+        <div className='flex lg:flex-row flex-col gap-2 py-8'>
+          {data?.data &&
+            data?.data.map((product: any) => (
+              <DonationCard
+                id={product.id}
+                key={product.id}
+                icon={CheckIcon}
+                image={product.image}
+                reward={product.peaks}
+                currency={getCurrency()}
+                price={calculatePrice(product.price)}
+                title={t(`donationCard${product.id}.title`)}
+                description={t(`donationCard${product.id}.description1`)}
+                description2={t(`donationCard${product.id}.description2`)}
+              />
+            ))}
+        </div>
+        <HorizontalDonationCard />
       </section>
     </>
   )

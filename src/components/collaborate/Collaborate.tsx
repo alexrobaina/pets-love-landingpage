@@ -37,12 +37,7 @@ const Collaborate = () => {
             </p>
           </div>
           <div className='flex flex-col w-40 md:w-full lg:w-full lg:flex-row gap-12'>
-            <Button
-              type='primary'
-              text={t('collaborateButton')}
-              onClick={e => scrollToSection(e, '#donate')}
-            />
-            <a>
+            <a href='https://github.com/alexrobaina/frontend_petsLove' target='_blank'>
               <Image src={IconGithub} alt='IconGithub' />
             </a>
           </div>

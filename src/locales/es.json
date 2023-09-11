@@ -40,6 +40,7 @@
         "joinUpDescription1": "Cada centavo cuenta y prometemos total transparencia en cómo se usan tus donaciones. Tu generoso apoyo nos permite colaborar con expertos y mejorar nuestra plataforma, marcando una gran diferencia para las mascotas necesitadas. ¡Construyamos un futuro más brillante para nuestros amigos peludos—¡Dona Ahora!"
     },
     "donationCard": {
+        "openseaCollection": "Colección Opensea",
         "whatsincluded": "Qué está incluido",
         "total": "Total",
         "titleAction": "Ayúdanos a crecer",
@@ -70,6 +71,12 @@
             "reward1": "Llevaremos 20 kilos de comida premium a refugios cercanos.",
             "reward2": "Recibirás un boletín mensual exclusivo donde te mantendremos al día con el progreso, noticias y logros de nuestra aplicación.",
             "reward3": ""
+        },
+        "donationCard4": {
+            "title": " 🎨 Compranos un NFT y salva una vida 🏠",
+            "description": "Conviértete en un Mantenedor del Refugio y Aliado Adoptante al comprar un NFT exclusivo con temática animal. Tu token digital único contribuye directamente al desarrollo de nuestra aplicación para refugios y al bienestar de las mascotas que esperan ser adoptadas.",
+            "reward1": "Llevaremos 20 kilos de comida premium a refugios cercanos.",
+            "reward2": "Recibirás un boletín mensual exclusivo donde te mantendremos al día con el progreso, noticias y logros de nuestra aplicación."
         }
     },
     "shelter": {
@@ -105,13 +112,19 @@
     },
     "collaborate": {
         "collaborateTitle": "Únete a Codificar por una Causa 🤝💻",
+        "gitHubCollaborators": "Colaboradores de GitHub",
         "collaborateDescription1": "Desata tus habilidades de codificación en nuestra plataforma de código abierto, diseñada para unir los mundos de la tecnología y el bienestar animal. Integra perfectamente con Jira y otras herramientas de software para potenciar nuestra misión. No es solo código; es una comunidad unida para hacer del mundo un lugar mejor para nuestros amigos peludos.",
         "collaborateDescription2": "Crea Soluciones Ágiles e Impactantes 🚀🌟 Deja atrás la burocracia de la gestión tradicional de servicios de TI y acelera el desarrollo en un entorno que celebra la innovación. Ayúdanos a optimizar las operaciones, mejorar las experiencias de los usuarios y responder rápidamente a las necesidades siempre cambiantes de las mascotas y las personas que las aman. ¡Con tu ayuda, implementaremos cambios que harán que las colas se meneen en todo el mundo! 🌍🐕🐈"
     },
     "succesDonation": {
         "collaborateButton": "Donar",
         "title": "¡Muchas gracias por colaborar con nuestro equipo!",
-        "description1": "Apreciamos tu invaluable apoyo en Amor de Mascotas. Recibirás nuestro boletín mensual exclusivo, manteniéndote al tanto del progreso, noticias y logros. Juntos, creamos un impacto positivo en el mundo de las mascotas.🐾🌟",
+        "description": "Apreciamos tu invaluable apoyo en Amor de Mascotas. Recibirás nuestro boletín mensual exclusivo, manteniéndote al tanto del progreso, noticias y logros. Juntos, creamos un impacto positivo en el mundo de las mascotas.🐾🌟",
+        "backToHome": "Volver a inicio"
+    },
+    "errorDonation": {
+        "title": "¡Muchas gracias por colaborar con nuestro equipo!",
+        "description": "Por favor, inténtalo de nuevo más tarde. algo salió mal.",
         "backToHome": "Volver a inicio"
     },
     "footer": {
@@ -119,5 +132,8 @@
         "terms": "Términos y Condiciones",
         "rights": "Todos los derechos reservados.",
         "followUs": "Síguenos"
+    },
+    "terms&conditions": {
+        "backToHome": "Volver a inicio"
     }
 }

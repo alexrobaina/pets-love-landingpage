@@ -1,7 +1,7 @@
 {
     "navbar": {
         "login": "Login",
-        "appName": "Pets Love",
+        "appName": "Pet's love",
         "github": "Github",
         "collaborators": "How to colaborate?",
         "prototype": "Prototype",
@@ -32,14 +32,15 @@
     },
     "prototype": {
         "prototypeTitle": "Be Part of the Future in Pet Adoption—See Our Prototype Today! 🐾🚀",
-        "prototypeDescription": "Discover what makes Pets Love revolutionary by exploring our prototype. Your early engagement can shape the future of pet adoption, making it even more meaningful and love-filled. Don't miss out—Click to Explore the Prototype Now!",
+        "prototypeDescription": "Discover what makes Pet's love revolutionary by exploring our prototype. Your early engagement can shape the future of pet adoption, making it even more meaningful and love-filled. Don't miss out—Click to Explore the Prototype Now!",
         "prototypeButtonName": "See prototype"
     },
     "joinUp": {
-        "joinUpTitle": "🌟Be a Hero for Paws and Whiskers Support Pets Love! 🌟",
+        "joinUpTitle": "🌟Be a Hero for Paws and Whiskers Support Pet's love! 🌟",
         "joinUpDescription1": "Every penny counts, and we promise total transparency in how your donations are used. Your generous support allows us to collaborate with experts and refine our platform, making a world of difference for pets in need. Let's build a brighter future for our furry friends—Donate Now!"
     },
     "donationCard": {
+        "openseaCollection": "Opensea collection",
         "whatsincluded": "What's included",
         "total": "Total",
         "titleAction": "Help us to grow",
@@ -65,53 +66,65 @@
         },
         "donationCard3": {
             "title": "🍲 Donate 20kg of Food 🍲",
-            "description1": "Donate 20Kg of food to Pets Love shelters and make a difference in the lives of pets in need. Your love and care are reflected in each grain. Join in filling furry hearts with joy and gratitude. 🐾❤️🍲",
+            "description1": "Donate 20Kg of food to Pet's love shelters and make a difference in the lives of pets in need. Your love and care are reflected in each grain. Join in filling furry hearts with joy and gratitude. 🐾❤️🍲",
             "description2": "❤️ Donate today and let's feed the love! ❤️",
             "reward1": "We will take 20 kilos of premium food to nearby shelters.",
             "reward2": "You will receive an exclusive monthly newsletter where we will keep you up to date with the progress, news and achievements of our application.",
             "reward3": ""
+        },
+        "donationCard4": {
+            "title": "Buy us an NFT and safe a life",
+            "description": "Become a Shelter Sustainer & Adopter Ally by purchasing an exclusive animal-themed NFT. Your unique digital token directly contributes to the development of our app for shelters and the well-being of pets awaiting adoption.",
+            "reward1": "Llevaremos 20 kilos de comida premium a refugios cercanos.",
+            "reward2": "Recibirás un boletín mensual exclusivo donde te mantendremos al día con el progreso, noticias y logros de nuestra aplicación."
         }
     },
     "shelter": {
         "shelterTitle": "Shelters",
         "shelterSubtitle1": "The Heartbeat of Our Furry Community 🏠",
-        "shelterDescription1": "Shelters truly are the pulsing heart of our loving community. By teaming up with these havens of care and compassion, we help connect deserving pets with forever homes. Think of shelters as the caring guardians that provide second chances and endless love to our furry friends. Your support is the magic ingredient in weaving together happy 'tail-tales' at Pets Love! 💙",
-        "shelterSubtitle2": "Elevate Your Shelter with Pets Love 🏠🐾",
-        "shelterDescription2": "Pets Love serves as an invaluable toolkit for animal shelters. With us, centralizing medical histories and behavioral traits becomes a breeze, paving the way for appealing pet profiles. Vets, future pet parents, and volunteers can easily access crucial details, ensuring each animal's well-being is front and center. In a nutshell, Pets Love enhances shelter management, champions responsible adoptions, and guarantees joy for each paw and claw in your care. 💙🐕🐈"
+        "shelterDescription1": "Shelters truly are the pulsing heart of our loving community. By teaming up with these havens of care and compassion, we help connect deserving pets with forever homes. Think of shelters as the caring guardians that provide second chances and endless love to our furry friends. Your support is the magic ingredient in weaving together happy 'tail-tales' at Pet's love! 💙",
+        "shelterSubtitle2": "Elevate Your Shelter with Pet's love 🏠🐾",
+        "shelterDescription2": "Pet's love serves as an invaluable toolkit for animal shelters. With us, centralizing medical histories and behavioral traits becomes a breeze, paving the way for appealing pet profiles. Vets, future pet parents, and volunteers can easily access crucial details, ensuring each animal's well-being is front and center. In a nutshell, Pet's love enhances shelter management, champions responsible adoptions, and guarantees joy for each paw and claw in your care. 💙🐕🐈"
     },
     "adopt": {
         "adoptTitle": "Adopt",
-        "adoptDescription1": "Adopting from Pets Love isn't just gaining a pet—it's welcoming a new family member for life's adventures and cuddles. Together, let's make paw-sitively unforgettable memories. Welcome to our Pets Love family! ❤️🏠",
+        "adoptDescription1": "Adopting from Pet's love isn't just gaining a pet—it's welcoming a new family member for life's adventures and cuddles. Together, let's make paw-sitively unforgettable memories. Welcome to our Pet's love family! ❤️🏠",
         "adoptSubtitle2": "Stay Connected with Pet QR Codes 📲🐶",
-        "adoptDescription2": "Every pet gets its own QR code, acting as a digital leash. Should your furry friend wander, this code helps any good Samaritan quickly get in touch with you. Stay connected and keep your pet safe with Pets Love's cutting-edge technology. 🐾🔗",
+        "adoptDescription2": "Every pet gets its own QR code, acting as a digital leash. Should your furry friend wander, this code helps any good Samaritan quickly get in touch with you. Stay connected and keep your pet safe with Pet's love's cutting-edge technology. 🐾🔗",
         "adoptSubtitle3": "Health Records: Your Pet's Passport to Wellness 📋💕",
-        "adoptDescription3": "Think of your pet's medical history as a love letter to their well-being. It helps you understand their unique needs and offer the care they deserve. With Pets Love, complete medical records are the cornerstone of lasting, loving relationships."
+        "adoptDescription3": "Think of your pet's medical history as a love letter to their well-being. It helps you understand their unique needs and offer the care they deserve. With Pet's love, complete medical records are the cornerstone of lasting, loving relationships."
     },
     "veterinary": {
         "veterinaryTitle": "Vets",
         "veterinarySubtitle1": "Champions of Pet Wellness 🏥🐾",
-        "veterinaryDescription1": "At Pets Love, we celebrate your vital role in pet health. Our platform streamlines your interactions with shelters and adopters, making each visit as informed as it is efficient. Let's unite to give every furry friend the love and care they deserve. 💙🐕🐈",
+        "veterinaryDescription1": "At Pet's love, we celebrate your vital role in pet health. Our platform streamlines your interactions with shelters and adopters, making each visit as informed as it is efficient. Let's unite to give every furry friend the love and care they deserve. 💙🐕🐈",
         "veterinarySubtitle2": "Health Records: The Blueprint of Care 📋💕",
         "veterinaryDescription2": "Access complete medical histories right at your fingertips, covering everything from vaccinations to past treatments. This comprehensive data informs your decisions and ensures the best outcomes for your furry patients. 🏥📝",
         "veterinarySubtitle3": "Team Up for Pet Wellness 🤝🌟",
-        "veterinaryDescription3": "Pets Love fosters a collaborative ecosystem involving vets, shelters, and adopters. Your expertise is invaluable in this equation, contributing to a lifelong journey of pet health and happiness. 🐾🌟."
+        "veterinaryDescription3": "Pet's love fosters a collaborative ecosystem involving vets, shelters, and adopters. Your expertise is invaluable in this equation, contributing to a lifelong journey of pet health and happiness. 🐾🌟."
     },
     "voluntaries": {
         "voluntariesTitle": "Voluntaries",
         "voluntariesSubtitle1": "Passion Meets Purpose 🤝",
-        "voluntariesDescription1": "You're at the heart of the pet-loving world. Pets Love bridges your dedication to shelters and vets, smoothing the way for pet transitions and information exchange. Your compassionate efforts have a paw-sitive, tail-wagging impact on every animal's life. 💙🐕🐈",
+        "voluntariesDescription1": "You're at the heart of the pet-loving world. Pet's love bridges your dedication to shelters and vets, smoothing the way for pet transitions and information exchange. Your compassionate efforts have a paw-sitive, tail-wagging impact on every animal's life. 💙🐕🐈",
         "voluntariesSubtitle2": "Manage with Heart 🐶🐱🏠",
         "voluntariesDescription2": "Easily update information for the pets you've lovingly cared for. Shelters and vets can even grant you permission to add vital details. Your commitment brightens the future for each furry companion. 🏠🌟"
     },
     "collaborate": {
         "collaborateButton": "Donate",
+        "gitHubCollaborators": "GitHub collaborators",
         "collaborateTitle": "Join Hands in Coding for a Cause 🤝💻",
         "collaborateDescription1": "Unleash your coding skills on our open-source platform, designed to unite the worlds of tech and animal welfare. Seamlessly integrate with Jira and other software tools to empower our mission. It's not just code; it's a community coming together to make the world a better place for our furry friends.",
         "collaborateDescription2": "Craft Impactful, Agile Solutions 🚀🌟 Ditch the red tape of traditional ITSM and accelerate development in an environment that celebrates innovation. Help us optimize operations, enhance user experiences, and respond rapidly to the ever-changing needs of pets and the people who love them. With your help, we'll deploy changes that make tails wag around the world! 🌍🐕🐈"
     },
     "succesDonation": {
         "title": "Thank you very much for colaborate with our team!",
-        "description1": "We appreciate your invaluable support at Pets Love. You will receive our exclusive monthly newsletter, keeping you abreast of progress, news and achievements. Together, we create a positive impact in the world of pets.🐾🌟",
+        "description1": "We appreciate your invaluable support at Pet's love. You will receive our exclusive monthly newsletter, keeping you abreast of progress, news and achievements. Together, we create a positive impact in the world of pets.🐾🌟",
+        "backToHome": "Back to home"
+    },
+    "errorDonation": {
+        "title": "Thank you very much for try to colaborate with our team!",
+        "description": "Please try again later. something went wrong.",
         "backToHome": "Back to home"
     },
     "footer": {
@@ -119,5 +132,8 @@
         "terms": "Terms & Conditions",
         "rights": "All rights Reserved.",
         "followUs": "Follow us"
+    },
+    "terms&conditions": {
+        "backToHome": "Back to home"
     }
 }
