@@ -58,11 +58,11 @@
             "reward2": ""
         },
         "donationCard2": {
-            "title": "🎨 Sostenedores de Refugios y Aliados de Adoptantes 🏠",
-            "description1": "Conviértete en un Sostenedor de Refugios y Aliado de Adoptantes comprando un NFT exclusivo con temática animal. Tu token digital único contribuye directamente al desarrollo de nuestra aplicación para refugios y al bienestar de las mascotas en espera de adopción.",
+            "title": "Atención Veterinaria que Desesperadamente Necesitan",
+            "description1": "Cada año, millones de mascotas no reciben la atención veterinaria necesaria debido a limitaciones económicas. Un problema simple como una pata rota o una afección cutánea puede convertirse en una situación potencialmente mortal si no se trata a tiempo. En Heal Paws, creemos que cada mascota merece recibir la atención médica que necesita, independientemente de la situación financiera de su dueño.",
             "description2": "❤️ ¡Gracias por tu compromiso! ❤️",
-            "reward1": "NFT Exclusivo con Temática Animal",
-            "reward2": "Tu Contribución Impulsa Directamente el Desarrollo de la Aplicación para Refugios y Apoya la Adopción de Mascotas"
+            "reward1": "Elegiremos minuciosamente los casos que requieren atención veterinaria urgente y colaboraremos con veterinarios y clínicas para garantizar tratamientos óptimos. Mantendremos una comunicación abierta sobre cómo tu donación está beneficiando a los animales."
+
         },
         "donationCard3": {
             "title": "🍲 Dona 20kg de Comida 🍲",

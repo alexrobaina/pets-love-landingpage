@@ -58,11 +58,10 @@
             "reward2": ""
         },
         "donationCard2": {
-            "title": "🎨 Shelter Sustainers & Adopter Allies 🏠",
-            "description1": "Become a Shelter Sustainer & Adopter Ally by purchasing an exclusive animal-themed NFT. Your unique digital token directly contributes to the development of our app for shelters and the well-being of pets awaiting adoption.",
+            "title": "Help Pets Get the Veterinary Care They Desperately Need",
+            "description1": "Every year, millions of pets go without necessary veterinary care due to financial constraints. A simple issue like a broken leg or a skin condition can escalate into a life-threatening situation if not treated in time. At Heal Paws, we believe every pet deserves to get the medical attention they need, regardless of their owner's financial status.",
             "description2": "❤️ Thank you for your commitment! ❤️",
-            "reward1": "Exclusive Animal-Themed NFT",
-            "reward2": "Your Contribution Directly Fuels Shelter App Development and Supports Pet Adoption"
+            "reward1": "We will carefully select cases that require urgent veterinary attention and collaborate with veterinarians and clinics to ensure optimal treatments. We will maintain open communication about how your donation is benefiting the animals."
         },
         "donationCard3": {
             "title": "🍲 Donate 20kg of Food 🍲",
