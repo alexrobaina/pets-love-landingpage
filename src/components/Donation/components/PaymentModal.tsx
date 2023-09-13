@@ -75,23 +75,25 @@ export const PaymentModal: FC<Props> = ({
         <p className='text-primary-900 mb-2 text-md py-4 hidden md:flex'>{description}</p>
         {price && (
           <>
-            <div className='flex justify-between mt-4'>
-              <h2 className='flex justify-end text-primary-950 lg:mb-2 marker: text-xl font-medium'>
-                Argentina
-              </h2>
-              <h2 className='flex justify-end text-primary-950 lg:mb-2 marker: text-xl font-medium'>{`Total: ${price} ${currency}`}</h2>
-            </div>
             {checkLocation() === 'AR' && (
-              <MercadoPagoButton
-                product={{
-                  id,
-                  image,
-                  title,
-                  price,
-                  reward,
-                  description,
-                }}
-              />
+              <>
+                <div className='flex justify-between mt-4'>
+                  <h2 className='flex justify-end text-primary-950 lg:mb-2 marker: text-xl font-medium'>
+                    Argentina
+                  </h2>
+                  <h2 className='flex justify-end text-primary-950 lg:mb-2 marker: text-xl font-medium'>{`Total: ${price} ${currency}`}</h2>
+                </div>
+                <MercadoPagoButton
+                  product={{
+                    id,
+                    image,
+                    title,
+                    price,
+                    reward,
+                    description,
+                  }}
+                />
+              </>
             )}
             {checkLocation() !== 'AR' && (
               <>
@@ -118,32 +120,6 @@ export const PaymentModal: FC<Props> = ({
                       <p className='text-[#269DDE] '>Pal</p>
                     </div>
                   </Link>
-                  {/* <PayPalScriptProvider
-                    options={{
-                      clientId: process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID as string,
-                    }}
-                  >
-                    <motion.div
-                      initial='hidden'
-                      animate='visible'
-                      variants={variants}
-                      transition={{ ease: 'easeOut' }}
-                    >
-                      <PayPalButtons
-                        createOrder={(data, actions) => {
-                          return actions.order.create({
-                            purchase_units: [
-                              {
-                                amount: {
-                                  value: price.toString(),
-                                },
-                              },
-                            ],
-                          })
-                        }}
-                      />
-                    </motion.div>
-                  </PayPalScriptProvider> */}
                 </div>
               </>
             )}
