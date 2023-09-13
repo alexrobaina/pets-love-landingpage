@@ -18,14 +18,10 @@ export async function POST(req: NextRequest, res: NextApiResponse) {
       productId: product.id
     }
 
-    const donation = await prisma.donation.create({data})
-
     const preference: CreatePreferencePayload = {
       items: [
         {
           title: product.title,
-          id: donation.order.toString(),
-          category_id: donation.id,
           description: cutText(product.description),
           unit_price: parseInt(product.price),
           picture_url: product?.image || '',
@@ -34,21 +30,12 @@ export async function POST(req: NextRequest, res: NextApiResponse) {
       ],
       auto_return: 'approved',
       back_urls: {
-        success: `${URL}/paySuccess?productId=${product.id}&order=${donation.order}&title=${product.title}&price=${product.inputValue}&payType=mercadopago`,
+        success: `${URL}/paySuccess?productId=${product.id}&title=${product.title}&price=${product.inputValue}&payType=mercadopago`,
         failure: `${URL}/payError?productId=${product.id}&title=${product.title}&price=${product.inputValue}&payType=mercadopago`,
       },
     };
 
     const response = await mercadopago.preferences.create(preference);
-     await prisma.donation.update({
-      where: {
-        id: donation.id
-      },
-      data: {
-        preferenceId: response.body.id
-      }
-    })
-
 
     return new NextResponse(JSON.stringify(response), {
       status: 200,

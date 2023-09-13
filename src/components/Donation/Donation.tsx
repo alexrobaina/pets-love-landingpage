@@ -33,7 +33,10 @@ const Donation = () => {
 
   const calculatePrice = (price: number) => {
     const country = localStorage.getItem('country')
-    if (country === 'AR') return price * parseInt(dolarBlue)
+    if (country === 'AR') {
+      const arPrice = price * parseInt(dolarBlue)
+      return Math.round(arPrice / 100) * 100
+    }
     return price
   }
 
