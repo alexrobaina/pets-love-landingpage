@@ -1,0 +1,14 @@
+.container {
+  section {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  section span {
+    display: block;
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+}
