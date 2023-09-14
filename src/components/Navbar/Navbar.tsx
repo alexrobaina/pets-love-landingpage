@@ -13,6 +13,7 @@ import Hamburguer from './components/Hamburguer/Hamburguer'
 import Footer from '../Footer/Footer'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { ANIMATED_ITEM, NAV_ANIMATION } from './constants/animations'
+import View from '@/components/useView/useInView'
 
 const queryClient = new QueryClient()
 
@@ -58,7 +59,7 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
         <nav
           className={`${
             isOpen && 'h-full'
-          } bg-primary-100 fixed w-full px-2 sm:px-4 md:px-8`}
+          } bg-primary-100 fixed w-full px-2 sm:px-4 md:px-8 z-50`}
         >
           <div className="mx-auto max-w-7xl">
             <div className="flex h-16 items-center justify-between gap-5">
