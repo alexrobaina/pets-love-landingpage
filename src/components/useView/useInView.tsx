@@ -26,7 +26,7 @@ const View: FC<Props> = ({ children, direction = false }) => {
         whileInView="visible"
         exit="hidden"
         variants={SECTIONS_ANIMATION}
-        // className={isInView ? '' : 'blur-2xl'}
+        // className={isInView ? '' : 'blur-3xl'}
       >
         <motion.div variants={direction ? ANIMATED_ITEM_LEFT : ANIMATED_ITEM_RIGHT}>
           {children}
