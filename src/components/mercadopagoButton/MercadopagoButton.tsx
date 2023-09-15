@@ -21,7 +21,12 @@ export const MercadoPagoButton: FC<Props> = ({ product }) => {
     }
   }
 
-  const query = useQuery(`mercadopago${product.id}`, generateLink)
+  const query = useQuery(`mercadopago${product.id}`, generateLink, {
+    refetchOnMount: false,
+    refetchOnWindowFocus: false,
+    refetchOnReconnect: false,
+    retry: 0, // No retries
+  })
 
   return (
     <>

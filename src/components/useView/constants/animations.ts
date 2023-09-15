@@ -3,12 +3,13 @@ export const SECTIONS_ANIMATION = {
     x: 0,
     opacity: 1,
     transition: {
-      duration: 1,
-      delayChildren: 0.02,
-      staggerChildren: 0.05,
-      type: 'spring',
-      opacity: 0,
-      x: { stiffness: 800, velocity: 2000 },
+    duration: 1,
+    delayChildren: 0.02,
+    staggerChildren: 0.05,
+    type: 'spring',
+    opacity: 0,
+    x: { stiffness: 800, velocity: 2000 },
+
     },
   },
   hidden: {
@@ -29,6 +30,7 @@ export const ANIMATED_ITEM_RIGHT = {
     transition: {
       type: 'spring',
       duration: 2,
+
     },
   },
 }
@@ -41,6 +43,7 @@ export const ANIMATED_ITEM_LEFT = {
     transition: {
       type: 'spring',
       duration: 2,
+
     },
   },
 }
