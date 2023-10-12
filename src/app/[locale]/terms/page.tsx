@@ -1,6 +1,6 @@
 'use client'
 import FadeIn from '@/components/FadeIn'
-import Button from '@/components/Button/Button'
+import Button from '../../../components/Button/Button'
 import axios from 'axios'
 import { useTranslations } from 'next-intl'
 import { useSearchParams } from 'next/navigation'
