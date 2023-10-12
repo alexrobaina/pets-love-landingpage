@@ -2,7 +2,7 @@
 import { FC } from 'react'
 import axios from 'axios'
 import { Wallet } from '@mercadopago/sdk-react'
-import { BaseLoading } from '../Loader/Loader'
+import { Loader } from '../Loader/Loader'
 import { useQuery } from 'react-query'
 
 interface Props {
@@ -32,7 +32,7 @@ export const MercadoPagoButton: FC<Props> = ({ product }) => {
     <>
       {query.isLoading && (
         <div className="flex justify-center">
-          <BaseLoading />
+          <Loader />
         </div>
       )}
 
