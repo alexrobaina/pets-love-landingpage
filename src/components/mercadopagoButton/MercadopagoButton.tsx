@@ -2,7 +2,7 @@
 import { FC } from 'react'
 import axios from 'axios'
 import { Wallet } from '@mercadopago/sdk-react'
-import { Loader } from '../Loader/Loader'
+import { BaseLoading } from '../Loader/Loader'
 import { useQuery } from 'react-query'
 
 interface Props {
@@ -31,15 +31,18 @@ export const MercadoPagoButton: FC<Props> = ({ product }) => {
   return (
     <>
       {query.isLoading && (
-        <div className='flex justify-center'>
-          <Loader />
+        <div className="flex justify-center">
+          <BaseLoading />
         </div>
       )}
 
       {query?.data?.response?.id && (
         <Wallet
-          initialization={{ preferenceId: query.data.response.id, redirectMode: 'modal' }}
-          locale='es-AR'
+          initialization={{
+            preferenceId: query.data.response.id,
+            redirectMode: 'modal',
+          }}
+          locale="es-AR"
         />
       )}
     </>

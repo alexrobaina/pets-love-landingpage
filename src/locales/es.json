@@ -1,138 +1,138 @@
 {
-    "navbar": {
-        "login": "Iniciar sesión",
-        "appName": "Amor de Mascotas",
-        "github": "Github",
-        "collaborators": "¿Cómo colaborar?",
-        "prototype": "Prototipo",
-        "donate": "Donar"
+  "navbar": {
+    "login": "Iniciar sesión",
+    "appName": "Pet's Love",
+    "github": "Github",
+    "collaborators": "¿Cómo colaborar?",
+    "prototype": "Prototipo",
+    "donate": "Donar"
+  },
+  "hero": {
+    "title": "¡Bienvenidos a Pet's Love! Donde cada pata, pluma y aleta encuentra un hogar lleno de amor.",
+    "description": "No solo encontramos hogares, estamos creando familias eternas mediante adopciones responsables. Únete a nuestra comunidad compasiva y hagamos una diferencia transformadora en la vida de las mascotas necesitadas. Juntos, ¡llenaremos los hogares de amor y alegría sin límites! ❤️",
+    "donationButton": "DONACIONES"
+  },
+  "sponsors": {
+    "sponsorsTitle": "Nuestros patrocinadores"
+  },
+  "features": {
+    "featuresMainTitle": "Acerca de Pet's Love",
+    "featuresTitle1": "Magia de Código Abierto ✨",
+    "featuresDescription1": "¡Nuestra aplicación es un esfuerzo comunitario, impulsado por código abierto! Esto significa que desarrolladores de todo el mundo pueden contribuir con sus talentos para refinar y personalizar la plataforma, satisfaciendo las necesidades únicas de refugios, veterinarios y adoptantes por igual.",
+    "featuresTitle2": "Escanea y Conecta Código QR",
+    "featuresDescription2": "Crea códigos QR únicos para cada perfil de mascota, llenos de detalles médicos precisos y fotos adorables. Nuestra función garantiza no solo la salud sino también un sentido de seguridad. ¡Conoce a tu futuro compañero peludo en un instante y da inicio a un vínculo que durará toda la vida!",
+    "featuresTitle3": "Adopta con Confianza 💕",
+    "featuresDescription3": "Nos enfocamos en adopciones responsables. Nuestra plataforma ofrece perfiles detallados de mascotas y permite a los refugios seguir la pista incluso después de que lleves a tu nuevo amigo a casa. De esta manera, nos aseguramos de que cada mascota encuentre no solo una casa, sino un hogar eterno lleno de amor.",
+    "featuresTitle4": "Colaboración por Patas y Bigotes 🐕🐈",
+    "featuresDescription4": "¡Creemos firmemente en el trabajo en equipo! Nuestra plataforma fomenta la colaboración entre refugios, veterinarios, voluntarios y futuros padres de mascotas. Juntos, construimos una red de apoyo para el bienestar animal, mejorada con actualizaciones en tiempo real y comunicación abierta.",
+    "featuresTitle5": "Confianza Potenciada por Blockchain 📜🔗",
+    "featuresDescription5": "Elimina las conjeturas de la documentación de adopción de mascotas. Nuestra plataforma se integra con tecnología de blockchain y contratos inteligentes para generar automáticamente documentos legales de adopción. En el momento en que un refugio te asigna una mascota, se crea un registro seguro y a prueba de manipulaciones, añadiendo una capa extra de confianza y transparencia al proceso de adopción.",
+    "featuresTitle6": "Empoderando a los Refugios 🏠",
+    "featuresDescription6": "Nuestra aplicación dota a los refugios con herramientas robustas para agilizar la gestión de mascotas, evaluar cuidadosamente a los posibles adoptantes y mantener los más altos estándares para la adopción responsable. No se trata solo de encontrar hogares; se trata de asegurar que esos hogares estén eternamente llenos de amor."
+  },
+  "prototype": {
+    "prototypeTitle": "Prueba nuestro prototipo Hoy! 🐾🚀",
+    "prototypeDescription": "Descubre lo que hace revolucionario a Amor de Mascotas explorando nuestro prototipo. Tu participación temprana puede dar forma al futuro de la adopción de mascotas, haciéndola aún más significativa y llena de amor. ¡No te lo pierdas—Haz Clic para Explorar el Prototipo Ahora!",
+    "prototypeButtonName": "Ver prototipo"
+  },
+  "joinUp": {
+    "joinUpTitle": "🌟¡Sé un Héroe para Patas y Bigotes, Apoya a Amor de Mascotas! 🌟",
+    "joinUpDescription1": "Cada centavo cuenta y prometemos total transparencia en cómo se usan tus donaciones. Tu generoso apoyo nos permite colaborar con expertos y mejorar nuestra plataforma, marcando una gran diferencia para las mascotas necesitadas. ¡Construyamos un futuro más brillante para nuestros amigos peludos—¡Dona Ahora!"
+  },
+  "donationCard": {
+    "openseaCollection": "Colección Opensea",
+    "whatsincluded": "Qué está incluido",
+    "total": "Total",
+    "titleAction": "Ayúdanos a crecer",
+    "email": "Correo electrónico",
+    "or": "o",
+    "donationMecadoPagoButton": "Donar con Mercado Pago",
+    "donate": "Donar",
+    "emailError": "Por favor, introduce una dirección de correo electrónico válida",
+    "titleModal": "¡Muchas gracias por ser parte de nuestro equipo!",
+    "donationCard1": {
+      "title": "Muchas gracias",
+      "description1": "Desde lo más profundo de nuestros corazones y la punta de nuestras colas, GRACIAS por ser un increíble Sostenedor de Refugios y Aliado de Adoptantes. Tu generosidad no solo cambia números; cambia vidas—¡Tanto peludas como humanas! Tu contribución llena nuestra misión de amor y hace posible cada movimiento de cola, ronroneo y pio pio. Gracias por ser parte de este maravilloso viaje hacia un mundo lleno de más colas en movimiento y hogares amorosos.",
+      "description2": "❤️ ¡Gracias por tu compromiso! ❤️",
+      "reward1": "Recibirás un boletín mensual exclusivo donde te mantendremos al día con el progreso, noticias y logros de nuestra aplicación.",
+      "reward2": ""
     },
-    "hero": {
-        "title": "¡Bienvenidos a Amor de Mascotas! Donde cada pata, pluma y aleta encuentra un hogar lleno de amor.",
-        "description": "No solo encontramos hogares, estamos creando familias eternas mediante adopciones responsables. Únete a nuestra comunidad compasiva y hagamos una diferencia transformadora en la vida de las mascotas necesitadas. Juntos, ¡llenaremos los hogares de amor y alegría sin límites! ❤️",
-        "donationButton": "DONACIONES"
+    "donationCard2": {
+      "title": "Atención Veterinaria que Desesperadamente Necesitan",
+      "description1": "Cada año, millones de mascotas no reciben la atención veterinaria necesaria debido a limitaciones económicas. Un problema simple como una pata rota o una afección cutánea puede convertirse en una situación potencialmente mortal si no se trata a tiempo. Cada mascota merece recibir la atención médica que necesita, independientemente de la situación financiera de su dueño.",
+      "description2": "❤️ ¡Gracias por tu compromiso! ❤️",
+      "reward1": "Elegiremos minuciosamente los casos que requieren atención veterinaria urgente y colaboraremos con veterinarios y clínicas para garantizar tratamientos óptimos. Mantendremos una comunicación abierta sobre cómo tu donación está beneficiando a los animales."
     },
-    "sponsors": {
-        "sponsorsTitle": "Nuestros patrocinadores"
+    "donationCard3": {
+      "title": "🍲 Dona 20kg de Comida 🍲",
+      "description1": "Dona 20kg de comida a los refugios de Pet's Love y marca la diferencia en la vida de las mascotas necesitadas. Tu amor y cuidado se reflejan en cada grano. Únete a llenar corazones peludos de alegría y gratitud. 🐾❤️🍲",
+      "description2": "❤️ ¡Dona hoy y alimentemos el amor! ❤️",
+      "reward1": "Llevaremos 20 kilos de comida premium a refugios cercanos.",
+      "reward2": "Recibirás un boletín mensual exclusivo donde te mantendremos al día con el progreso, noticias y logros de nuestra aplicación.",
+      "reward3": ""
     },
-    "features": {
-        "featuresMainTitle": "Acerca de Amor de Mascotas",
-        "featuresTitle1": "Magia de Código Abierto ✨",
-        "featuresDescription1": "¡Nuestra aplicación es un esfuerzo comunitario, impulsado por código abierto! Esto significa que desarrolladores de todo el mundo pueden contribuir con sus talentos para refinar y personalizar la plataforma, satisfaciendo las necesidades únicas de refugios, veterinarios y adoptantes por igual.",
-        "featuresTitle2": "Escanea y Conecta Código QR",
-        "featuresDescription2": "Crea códigos QR únicos para cada perfil de mascota, llenos de detalles médicos precisos y fotos adorables. Nuestra función garantiza no solo la salud sino también un sentido de seguridad. ¡Conoce a tu futuro peludo en un instante y da inicio a un vínculo que durará toda la vida!",
-        "featuresTitle3": "Adopta con Confianza 💕",
-        "featuresDescription3": "Nos enfocamos en adopciones responsables. Nuestra plataforma ofrece perfiles detallados de mascotas y permite a los refugios seguir la pista incluso después de que lleves a tu nuevo amigo a casa. De esta manera, nos aseguramos de que cada mascota encuentre no solo una casa, sino un hogar eterno lleno de amor.",
-        "featuresTitle4": "Colaboración por Patas y Bigotes 🐕🐈",
-        "featuresDescription4": "¡Creemos firmemente en el trabajo en equipo! Nuestra plataforma fomenta la colaboración sin fisuras entre refugios, veterinarios, voluntarios y futuros padres de mascotas. Juntos, construimos una red de apoyo para el bienestar animal, mejorada con actualizaciones en tiempo real y comunicación abierta.",
-        "featuresTitle5": "Confianza Potenciada por Blockchain 📜🔗",
-        "featuresDescription5": "Elimina las conjeturas de la documentación de adopción de mascotas. Nuestra plataforma se integra con tecnología de blockchain y contratos inteligentes para generar automáticamente documentos legales de adopción. En el momento en que un refugio te asigna una mascota, se crea un registro seguro y a prueba de manipulaciones, añadiendo una capa extra de confianza y transparencia al proceso de adopción.",
-        "featuresTitle6": "Empoderando a los Refugios 🏠",
-        "featuresDescription6": "Nuestra aplicación dota a los refugios con herramientas robustas para agilizar la gestión de mascotas, evaluar cuidadosamente a los posibles adoptantes y mantener los más altos estándares para la adopción responsable. No se trata solo de encontrar hogares; se trata de asegurar que esos hogares estén eternamente llenos de amor."
-    },
-    "prototype": {
-        "prototypeTitle": "¡Sé Parte del Futuro en la Adopción de Mascotas—¡Ve Nuestro Prototipo Hoy! 🐾🚀",
-        "prototypeDescription": "Descubre lo que hace revolucionario a Amor de Mascotas explorando nuestro prototipo. Tu participación temprana puede dar forma al futuro de la adopción de mascotas, haciéndola aún más significativa y llena de amor. ¡No te lo pierdas—Haz Clic para Explorar el Prototipo Ahora!",
-        "prototypeButtonName": "Ver prototipo"
-    },
-    "joinUp": {
-        "joinUpTitle": "🌟¡Sé un Héroe para Patas y Bigotes, Apoya a Amor de Mascotas! 🌟",
-        "joinUpDescription1": "Cada centavo cuenta y prometemos total transparencia en cómo se usan tus donaciones. Tu generoso apoyo nos permite colaborar con expertos y mejorar nuestra plataforma, marcando una gran diferencia para las mascotas necesitadas. ¡Construyamos un futuro más brillante para nuestros amigos peludos—¡Dona Ahora!"
-    },
-    "donationCard": {
-        "openseaCollection": "Colección Opensea",
-        "whatsincluded": "Qué está incluido",
-        "total": "Total",
-        "titleAction": "Ayúdanos a crecer",
-        "email": "Correo electrónico",
-        "or": "o",
-        "donationMecadoPagoButton": "Donar con Mercado Pago",
-        "donate": "Donar",
-        "emailError": "Por favor, introduce una dirección de correo electrónico válida",
-        "titleModal": "¡Muchas gracias por ser parte de nuestro equipo!",
-        "donationCard1": {
-            "title": "Muchas gracias",
-            "description1": "Desde lo más profundo de nuestros corazones y la punta de nuestras colas, GRACIAS por ser un increíble Sostenedor de Refugios y Aliado de Adoptantes. Tu generosidad no solo cambia números; cambia vidas—¡tanto peludas como humanas! Tu contribución llena nuestra misión de amor y hace posible cada movimiento de cola, ronroneo y gorjeo. Gracias por ser parte de este maravilloso viaje hacia un mundo lleno de más colas en movimiento y hogares amorosos.",
-            "description2": "❤️ ¡Gracias por tu compromiso! ❤️",
-            "reward1": "Recibirás un boletín mensual exclusivo donde te mantendremos al día con el progreso, noticias y logros de nuestra aplicación.",
-            "reward2": ""
-        },
-        "donationCard2": {
-            "title": "Atención Veterinaria que Desesperadamente Necesitan",
-            "description1": "Cada año, millones de mascotas no reciben la atención veterinaria necesaria debido a limitaciones económicas. Un problema simple como una pata rota o una afección cutánea puede convertirse en una situación potencialmente mortal si no se trata a tiempo. En Heal Paws, creemos que cada mascota merece recibir la atención médica que necesita, independientemente de la situación financiera de su dueño.",
-            "description2": "❤️ ¡Gracias por tu compromiso! ❤️",
-            "reward1": "Elegiremos minuciosamente los casos que requieren atención veterinaria urgente y colaboraremos con veterinarios y clínicas para garantizar tratamientos óptimos. Mantendremos una comunicación abierta sobre cómo tu donación está beneficiando a los animales."
-        },
-        "donationCard3": {
-            "title": "🍲 Dona 20kg de Comida 🍲",
-            "description1": "Dona 20kg de comida a los refugios de Amor de Mascotas y marca la diferencia en la vida de las mascotas necesitadas. Tu amor y cuidado se reflejan en cada grano. Únete a llenar corazones peludos de alegría y gratitud. 🐾❤️🍲",
-            "description2": "❤️ ¡Dona hoy y alimentemos el amor! ❤️",
-            "reward1": "Llevaremos 20 kilos de comida premium a refugios cercanos.",
-            "reward2": "Recibirás un boletín mensual exclusivo donde te mantendremos al día con el progreso, noticias y logros de nuestra aplicación.",
-            "reward3": ""
-        },
-        "donationCard4": {
-            "title": " 🎨 Compranos un NFT y salva una vida 🏠",
-            "description": "Conviértete en un Mantenedor del Refugio y Aliado Adoptante al comprar un NFT exclusivo con temática animal. Tu token digital único contribuye directamente al desarrollo de nuestra aplicación para refugios y al bienestar de las mascotas que esperan ser adoptadas.",
-            "reward1": "Llevaremos 20 kilos de comida premium a refugios cercanos.",
-            "reward2": "Recibirás un boletín mensual exclusivo donde te mantendremos al día con el progreso, noticias y logros de nuestra aplicación."
-        }
-    },
-    "shelter": {
-        "shelterTitle": "Refugios",
-        "shelterSubtitle1": "El Pulso de Nuestra Comunidad Peluda 🏠",
-        "shelterDescription1": "Los refugios verdaderamente son el corazón palpitante de nuestra amorosa comunidad. Al colaborar con estos santuarios de cuidado y compasión, ayudamos a conectar mascotas merecedoras con hogares para siempre. Piensa en los refugios como los guardianes cariñosos que brindan segundas oportunidades y amor infinito a nuestros amigos peludos. Tu apoyo es el ingrediente mágico que teje juntas felices 'historias de colas' en Amor de Mascotas! 💙",
-        "shelterSubtitle2": "Eleva Tu Refugio con Amor de Mascotas 🏠🐾",
-        "shelterDescription2": "Amor de Mascotas sirve como un invaluable conjunto de herramientas para los refugios de animales. Con nosotros, centralizar historias médicas y rasgos de comportamiento se convierte en un paseo, allanando el camino para perfiles de mascotas atractivos. Veterinarios, futuros padres de mascotas y voluntarios pueden acceder fácilmente a detalles cruciales, asegurando que el bienestar de cada animal esté al frente y en el centro. En resumen, Amor de Mascotas mejora la gestión de refugios, defiende adopciones responsables y garantiza alegría para cada pata y garra bajo tu cuidado. 💙🐕🐈"
-    },
-    "adopt": {
-        "adoptTitle": "Adoptar",
-        "adoptDescription1": "Adoptar de Amor de Mascotas no es solo ganar una mascota, es recibir un nuevo miembro de la familia para las aventuras y mimos de la vida. Juntos, hagamos recuerdos pata-sitivamente inolvidables. ¡Bienvenido a nuestra familia de Amor de Mascotas! ❤️🏠",
-        "adoptSubtitle2": "Mantente Conectado con Códigos QR para Mascotas 📲🐶",
-        "adoptDescription2": "Cada mascota obtiene su propio código QR, que actúa como una correa digital. Si tu amigo peludo se extravía, este código ayuda a cualquier buen samaritano a ponerse en contacto contigo rápidamente. Mantente conectado y mantén a tu mascota segura con la tecnología de vanguardia de Amor de Mascotas. 🐾🔗",
-        "adoptSubtitle3": "Registros de Salud: El Pasaporte al Bienestar de Tu Mascota 📋💕",
-        "adoptDescription3": "Piensa en la historia médica de tu mascota como una carta de amor a su bienestar. Te ayuda a entender sus necesidades únicas y ofrecer el cuidado que merecen. Con Amor de Mascotas, los registros médicos completos son la piedra angular de relaciones duraderas y amorosas."
-    },
-    "veterinary": {
-        "veterinaryTitle": "Veterinarios",
-        "veterinarySubtitle1": "Campeones del Bienestar Animal 🏥🐾",
-        "veterinaryDescription1": "En Amor de Mascotas, celebramos tu papel vital en la salud de los animales. Nuestra plataforma simplifica tus interacciones con los refugios y adoptantes, haciendo que cada visita sea tan informada como eficiente. Unámonos para dar a cada amigo peludo el amor y cuidado que merecen. 💙🐕🐈",
-        "veterinarySubtitle2": "Registros Médicos: El Plano del Cuidado 📋💕",
-        "veterinaryDescription2": "Accede a historias médicas completas justo al alcance de tu mano, cubriendo todo desde vacunaciones hasta tratamientos pasados. Estos datos exhaustivos informan tus decisiones y aseguran los mejores resultados para tus pacientes peludos. 🏥📝",
-        "veterinarySubtitle3": "Colabora para el Bienestar Animal 🤝🌟",
-        "veterinaryDescription3": "Amor de Mascotas fomenta un ecosistema colaborativo que involucra veterinarios, refugios y adoptantes. Tu experiencia es invaluable en esta ecuación, contribuyendo a un viaje de salud y felicidad para las mascotas durante toda su vida. 🐾🌟."
-    },
-    "voluntaries": {
-        "voluntariesTitle": "Voluntarios",
-        "voluntariesSubtitle1": "Pasión Encuentra Propósito 🤝",
-        "voluntariesDescription1": "Estás en el corazón del mundo amante de las mascotas. Amor de Mascotas conecta tu dedicación con los refugios y veterinarios, allanando el camino para las transiciones de mascotas e intercambio de información. Tus esfuerzos compasivos tienen un impacto pata-sitivo y meneador de colas en la vida de cada animal. 💙🐕🐈",
-        "voluntariesSubtitle2": "Gestiona con Corazón 🐶🐱🏠",
-        "voluntariesDescription2": "Actualiza fácilmente la información para las mascotas que has cuidado amorosamente. Los refugios y veterinarios incluso pueden otorgarte permiso para agregar detalles vitales. Tu compromiso ilumina el futuro de cada compañero peludo. 🏠🌟"
-    },
-    "collaborate": {
-        "collaborateTitle": "Únete a Codificar por una Causa 🤝💻",
-        "gitHubCollaborators": "Colaboradores de GitHub",
-        "collaborateDescription1": "Desata tus habilidades de codificación en nuestra plataforma de código abierto, diseñada para unir los mundos de la tecnología y el bienestar animal. Integra perfectamente con Jira y otras herramientas de software para potenciar nuestra misión. No es solo código; es una comunidad unida para hacer del mundo un lugar mejor para nuestros amigos peludos.",
-        "collaborateDescription2": "Crea Soluciones Ágiles e Impactantes 🚀🌟 Deja atrás la burocracia de la gestión tradicional de servicios de TI y acelera el desarrollo en un entorno que celebra la innovación. Ayúdanos a optimizar las operaciones, mejorar las experiencias de los usuarios y responder rápidamente a las necesidades siempre cambiantes de las mascotas y las personas que las aman. ¡Con tu ayuda, implementaremos cambios que harán que las colas se meneen en todo el mundo! 🌍🐕🐈"
-    },
-    "succesDonation": {
-        "collaborateButton": "Donar",
-        "title": "¡Muchas gracias por colaborar con nuestro equipo!",
-        "description": "Apreciamos tu invaluable apoyo en Amor de Mascotas. Recibirás nuestro boletín mensual exclusivo, manteniéndote al tanto del progreso, noticias y logros. Juntos, creamos un impacto positivo en el mundo de las mascotas.🐾🌟",
-        "backToHome": "Volver a inicio"
-    },
-    "errorDonation": {
-        "title": "¡Muchas gracias por colaborar con nuestro equipo!",
-        "description": "Por favor, inténtalo de nuevo más tarde. algo salió mal.",
-        "backToHome": "Volver a inicio"
-    },
-    "footer": {
-        "privacy": "Política de Privacidad",
-        "terms": "Términos y Condiciones",
-        "rights": "Todos los derechos reservados.",
-        "followUs": "Síguenos"
-    },
-    "terms&conditions": {
-        "backToHome": "Volver a inicio"
+    "donationCard4": {
+      "title": " 🎨 Compranos un NFT y salva una vida 🏠",
+      "description": "Conviértete en un Mantenedor del Refugio y Aliado Adoptante al comprar un NFT exclusivo con temática animal. Tu token digital único contribuye directamente al desarrollo de nuestra aplicación para refugios y al bienestar de las mascotas que esperan ser adoptadas.",
+      "reward1": "Llevaremos 20 kilos de comida premium a refugios cercanos.",
+      "reward2": "Recibirás un boletín mensual exclusivo donde te mantendremos al día con el progreso, noticias y logros de nuestra aplicación."
     }
+  },
+  "shelter": {
+    "shelterTitle": "Refugios",
+    "shelterSubtitle1": "El Pulso de Nuestra Comunidad Peluda 🏠",
+    "shelterDescription1": "Los refugios verdaderamente son el corazón palpitante de nuestra amorosa comunidad. Al colaborar con estos santuarios de cuidado y compasión, ayudamos a conectar mascotas merecedoras con hogares para siempre. Piensa en los refugios como los guardianes cariñosos que brindan segundas oportunidades y amor infinito a nuestros amigos peludos. Tu apoyo es el ingrediente mágico que teje juntas felices 'historias de colas' en Amor de Mascotas! 💙",
+    "shelterSubtitle2": "Eleva Tu Refugio con Amor de Mascotas 🏠🐾",
+    "shelterDescription2": "Amor de Mascotas sirve como un invaluable conjunto de herramientas para los refugios de animales. Con nosotros, centralizar historias médicas y rasgos de comportamiento se convierte en un paseo, allanando el camino para perfiles de mascotas atractivos. Veterinarios, futuros padres de mascotas y voluntarios pueden acceder fácilmente a detalles cruciales, asegurando que el bienestar de cada animal esté al frente y en el centro. En resumen, Amor de Mascotas mejora la gestión de refugios, defiende adopciones responsables y garantiza alegría para cada pata y garra bajo tu cuidado. 💙🐕🐈"
+  },
+  "adopt": {
+    "adoptTitle": "Adoptar",
+    "adoptDescription1": "Adoptar de Amor de Mascotas no es solo ganar una mascota, es recibir un nuevo miembro de la familia para las aventuras y mimos de la vida. Juntos, hagamos recuerdos pata-sitivamente inolvidables. ¡Bienvenido a nuestra familia de Amor de Mascotas! ❤️🏠",
+    "adoptSubtitle2": "Mantente Conectado con Códigos QR para Mascotas 📲🐶",
+    "adoptDescription2": "Cada mascota obtiene su propio código QR, que actúa como una correa digital. Si tu amigo peludo se extravía, este código ayuda a cualquier buen samaritano a ponerse en contacto contigo rápidamente. Mantente conectado y mantén a tu mascota segura con la tecnología de vanguardia de Amor de Mascotas. 🐾🔗",
+    "adoptSubtitle3": "Registros de Salud: El Pasaporte al Bienestar de Tu Mascota 📋💕",
+    "adoptDescription3": "Piensa en la historia médica de tu mascota como una carta de amor a su bienestar. Te ayuda a entender sus necesidades únicas y ofrecer el cuidado que merecen. Con Amor de Mascotas, los registros médicos completos son la piedra angular de relaciones duraderas y amorosas."
+  },
+  "veterinary": {
+    "veterinaryTitle": "Veterinarios",
+    "veterinarySubtitle1": "Campeones del Bienestar Animal 🏥🐾",
+    "veterinaryDescription1": "En Amor de Mascotas, celebramos tu papel vital en la salud de los animales. Nuestra plataforma simplifica tus interacciones con los refugios y adoptantes, haciendo que cada visita sea tan informada como eficiente. Unámonos para dar a cada amigo peludo el amor y cuidado que merecen. 💙🐕🐈",
+    "veterinarySubtitle2": "Registros Médicos: El Plano del Cuidado 📋💕",
+    "veterinaryDescription2": "Accede a historias médicas completas justo al alcance de tu mano, cubriendo todo desde vacunaciones hasta tratamientos pasados. Estos datos exhaustivos informan tus decisiones y aseguran los mejores resultados para tus pacientes peludos. 🏥📝",
+    "veterinarySubtitle3": "Colabora para el Bienestar Animal 🤝🌟",
+    "veterinaryDescription3": "Amor de Mascotas fomenta un ecosistema colaborativo que involucra veterinarios, refugios y adoptantes. Tu experiencia es invaluable en esta ecuación, contribuyendo a un viaje de salud y felicidad para las mascotas durante toda su vida. 🐾🌟."
+  },
+  "voluntaries": {
+    "voluntariesTitle": "Voluntarios",
+    "voluntariesSubtitle1": "Pasión Encuentra Propósito 🤝",
+    "voluntariesDescription1": "Estás en el corazón del mundo amante de las mascotas. Amor de Mascotas conecta tu dedicación con los refugios y veterinarios, allanando el camino para las transiciones de mascotas e intercambio de información. Tus esfuerzos compasivos tienen un impacto pata-sitivo y meneador de colas en la vida de cada animal. 💙🐕🐈",
+    "voluntariesSubtitle2": "Gestiona con Corazón 🐶🐱🏠",
+    "voluntariesDescription2": "Actualiza fácilmente la información para las mascotas que has cuidado amorosamente. Los refugios y veterinarios incluso pueden otorgarte permiso para agregar detalles vitales. Tu compromiso ilumina el futuro de cada compañero peludo. 🏠🌟"
+  },
+  "collaborate": {
+    "collaborateTitle": "Únete a programar por una causa 🤝💻",
+    "gitHubCollaborators": "Colaboradores de GitHub",
+    "collaborateDescription1": "Desata tus habilidades de programación en nuestra plataforma de código abierto, diseñada para unir los mundos de la tecnología y el bienestar animal. Integra perfectamente con Jira y otras herramientas de software para potenciar nuestra misión. No es solo código; es una comunidad unida para hacer del mundo un lugar mejor para nuestros amigos peludos.",
+    "collaborateDescription2": "Crea Soluciones Ágiles e Impactantes 🚀🌟 Deja atrás la burocracia de la gestión tradicional de servicios de TI y acelera el desarrollo en un entorno que celebra la innovación. Ayúdanos a optimizar las operaciones, mejorar las experiencias de los usuarios y responder rápidamente a las necesidades siempre cambiantes de las mascotas y las personas que las aman. ¡Con tu ayuda, implementaremos cambios que harán que las colas se meneen en todo el mundo! 🌍🐕🐈"
+  },
+  "succesDonation": {
+    "collaborateButton": "Donar",
+    "title": "¡Muchas gracias por colaborar con nuestro equipo!",
+    "description": "Apreciamos tu invaluable apoyo en Amor de Mascotas. Recibirás nuestro boletín mensual exclusivo, manteniéndote al tanto del progreso, noticias y logros. Juntos, creamos un impacto positivo en el mundo de las mascotas.🐾🌟",
+    "backToHome": "Volver a inicio"
+  },
+  "errorDonation": {
+    "title": "¡Muchas gracias por colaborar con nuestro equipo!",
+    "description": "Por favor, inténtalo de nuevo más tarde. algo salió mal.",
+    "backToHome": "Volver a inicio"
+  },
+  "footer": {
+    "privacy": "Política de Privacidad",
+    "terms": "Términos y Condiciones",
+    "rights": "Todos los derechos reservados.",
+    "followUs": "Síguenos"
+  },
+  "terms&conditions": {
+    "backToHome": "Volver a inicio"
+  }
 }

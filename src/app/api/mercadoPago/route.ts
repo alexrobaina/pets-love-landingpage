@@ -1,4 +1,3 @@
-import prisma from '@/prisma/prisma'
 import mercadopago from 'mercadopago'
 import { CreatePreferencePayload } from 'mercadopago/models/preferences/create-payload.model'
 import { NextApiResponse } from 'next'
