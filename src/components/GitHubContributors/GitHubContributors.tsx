@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-import { Loader } from '../Loader/Loader'
+import { BaseLoading } from '../Loader/Loader'
 import { useTranslations } from 'next-intl'
 
 type Contributors = {
@@ -16,7 +16,9 @@ const GitHubContributors = () => {
 
   const fetchData = async () => {
     try {
-      const { data } = await axios.get<Contributors[]>('/api/githubContributors')
+      const { data } = await axios.get<Contributors[]>(
+        '/api/githubContributors',
+      )
       setContributors(data)
       setLoading(false)
     } catch (error) {
@@ -30,51 +32,51 @@ const GitHubContributors = () => {
 
   if (loading) {
     return (
-      <div className='h-60'>
-        <Loader />
+      <div className="h-60">
+        <BaseLoading />
       </div>
     )
   }
 
   return (
-    <div className='mb-40'>
-      <h1 className='text-3xl font-semibold mb-4 text-primary-950'>
+    <div className="mb-40">
+      <h1 className="text-3xl font-semibold mb-4 text-primary-950">
         {t('gitHubCollaborators')}
       </h1>
-      <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {contributors.map((contributor, index) => (
           <a
             key={index}
             href={contributor.html_url}
-            target='_blank'
-            rel='noreferrer'
-            className='border flex justify-between items-center p-2 ring-[0.9px] ring-primary-400 rounded-lg'
+            target="_blank"
+            rel="noreferrer"
+            className="border flex justify-between items-center p-2 ring-[0.9px] ring-primary-400 rounded-lg"
           >
-            <div className='flex items-center gap-1 space-x-4'>
+            <div className="flex items-center gap-1 space-x-4">
               <img
                 src={contributor.avatar_url}
-                className='w-10 h-10 rounded-full'
+                className="w-10 h-10 rounded-full"
                 alt={'avatar of ' + contributor.login}
               />
-              <span className='text-lg text-primary-950 font-medium'>
+              <span className="text-lg text-primary-950 font-medium">
                 {contributor.login}
               </span>
             </div>
             <svg
-              className='stroke-current text-primary-400'
-              width='22'
-              height='22'
-              viewBox='0 0 24 24'
-              strokeWidth='1.5'
-              stroke='#2c3e50'
-              fill='none'
-              strokeLinejoin='round'
-              strokeLinecap='round'
+              className="stroke-current text-primary-400"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="#2c3e50"
+              fill="none"
+              strokeLinejoin="round"
+              strokeLinecap="round"
             >
-              <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-              <path d='M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6' />
-              <path d='M11 13l9 -9' />
-              <path d='M15 4h5v5' />
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+              <path d="M11 13l9 -9" />
+              <path d="M15 4h5v5" />
             </svg>
           </a>
         ))}

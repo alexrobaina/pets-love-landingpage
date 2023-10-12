@@ -57,11 +57,11 @@ const Donation = () => {
     <>
       <section>
         {isLoading && (
-          <div className='w-flull flex justify-center py-32'>
+          <div className="w-flull flex justify-center py-32">
             <Loader />
           </div>
         )}
-        <div className='flex lg:flex-row flex-col gap-2 py-8'>
+        <div className="flex lg:flex-row flex-col gap-2 py-8">
           {data?.data &&
             data?.data.map((product: any) => (
               <DonationCard

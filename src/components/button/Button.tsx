@@ -52,7 +52,7 @@ const Button: FC<Props> = ({
       } py-2 px-4 rounded ${buttonClasses} flex gap-3 items-center justify-center`}
     >
       {isLoading && <Loader />}
-      {icon && <Image src={icon} width={30} alt='icon-button' />}
+      {icon && <Image src={icon} width={30} alt="icon-button" />}
       {text && text}
     </button>
   )

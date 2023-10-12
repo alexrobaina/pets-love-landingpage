@@ -2,7 +2,7 @@ import axios from 'axios';
 import { NextApiResponse } from 'next'
 import { NextRequest, NextResponse } from 'next/server'
 
-export async function GET(req: NextRequest, res: NextApiResponse) {
+export async function GET(_req: NextRequest, _res: NextApiResponse) {
   try {
       const { data } = await axios.get(
         'https://api.github.com/repos/alexrobaina/frontend_petsLove/contributors',

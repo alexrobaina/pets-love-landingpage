@@ -1,12 +1,12 @@
-import prisma from '@/prisma/prisma'
+import axios from 'axios';
 import { NextApiResponse } from 'next'
 import { NextRequest, NextResponse } from 'next/server'
 
-export async function GET(req: NextRequest, res: NextApiResponse) {
+export async function GET(_req: NextRequest, _res: NextApiResponse) {
   try {
-  const product = await prisma.product.findMany({})
+  const {data} = await axios.get(`${process.env.API}/api/v1/products/`)
 
-    return new NextResponse(JSON.stringify(product), {
+    return new NextResponse(JSON.stringify(data.product), {
       status: 200,
       headers: {
         'Content-Type': 'application/json',
