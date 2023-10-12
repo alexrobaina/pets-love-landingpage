@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-import { BaseLoading } from '../Loader/Loader'
+import { Loader } from '../Loader/Loader'
 import { useTranslations } from 'next-intl'
 
 type Contributors = {
@@ -16,9 +16,7 @@ const GitHubContributors = () => {
 
   const fetchData = async () => {
     try {
-      const { data } = await axios.get<Contributors[]>(
-        '/api/githubContributors',
-      )
+      const { data } = await axios.get<Contributors[]>('/api/githubContributors')
       setContributors(data)
       setLoading(false)
     } catch (error) {
@@ -33,7 +31,7 @@ const GitHubContributors = () => {
   if (loading) {
     return (
       <div className="h-60">
-        <BaseLoading />
+        <Loader />
       </div>
     )
   }
