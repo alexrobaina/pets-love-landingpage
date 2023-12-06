@@ -1,12 +1,12 @@
 import { FC } from 'react'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import View from '@/components/useView/useInView'
 
 interface Props {
   content: any
-  img: string
   order: boolean
   flip?: boolean
+  img: StaticImageData
 }
 
 const FeatureSections: FC<Props> = ({ flip, content, img, order }) => {
@@ -14,8 +14,8 @@ const FeatureSections: FC<Props> = ({ flip, content, img, order }) => {
     <article
       className={
         order
-          ? ' flex flex-col md:flex-row-reverse mr-auto items-center py-8 mx-auto'
-          : ' flex flex-col md:flex-row mr-auto justify-center items-center py-8 mx-auto '
+          ? ' flex flex-col md:flex-row-reverse mr-auto items-center py-8 mx-auto gap-5'
+          : ' flex flex-col md:flex-row mr-auto justify-center items-center py-8 mx-auto gap-5'
       }
     >
       <View>

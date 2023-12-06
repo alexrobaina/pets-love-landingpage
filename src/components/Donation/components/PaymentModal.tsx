@@ -46,24 +46,23 @@ export const PaymentModal: FC<Props> = ({
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
   }
-  console.log(price)
 
   return (
     <ReactModal
-      height='auto'
+      height="auto"
       title={title}
       buttonClose
       isOpen={isOpenDonationModal}
       closeModal={() => handleOpenDonationModal()}
     >
-      <div className='flex justify-between flex-col w-full mt-5'>
-        <div className='xs:flex-row flex xs:gap-12 flex-col'>
+      <div className="flex justify-between flex-col w-full mt-5">
+        <div className="xs:flex-row flex xs:gap-12 flex-col">
           {image && (
-            <div className='w-full flex justify-start'>
+            <div className="w-full flex justify-start">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={image}
-                alt='cardImage'
+                alt="cardImage"
                 className={`rounded-3xl border-primary-100 w-[200px] md:mt-0 ${
                   isScreenSmall ? 'w-auto' : 'w-[200px]'
                 }`}
@@ -71,14 +70,14 @@ export const PaymentModal: FC<Props> = ({
             </div>
           )}
         </div>
-        <p className='text-primary-900 mb-2 text-md py-4 hidden md:flex'>{description}</p>
+        <p className="text-primary-900 mb-2 text-md py-4 hidden md:flex">{description}</p>
         {checkLocation() === 'AR' && (
           <>
-            <div className='flex justify-between mt-4'>
-              <h2 className='flex justify-end text-primary-950 lg:mb-2 marker: text-xl font-medium'>
+            <div className="flex justify-between mt-4">
+              <h2 className="flex justify-end text-primary-950 lg:mb-2 marker: text-xl font-medium">
                 Argentina
               </h2>
-              <h2 className='flex justify-end text-primary-950 lg:mb-2 marker: text-xl font-medium'>{`Total: ${price} ${currency}`}</h2>
+              <h2 className="flex justify-end text-primary-950 lg:mb-2 marker: text-xl font-medium">{`Total: ${price} ${currency}`}</h2>
             </div>
             <MercadoPagoButton
               product={{
@@ -94,20 +93,20 @@ export const PaymentModal: FC<Props> = ({
         )}
         {checkLocation() !== 'AR' && (
           <>
-            <hr className='my-8 h-[0.3px] border-t-0 bg-gray-400 opacity-100 dark:opacity-50' />
-            <label className='flex justify-end text-primary-950 lg:mb-2 marker: text-xl font-medium'>
+            <hr className="my-8 h-[0.3px] border-t-0 bg-gray-400 opacity-100 dark:opacity-50" />
+            <label className="flex justify-end text-primary-950 lg:mb-2 marker: text-xl font-medium">
               {t('total')} ${price}
             </label>
-            <div className='min-h-[100px]'>
+            <div className="min-h-[100px]">
               <Link
-                target='_blank'
+                target="_blank"
                 onClick={() => handleOpenDonationModal()}
                 href={`https://paypal.me/petsloveapp/${price}?country.x=AR&locale.x=es_XC`}
-                className='flex bg-[#FCC439] text-white font-bold py-2 px-4 rounded-md w-full justify-center'
+                className="flex bg-[#FCC439] text-white font-bold py-2 px-4 rounded-md w-full justify-center"
               >
-                <div className='flex'>
-                  <p className='text-[#053087]'>Pay</p>
-                  <p className='text-[#269DDE] '>Pal</p>
+                <div className="flex">
+                  <p className="text-[#053087]">Pay</p>
+                  <p className="text-[#269DDE] ">Pal</p>
                 </div>
               </Link>
             </div>

@@ -1,8 +1,9 @@
 import React from 'react'
-import { Refugios, Veterinarios, Adopcion, Voluntarios } from '@/assets/illustrations'
+import { Veterinarios, Adopcion, Voluntarios } from '@/assets/illustrations'
 import FeatureComponent from './FeatureComponent'
 import { useTranslations } from 'next-intl'
 import View from '@/components/useView/useInView'
+import { ManAdopter, Refugy, Vet } from '@/assets/images'
 
 export const FeatureSections = () => {
   const t = useTranslations('shelter')
@@ -13,6 +14,8 @@ export const FeatureSections = () => {
     <section id="features">
       <FeatureComponent
         flip
+        img={Refugy}
+        order={false}
         content={
           <article className="text-primary-950 mt-20">
             <View>
@@ -33,7 +36,6 @@ export const FeatureSections = () => {
                 {t('shelterSubtitle2')}
               </h3>
             </View>
-
             <View>
               <p className="mb-4 max-w-2xl font-light  lg:mb-8 md:text-lg lg:text-xl ">
                 {t('shelterDescription2')}
@@ -41,8 +43,6 @@ export const FeatureSections = () => {
             </View>
           </article>
         }
-        img={Refugios}
-        order={false}
       />
 
       <FeatureComponent
@@ -59,31 +59,16 @@ export const FeatureSections = () => {
               </p>
             </View>
             <View direction={true}>
-              <h3 className="mb-3 lg:mb-5 max-w-2xl text-md font-bold leading-none md:text-xl xl:text-md">
-                {t1('adoptSubtitle2')}
-              </h3>
-            </View>
-            <View direction={true}>
               <p className="mb-4 max-w-2xl font-light  lg:mb-8 md:text-lg lg:text-xl ">
                 {t1('adoptDescription2')}
               </p>
             </View>
-            <View direction={true}>
-              <h3 className="mb-3 lg:mb-5 max-w-2xl text-md font-bold leading-none md:text-xl xl:text-md">
-                {t1('adoptSubtitle3')}
-              </h3>
-            </View>
-            <View direction={true}>
-              <p className="mb-4 max-w-2xl font-light  lg:mb-8 md:text-lg lg:text-xl ">
-                {t1('adoptDescription3')}
-              </p>
-            </View>
           </article>
         }
-        img={Adopcion}
+        img={ManAdopter}
         order={true}
       />
-
+      {/* VETERINARIAN */}
       <FeatureComponent
         content={
           <article className="text-primary-950">
@@ -107,29 +92,20 @@ export const FeatureSections = () => {
                 {t2('veterinarySubtitle2')}
               </h3>
             </View>
-
             <View>
               <p className="mb-4 max-w-2xl font-light  lg:mb-8 md:text-lg lg:text-xl ">
                 {t2('veterinaryDescription2')}
               </p>
             </View>
-            <View>
-              <h3 className="mb-3 lg:mb-5 max-w-2xl text-md font-bold leading-none md:text-xl xl:text-md">
-                {t2('veterinarySubtitle3')}
-              </h3>
-            </View>
-            <View>
-              <p className="mb-4 max-w-2xl font-light  lg:mb-8 md:text-lg lg:text-xl ">
-                {t2('veterinaryDescription3')}
-              </p>
-            </View>
           </article>
         }
-        img={Veterinarios}
+        img={Vet}
         order={false}
       />
 
-      <FeatureComponent
+      {/* Volunteers are disable now */}
+
+      {/* <FeatureComponent
         content={
           <article className="text-primary-950">
             <View direction={true}>
@@ -161,7 +137,7 @@ export const FeatureSections = () => {
         }
         img={Voluntarios}
         order={true}
-      />
+      /> */}
     </section>
   )
 }

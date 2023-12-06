@@ -1,10 +1,10 @@
 'use client'
 import React from 'react'
 import Image from 'next/image'
-import { Home } from '@/assets/illustrations'
 import { useTranslations } from 'next-intl'
 import Button from '../Button/Button'
 import View from '@/components/useView/useInView'
+import { HeroImage } from '@/assets/images'
 
 const Hero = () => {
   const t = useTranslations('hero')
@@ -26,7 +26,7 @@ const Hero = () => {
       <div className="lg:grid py-8 mx-auto lg:max-w-screen-xl lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div className="place-self-center mr-auto pb-10 lg:col-span-7 sm:col-span-3 ">
           <View direction={true}>
-            <h1 className="mb-4 lg:max-w-2xl text-4xl font-semibold md:text-4xl xl:text-5xl text-primary-950 sm:max-w-screen-sm">
+            <h1 className="mb-4 lg:max-w-2xl text-xl font-semibold md:text-4xl xl:text-5xl text-primary-950 sm:max-w-screen-sm">
               {t('title')}
             </h1>
           </View>
@@ -35,7 +35,6 @@ const Hero = () => {
               {t('description')}
             </p>
           </View>
-
           <View direction={true}>
             <div className="pb-5">
               <Button
@@ -48,7 +47,7 @@ const Hero = () => {
         </div>
         <div className="lg:mt-0 lg:col-span-5 lg:flex sm:col-span-1">
           <View>
-            <Image src={Home} alt="mockup" />
+            <Image className="rounded-lg" src={HeroImage} alt="mockup" />
           </View>
         </div>
       </div>
