@@ -1,6 +1,6 @@
+'use client'
 import React from 'react'
 import { useTranslations } from 'next-intl'
-import View from '@/hook/useView'
 
 const JointUp = () => {
   const t = useTranslations('joinUp')

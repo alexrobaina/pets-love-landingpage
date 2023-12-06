@@ -1,5 +1,5 @@
 import React from 'react'
-import FeatureComponent from './components/Feature'
+import Feature from './components/Feature'
 import { useTranslations } from 'next-intl'
 import View from '@/hook/useView'
 import { ManAdopter, Refugy, Vet } from '@/assets/images'
@@ -11,7 +11,7 @@ export const FeaturesSections = () => {
   const t3 = useTranslations('voluntaries')
   return (
     <section id="features">
-      <FeatureComponent
+      <Feature
         flip
         img={Refugy}
         order={false}
@@ -44,7 +44,7 @@ export const FeaturesSections = () => {
         }
       />
 
-      <FeatureComponent
+      <Feature
         content={
           <article className="text-primary-950">
             <View direction={true}>
@@ -68,7 +68,7 @@ export const FeaturesSections = () => {
         order={true}
       />
       {/* VETERINARIAN */}
-      <FeatureComponent
+      <Feature
         content={
           <article className="text-primary-950">
             <View>
@@ -104,7 +104,7 @@ export const FeaturesSections = () => {
 
       {/* Volunteers are disable now */}
 
-      {/* <FeatureComponent
+      {/* <Feature
         content={
           <article className="text-primary-950">
             <View direction={true}>

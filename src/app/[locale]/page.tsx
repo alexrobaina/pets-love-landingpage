@@ -3,7 +3,7 @@ import { Features } from '@/components/Features'
 import Collaborate from '@/components/Collaborate'
 import JointUp from '@/components/Joinup'
 import Donation from '@/components/Donation'
-import { FeatureSections } from '@/components/FeaturesSections'
+import { FeaturesSections } from '@/components/FeaturesSections'
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
       {/* <Prototype /> */}
       <JointUp />
       <Donation />
-      <FeatureSections />
+      <FeaturesSections />
       <Collaborate />
     </>
   )
