@@ -1,6 +1,5 @@
 import Hero from '@/components/Hero/Hero'
 import { Features } from '@/components/Features/Features'
-import Prototype from '@/components/Prototype/Prototype'
 import { FeatureSections } from '@/components/FeaturesSections/FeatureSections'
 import Collaborate from '@/components/Collaborate/Collaborate'
 import JointUp from '@/components/Joinup/JointUp'
@@ -11,7 +10,7 @@ export default function Home() {
     <>
       <Hero />
       <Features />
-      <Prototype />
+      {/* <Prototype /> */}
       <JointUp />
       <Donation />
       <FeatureSections />

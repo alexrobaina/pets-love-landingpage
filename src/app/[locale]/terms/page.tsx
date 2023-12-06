@@ -1,6 +1,6 @@
 'use client'
-import FadeIn from '@/components/FadeIn'
-import Button from '../../../components/Button/Button'
+import FadeIn from '@/components/common/FadeIn'
+import Button from '../../../components/common/Button/Button'
 import axios from 'axios'
 import { useTranslations } from 'next-intl'
 import { useSearchParams } from 'next/navigation'
@@ -90,7 +90,11 @@ const Terms = () => {
               concerns regarding these Terms and Conditions, please contact us at.`}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Button onClick={backToHome} type="primary" text={t('backToHome')} />
+              <Button
+                onClick={backToHome}
+                type="primary"
+                text={t('backToHome')}
+              />
             </div>
           </div>
         </div>

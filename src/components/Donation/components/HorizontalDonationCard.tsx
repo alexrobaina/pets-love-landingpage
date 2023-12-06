@@ -5,7 +5,6 @@ import { useTranslations } from 'next-intl'
 import Button from '../../../components/Button/Button'
 import useScreenWidth from '@/hook/useScreenWidth'
 import View from '@/components/useView/useInView'
-import FadeIn from '@/components/FadeIn'
 
 const HorizontalDonationCard: FC = () => {
   const [isOpenDonationModal, setIsOpenDonationModal] = useState(false)

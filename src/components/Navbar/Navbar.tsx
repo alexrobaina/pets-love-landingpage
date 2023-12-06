@@ -1,5 +1,5 @@
 'use client'
-import { useState, useCallback } from 'react'
+import { useState } from 'react'
 import { useRouter } from 'next-intl/client'
 import { useTranslations } from 'next-intl'
 import { useLocale } from 'next-intl'
@@ -9,11 +9,10 @@ import { Logo } from '@/assets/illustrations'
 import { navigation } from '../../app/constants/navigation'
 import Button from '../Button/Button'
 import { motion, AnimatePresence } from 'framer-motion'
-import Hamburguer from './components/Hamburguer/Hamburguer'
 import Footer from '../Footer/Footer'
 import { QueryClient, QueryClientProvider } from 'react-query'
 import { ANIMATED_ITEM, NAV_ANIMATION } from './constants/animations'
-import View from '@/components/useView/useInView'
+import Hamburguer from './components/Hamburguer/Hamburguer'
 
 const queryClient = new QueryClient()
 
@@ -74,7 +73,7 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
                     <a
                       target="_blank"
                       href={NAVIGATION.github.href}
-                      className="rounded-md px-3 py-2 text-sm font-semibold text-primary-950 hover:bg-primary-300"
+                      className="rounded-md px-3 py-2 text-sm font-semibold text-primary-950 cursor-pointer hover:bg-primary-300"
                       aria-current="page"
                     >
                       {NAVIGATION.github.routeName}
@@ -82,13 +81,13 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
 
                     <li
                       onClick={(e) => scrollToSection(e, '#collaborators')}
-                      className="rounded-md px-3 py-2 text-sm font-semibold text-primary-950 hover:bg-primary-300"
+                      className="rounded-md px-3 py-2 text-sm font-semibold text-primary-950 cursor-pointer hover:bg-primary-300"
                     >
                       {NAVIGATION.collaborators.routeName}
                     </li>
                     <li
                       onClick={(e) => scrollToSection(e, '#prototype')}
-                      className="rounded-md bg-white/10 px-3 py-2 text-sm font-semibold text-primary-950 hover:bg-primary-300"
+                      className="rounded-md bg-white/10 px-3 py-2 text-sm font-semibold text-primary-950 cursor-pointer hover:bg-primary-300"
                     >
                       {NAVIGATION.prototype.routeName}
                     </li>
@@ -180,7 +179,7 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
                 <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
                   <motion.li
                     variants={ANIMATED_ITEM}
-                    className="rounded-md px-3 py-2 text-sm font-semibold text-primary-950 hover:bg-primary-300 hover:bg-opacity-75"
+                    className="rounded-md px-3 py-2 text-sm font-semibold text-primary-950 cursor-pointer hover:bg-primary-300 hover:bg-opacity-75"
                   >
                     <a href={NAVIGATION.github.href} aria-current="page">
                       {NAVIGATION.github.routeName}
@@ -196,7 +195,7 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
                   <motion.li
                     variants={ANIMATED_ITEM}
                     onClick={(e) => scrollToSection(e, '#prototype')}
-                    className=" text-primary-950 hover:bg-primary-300 hover:bg-opacity-75 block rounded-md px-3 py-2 text-base font-medium"
+                    className=" text-primary-950 cursor-pointer hover:bg-primary-300 hover:bg-opacity-75 block rounded-md px-3 py-2 text-base font-medium"
                   >
                     {NAVIGATION.prototype.routeName}
                   </motion.li>

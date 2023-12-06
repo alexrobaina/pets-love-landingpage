@@ -56,24 +56,28 @@ export const ReactModal: FC<Props> = ({
       ariaHideApp={false}
       style={customStyles}
       onRequestClose={closeModal}
-      contentLabel='Example Modal'
+      contentLabel="Example Modal"
     >
       <motion.div
-        initial='hidden'
-        animate='visible'
+        initial="hidden"
+        animate="visible"
         variants={variants}
         transition={{ ease: 'easeOut' }}
-        className='flex flex-col md:p-4'
+        className="flex flex-col md:p-4"
       >
-        <div className='flex justify-between items-center'>
-          <h2 className='text-primary-950 font-medium'>{title}</h2>
+        <div className="flex justify-between items-center">
+          <h2 className="text-primary-950 font-medium">{title}</h2>
           {buttonClose && (
-            <div className='text-primary-950' role='button' onClick={closeModal}>
+            <div
+              className="text-primary-950"
+              role="button"
+              onClick={closeModal}
+            >
               <GrClose />
             </div>
           )}
         </div>
-        <div className='flex flex-col h-full'>
+        <div className="flex flex-col h-full">
           <>{children}</>
         </div>
       </motion.div>

@@ -3,7 +3,6 @@ import React from 'react'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { IconGithub } from '@/assets/icons'
-import Button from '../Button/Button'
 import GitHubCollaborators from '../GitHubContributors/GitHubContributors'
 import View from '@/components/useView/useInView'
 
