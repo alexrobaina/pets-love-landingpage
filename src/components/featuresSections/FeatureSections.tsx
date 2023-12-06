@@ -1,5 +1,5 @@
 import React from 'react'
-import FeatureComponent from './FeatureComponent'
+import FeatureComponent from './components'
 import { useTranslations } from 'next-intl'
 import View from '@/hook/useView'
 import { ManAdopter, Refugy, Vet } from '@/assets/images'

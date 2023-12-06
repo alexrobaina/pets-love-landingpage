@@ -9,7 +9,7 @@ interface Props {
   img: StaticImageData
 }
 
-const FeatureSections: FC<Props> = ({ flip, content, img, order }) => {
+const Feature: FC<Props> = ({ flip, content, img, order }) => {
   return (
     <article
       className={
@@ -35,4 +35,4 @@ const FeatureSections: FC<Props> = ({ flip, content, img, order }) => {
   )
 }
 
-export default FeatureSections
+export default Feature
