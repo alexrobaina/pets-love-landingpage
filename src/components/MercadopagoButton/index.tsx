@@ -2,7 +2,7 @@
 import { FC } from 'react'
 import axios from 'axios'
 import { Wallet } from '@mercadopago/sdk-react'
-import { Loader } from '../Loader/Loader'
+import { Loader } from '../Loader'
 import { useQuery } from 'react-query'
 
 interface Props {

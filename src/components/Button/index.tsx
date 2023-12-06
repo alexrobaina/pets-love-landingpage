@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import { Loader } from '../Loader/Loader'
+import { Loader } from '../Loader'
 import { FC, MouseEventHandler } from 'react'
 
 interface Props {

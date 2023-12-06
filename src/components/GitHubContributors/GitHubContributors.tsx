@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
-import { Loader } from '../Loader/Loader'
+import { Loader } from '../Loader'
 import { useTranslations } from 'next-intl'
 
 type Contributors = {

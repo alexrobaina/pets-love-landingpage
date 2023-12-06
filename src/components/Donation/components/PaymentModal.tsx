@@ -4,7 +4,7 @@ import { FC } from 'react'
 import { ReactModal } from '@/components/ReactModal/ReactModal'
 import { useTranslations } from 'next-intl'
 import useScreenWidth from '@/hook/useScreenWidth'
-import { MercadoPagoButton } from '@/components/MercadopagoButton/MercadopagoButton'
+import { MercadoPagoButton } from '@/components/MercadopagoButton'
 import { initMercadoPago } from '@mercadopago/sdk-react'
 import Link from 'next/link'
 
