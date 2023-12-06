@@ -2,7 +2,7 @@
 import React from 'react'
 import { FC, useState } from 'react'
 import { useTranslations } from 'next-intl'
-import Button from '../../../components/Button/Button'
+import Button from '../../Button'
 import useScreenWidth from '@/hook/useScreenWidth'
 import View from '@/components/useView/useInView'
 

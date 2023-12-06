@@ -2,7 +2,7 @@ import React from 'react'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { PrototypeDemo } from '@/assets/images'
-import Button from '../Button/Button'
+import Button from '../Button'
 import View from '@/components/useView/useInView'
 
 const Prototype = () => {

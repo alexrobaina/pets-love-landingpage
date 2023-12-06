@@ -3,7 +3,7 @@ import React from 'react'
 import { FC, useState } from 'react'
 import { useTranslations } from 'next-intl'
 import { PaymentModal } from './PaymentModal'
-import Button from '../../../components/Button/Button'
+import Button from '../../Button'
 import Image from 'next/image'
 
 interface Props {

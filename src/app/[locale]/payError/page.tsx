@@ -1,5 +1,5 @@
 'use client'
-import Button from '../../../components/Button/Button'
+import Button from '../../../components/Button'
 import FadeIn from '../../../components/FadeIn'
 import { useTranslations } from 'next-intl'
 import { useRouter } from 'next/navigation'
