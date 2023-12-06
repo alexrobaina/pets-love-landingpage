@@ -1,7 +1,7 @@
 'use client'
 import React, { useCallback } from 'react'
 import { FC } from 'react'
-import { ReactModal } from '../../ReactModal'
+import { ReactModal } from '@/components/ReactModal/ReactModal'
 import { useTranslations } from 'next-intl'
 import useScreenWidth from '@/hook/useScreenWidth'
 import { MercadoPagoButton } from '@/components/MercadopagoButton/MercadopagoButton'
@@ -55,6 +55,7 @@ export const PaymentModal: FC<Props> = ({
       isOpen={isOpenDonationModal}
       closeModal={() => handleOpenDonationModal()}
     >
+      {/* @ts-ignore */}
       <div className="flex justify-between flex-col w-full mt-5">
         <div className="xs:flex-row flex xs:gap-12 flex-col">
           {image && (

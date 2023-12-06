@@ -1,6 +1,6 @@
 'use client'
-import Button from '../../../components/common/Button/Button'
-import FadeIn from '../../../components/common/FadeIn'
+import Button from '../../../components/Button/Button'
+import FadeIn from '../../../components/FadeIn'
 import { useTranslations } from 'next-intl'
 import { useRouter } from 'next/navigation'
 
@@ -20,15 +20,9 @@ const PayError = () => {
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               {t('title')}
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              {t('description')}
-            </p>
+            <p className="mt-6 text-lg leading-8 text-gray-600">{t('description')}</p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Button
-                onClick={backToHome}
-                type="primary"
-                text={t('backToHome')}
-              />
+              <Button onClick={backToHome} type="primary" text={t('backToHome')} />
             </div>
           </div>
         </div>
