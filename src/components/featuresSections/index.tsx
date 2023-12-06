@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl'
 import View from '@/hook/useView'
 import { ManAdopter, Refugy, Vet } from '@/assets/images'
 
-export const FeatureSections = () => {
+export const FeaturesSections = () => {
   const t = useTranslations('shelter')
   const t1 = useTranslations('adopt')
   const t2 = useTranslations('veterinary')
