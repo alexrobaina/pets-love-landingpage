@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { PrototypeDemo } from '@/assets/images'
 import Button from '../Button'
-import View from '@/components/useView/useInView'
+import View from '@/hook/useView'
 
 const Prototype = () => {
   const t = useTranslations('prototype')

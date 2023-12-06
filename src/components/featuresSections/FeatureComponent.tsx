@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import Image, { StaticImageData } from 'next/image'
-import View from '@/components/useView/useInView'
+import View from '@/hook/useView'
 
 interface Props {
   content: any

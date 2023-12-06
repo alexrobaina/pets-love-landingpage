@@ -10,7 +10,7 @@ import {
   IconQrScan,
 } from '@/assets/icons'
 import Image from 'next/image'
-import View from '@/components/useView/useInView'
+import View from '@/hook/useView'
 
 export const Features = () => {
   const t = useTranslations('features')

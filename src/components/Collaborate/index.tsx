@@ -3,8 +3,8 @@ import React from 'react'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { IconGithub } from '@/assets/icons'
-import GitHubCollaborators from '../GitHubContributors/GitHubContributors'
-import View from '@/components/useView/useInView'
+import GitHubCollaborators from '../GitHubContributors'
+import View from '@/hook/useView'
 
 const Collaborate = () => {
   const t = useTranslations('collaborate')

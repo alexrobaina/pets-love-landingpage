@@ -1,8 +1,7 @@
 import React from 'react'
-import { Veterinarios, Adopcion, Voluntarios } from '@/assets/illustrations'
 import FeatureComponent from './FeatureComponent'
 import { useTranslations } from 'next-intl'
-import View from '@/components/useView/useInView'
+import View from '@/hook/useView'
 import { ManAdopter, Refugy, Vet } from '@/assets/images'
 
 export const FeatureSections = () => {
