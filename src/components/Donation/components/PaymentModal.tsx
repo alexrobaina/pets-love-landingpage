@@ -37,9 +37,11 @@ export const PaymentModal: FC<Props> = ({
   const t = useTranslations('donationCard')
 
   const checkLocation = useCallback(() => {
-    const country = localStorage.getItem('country')
+    if (typeof window !== 'undefined') {
+      const country = localStorage.getItem('country')
 
-    return country
+      return country
+    }
   }, [])
 
   const variants = {

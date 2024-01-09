@@ -71,20 +71,24 @@ const Donation = () => {
   }
 
   const calculatePrice = (price: number) => {
-    const country = localStorage.getItem('country')
-    if (country === 'AR') {
-      const arPrice = price * parseInt(dolarBlue)
-      return Math.round(arPrice / 100) * 100
+    if (typeof window !== 'undefined') {
+      const country = localStorage.getItem('country')
+      if (country === 'AR') {
+        const arPrice = price * parseInt(dolarBlue)
+        return Math.round(arPrice / 100) * 100
+      }
+      return price
     }
-    return price
   }
 
   const getCurrency = () => {
-    const country = localStorage.getItem('country')
-    if (country === 'AR') {
-      return 'ARS'
+    if (typeof window !== 'undefined') {
+      const country = localStorage.getItem('country')
+      if (country === 'AR') {
+        return 'ARS'
+      }
+      return 'USD'
     }
-    return 'USD'
   }
 
   useEffect(() => {
@@ -103,8 +107,8 @@ const Donation = () => {
               icon={CheckIcon}
               image={product.image}
               reward={product.peaks}
-              currency={getCurrency()}
-              price={calculatePrice(product.price)}
+              currency={getCurrency() || 'USD'}
+              price={calculatePrice(product.price) || 0}
               title={t(`donationCard${product.id}.title`)}
               description={t(`donationCard${product.id}.description1`)}
               description2={t(`donationCard${product.id}.description2`)}
