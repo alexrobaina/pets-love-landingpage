@@ -7,6 +7,7 @@ import useScreenWidth from '@/hook/useScreenWidth'
 import { MercadoPagoButton } from '@/components/MercadopagoButton'
 import { initMercadoPago } from '@mercadopago/sdk-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 initMercadoPago(process.env.NEXT_PUBLIC_MERCADO_PAGO_PUBLIC_KEY as string)
 
@@ -63,12 +64,11 @@ export const PaymentModal: FC<Props> = ({
           {image && (
             <div className="w-full flex justify-start">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
+              <Image
                 src={image}
+                height={200}
                 alt="cardImage"
-                className={`rounded-3xl border-primary-100 w-[200px] md:mt-0 ${
-                  isScreenSmall ? 'w-auto' : 'w-[200px]'
-                }`}
+                className="rounded-md object-top object-cover"
               />
             </div>
           )}
