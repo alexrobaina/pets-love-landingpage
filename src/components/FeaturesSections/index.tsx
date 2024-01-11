@@ -11,12 +11,13 @@ export const FeaturesSections = () => {
   const t3 = useTranslations('voluntaries')
   return (
     <section id="features">
+      {/* SHELTER */}
       <Feature
         flip
         img={Refugy}
         order={false}
         content={
-          <article className="text-primary-950 mt-20">
+          <article className="text-primary-950">
             <View>
               <h1 className="mb-10 max-w-2xl text-2xl font-extrabold leading-none md:text-4xl xl:text-5xl ">
                 {t('shelterTitle')}
