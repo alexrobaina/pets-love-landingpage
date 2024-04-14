@@ -6,6 +6,13 @@ import { useTranslations } from 'next-intl'
 import { useSearchParams } from 'next/navigation'
 import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Donations',
+  description:
+    "We appreciate your invaluable support at Pet's Love. You will receive our exclusive monthly newsletter, keeping you abreast of progress, news and achievements. Together, we create a positive impact in the world of pets.🐾🌟",
+}
 
 const PaySuccess = () => {
   const t = useTranslations('succesDonation')
@@ -44,9 +51,9 @@ const PaySuccess = () => {
 
   return (
     <FadeIn>
-      <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="mx-auto max-w-2xl py-22 sm:py-32 lg:py-44">
-          <div className="text-center">
+      <main className="relative isolate px-6 pt-14 lg:px-8">
+        <section className="mx-auto max-w-2xl py-22 sm:py-32 lg:py-44">
+          <article className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               {t('title')}
             </h1>
@@ -54,9 +61,9 @@ const PaySuccess = () => {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Button onClick={backToHome} type="primary" text={t('backToHome')} />
             </div>
-          </div>
-        </div>
-      </div>
+          </article>
+        </section>
+      </main>
     </FadeIn>
   )
 }
