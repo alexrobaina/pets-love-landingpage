@@ -6,12 +6,6 @@ import { useTranslations } from 'next-intl'
 import { useSearchParams } from 'next/navigation'
 import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
-import { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Terms',
-  description: 'Terms & Conditions',
-}
 
 const TermsPrivacy = () => {
   const t = useTranslations('terms&conditions')

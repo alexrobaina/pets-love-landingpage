@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     'At Pets love, we unite hearts and homes. Join our community in making a difference in the lives of pets in need. Together, we create homes full of love!️',
 
   keywords: keywords,
+  robots: 'index, follow',
   applicationName: 'PetsloveApp',
   alternates: {
     canonical: '/',
