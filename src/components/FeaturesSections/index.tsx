@@ -14,6 +14,7 @@ export const FeaturesSections = () => {
       {/* SHELTER */}
       <Feature
         flip
+        title={t('shelterTitle')}
         img={Refugy}
         order={false}
         content={
@@ -67,6 +68,7 @@ export const FeaturesSections = () => {
         }
         img={ManAdopter}
         order={true}
+        title={t1('adoptTitle')}
       />
       {/* VETERINARIAN */}
       <Feature
@@ -101,6 +103,7 @@ export const FeaturesSections = () => {
         }
         img={Vet}
         order={false}
+        title={t2('veterinaryTitle')}
       />
 
       {/* Volunteers are disable now */}

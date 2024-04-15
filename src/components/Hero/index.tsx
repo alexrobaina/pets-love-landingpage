@@ -47,7 +47,7 @@ const Hero = () => {
         </div>
         <div className="lg:mt-0 lg:col-span-5 lg:flex sm:col-span-1">
           <View>
-            <Image className="rounded-lg" src={HeroImage} alt="mockup" priority />
+            <Image className="rounded-lg" src={HeroImage} alt="hero-image" priority />
           </View>
         </div>
       </div>

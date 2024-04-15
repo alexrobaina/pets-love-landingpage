@@ -44,7 +44,7 @@ const DonationCard: FC<Props> = ({
             src={image}
             width={500}
             height={0}
-            alt="cardImage"
+            alt={title}
             className="w-full rounded-md object-top object-cover"
           />
           <h3 className="text-2xl mt-4 font-bold tracking-tight text-primary-950">

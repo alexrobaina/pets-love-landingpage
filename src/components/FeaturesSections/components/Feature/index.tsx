@@ -7,9 +7,10 @@ interface Props {
   order: boolean
   flip?: boolean
   img: StaticImageData
+  title: string
 }
 
-const Feature: FC<Props> = ({ flip, content, img, order }) => {
+const Feature: FC<Props> = ({ flip, content, img, order, title }) => {
   return (
     <article
       className={
