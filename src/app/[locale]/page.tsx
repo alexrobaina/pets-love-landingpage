@@ -7,7 +7,7 @@ import Donation from '@/components/Donation'
 
 export default function Home() {
   return (
-    <>
+    <main>
       <Hero />
       <Features />
       {/* <Prototype /> */}
@@ -15,6 +15,6 @@ export default function Home() {
       <Donation />
       <FeaturesSections />
       <Collaborate />
-    </>
+    </main>
   )
 }

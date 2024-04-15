@@ -4,14 +4,29 @@ import { useLocale } from 'next-intl'
 import { NextIntlClientProvider } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { Navbar } from '@/components/Navbar'
+import type { Metadata } from 'next'
+import { keywords } from '../../constants/keywords'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Pets love',
-  image: 'https://cdn.midjourney.com/362cb41d-fba2-4c78-b6a7-01cbbbc1fd72/0_1.png',
+export const metadata: Metadata = {
+  title: {
+    default: 'Pets love',
+    template: '%s - Pets love',
+  },
   description:
     'At Pets love, we unite hearts and homes. Join our community in making a difference in the lives of pets in need. Together, we create homes full of love!️',
+
+  keywords: keywords,
+  robots: 'index, follow',
+  applicationName: 'PetsloveApp',
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/en-US',
+      'es-ES': '/es-ES',
+    },
+  },
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {

@@ -1,10 +1,11 @@
 'use client'
-import Button from '../../../components/Button'
-import FadeIn from '../../../components/FadeIn'
+
+import Button from '@/components/Button'
+import FadeIn from '@/components/FadeIn'
 import { useTranslations } from 'next-intl'
 import { useRouter } from 'next/navigation'
 
-const PayError = () => {
+const PayFailed = () => {
   const t = useTranslations('errorDonation')
   const router = useRouter()
 
@@ -14,9 +15,9 @@ const PayError = () => {
 
   return (
     <FadeIn>
-      <div className="relative isolate px-6 pt-14 lg:px-8">
-        <div className="mx-auto max-w-2xl py-22 sm:py-32 lg:py-44">
-          <div className="text-center">
+      <main className="relative isolate px-6 pt-14 lg:px-8">
+        <section className="mx-auto max-w-2xl py-22 sm:py-32 lg:py-44">
+          <article className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
               {t('title')}
             </h1>
@@ -24,11 +25,11 @@ const PayError = () => {
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Button onClick={backToHome} type="primary" text={t('backToHome')} />
             </div>
-          </div>
-        </div>
-      </div>
+          </article>
+        </section>
+      </main>
     </FadeIn>
   )
 }
 
-export default PayError
+export default PayFailed
