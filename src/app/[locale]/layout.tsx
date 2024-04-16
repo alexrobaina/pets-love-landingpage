@@ -6,20 +6,32 @@ import { notFound } from 'next/navigation'
 import { Navbar } from '@/components/Navbar'
 import type { Metadata } from 'next'
 import { keywords } from '../../constants/keywords'
+import { siteMetadata } from '@/constants/siteMetadata'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: {
-    default: 'Pets love',
-    template: '%s - Pets love',
-  },
-  description:
-    'At Pets love, we unite hearts and homes. Join our community in making a difference in the lives of pets in need. Together, we create homes full of love!️',
 
+  metadataBase: new URL(siteMetadata.siteUrl),
+  title: {
+    default: siteMetadata.title,
+    template: `%s | ${siteMetadata.title}`,
+  },
+  description: siteMetadata.description,
+  openGraph: {
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    url: siteMetadata.siteUrl,
+    siteName: siteMetadata.title,
+    images: [siteMetadata.openGraphImage],
+    locale: 'en_US',
+    type: 'website',
+  },
   keywords: keywords,
   robots: 'index, follow',
-  applicationName: 'PetsloveApp',
+  applicationName: siteMetadata.title,
+
   alternates: {
     canonical: '/',
     languages: {
@@ -27,6 +39,16 @@ export const metadata: Metadata = {
       'es-ES': '/es-ES',
     },
   },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: siteMetadata.title,
+    images: [siteMetadata.twitterImage],
+  },
+  verification: {
+    google: 'TrP8LpnnPMQ362nwzfUf5LwuvTv6qJIJE2Bqu0U23VE',
+  },
+
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
