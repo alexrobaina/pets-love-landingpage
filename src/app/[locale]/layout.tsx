@@ -8,7 +8,6 @@ import type { Metadata } from 'next'
 import { keywords } from '../../constants/keywords'
 import { siteMetadata } from '@/constants/siteMetadata'
 
-
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {

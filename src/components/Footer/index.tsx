@@ -29,6 +29,7 @@ const Footer = () => {
               target="_blank"
               href="https://www.instagram.com/pets.love.app/"
               className="  hover:text-cyan-400"
+              aria-label="instagram-petsLove"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -51,6 +52,7 @@ const Footer = () => {
               target="_blank"
               href="https://github.com/alexrobaina/frontend_petsLove"
               className="hover:text-cyan-400"
+              aria-label="github"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -69,6 +71,7 @@ const Footer = () => {
               target="_blank"
               href="https://www.linkedin.com/in/alexrobaina/"
               className="hover:text-cyan-400 "
+              aria-label="linkedin"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -94,6 +97,7 @@ const Footer = () => {
               target="_blank"
               href="https://t.me/waayex"
               className="hover:text-cyan-400 "
+              aria-label="website"
             >
               <svg
                 width="32"
@@ -113,6 +117,7 @@ const Footer = () => {
               target="_blank"
               href="https://wa.me/541138997032"
               className="hover:text-cyan-400"
+              aria-label="whatsapp"
             >
               <svg
                 width="32"
