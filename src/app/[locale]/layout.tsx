@@ -8,9 +8,11 @@ import type { Metadata } from 'next'
 import { keywords } from '../../constants/keywords'
 import { siteMetadata } from '@/constants/siteMetadata'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
+
   metadataBase: new URL(siteMetadata.siteUrl),
   title: {
     default: siteMetadata.title,
@@ -29,6 +31,7 @@ export const metadata: Metadata = {
   keywords: keywords,
   robots: 'index, follow',
   applicationName: siteMetadata.title,
+
   alternates: {
     canonical: '/',
     languages: {
@@ -36,6 +39,7 @@ export const metadata: Metadata = {
       'es-ES': '/es-ES',
     },
   },
+
   twitter: {
     card: 'summary_large_image',
     title: siteMetadata.title,
@@ -44,6 +48,7 @@ export const metadata: Metadata = {
   verification: {
     google: 'TrP8LpnnPMQ362nwzfUf5LwuvTv6qJIJE2Bqu0U23VE',
   },
+
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
