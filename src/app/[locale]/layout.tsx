@@ -41,6 +41,9 @@ export const metadata: Metadata = {
     title: siteMetadata.title,
     images: [siteMetadata.twitterImage],
   },
+  verification: {
+    google: 'TrP8LpnnPMQ362nwzfUf5LwuvTv6qJIJE2Bqu0U23VE',
+  },
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
