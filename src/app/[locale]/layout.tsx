@@ -17,15 +17,15 @@ export const metadata: Metadata = {
     template: `%s | ${siteMetadata.title}`,
   },
   description: siteMetadata.description,
-  // openGraph: {
-  //   title: siteMetadata.title,
-  //   description: siteMetadata.description,
-  //   url: siteMetadata.siteUrl,
-  //   siteName: siteMetadata.title,
-  //   images: [siteMetadata.openGraphImage],
-  //   locale: 'en_US',
-  //   type: 'website',
-  // },
+  openGraph: {
+    title: siteMetadata.title,
+    description: siteMetadata.description,
+    url: siteMetadata.siteUrl,
+    siteName: siteMetadata.title,
+    images: [siteMetadata.openGraphImage],
+    locale: 'en_US',
+    type: 'website',
+  },
   keywords: keywords,
   robots: 'index, follow',
   applicationName: siteMetadata.title,
@@ -36,11 +36,11 @@ export const metadata: Metadata = {
       'es-ES': '/es-ES',
     },
   },
-  // twitter: {
-  //   card: 'summary_large_image',
-  //   title: siteMetadata.title,
-  //   images: [siteMetadata.twitterImage],
-  // },
+  twitter: {
+    card: 'summary_large_image',
+    title: siteMetadata.title,
+    images: [siteMetadata.twitterImage],
+  },
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
