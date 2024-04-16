@@ -23,9 +23,9 @@ export const FeaturesSections = () => {
               <h1 className="mb-10 max-w-2xl text-2xl font-extrabold leading-none md:text-4xl xl:text-5xl ">
                 {t('shelterTitle')}
               </h1>
-              <h3 className="mb-3 lg:mb-5 max-w-2xl text-md font-bold leading-none md:text-xl xl:text-md">
+              <h2 className="mb-3 lg:mb-5 max-w-2xl text-md font-bold leading-none md:text-xl xl:text-md">
                 {t('shelterSubtitle1')}
-              </h3>
+              </h2>
             </View>
             <View>
               <p className="mb-4 max-w-2xl font-light  lg:mb-8 md:text-lg lg:text-xl ">
@@ -33,9 +33,9 @@ export const FeaturesSections = () => {
               </p>
             </View>
             <View>
-              <h3 className="mb-3 lg:mb-5 max-w-2xl text-md font-bold leading-none md:text-xl xl:text-md">
+              <h2 className="mb-3 lg:mb-5 max-w-2xl text-md font-bold leading-none md:text-xl xl:text-md">
                 {t('shelterSubtitle2')}
-              </h3>
+              </h2>
             </View>
             <View>
               <p className="mb-4 max-w-2xl font-light  lg:mb-8 md:text-lg lg:text-xl ">
@@ -80,9 +80,9 @@ export const FeaturesSections = () => {
               </h1>
             </View>
             <View>
-              <h3 className="mb-3 lg:mb-5 max-w-2xl text-md font-bold leading-none md:text-xl xl:text-md">
+              <h2 className="mb-3 lg:mb-5 max-w-2xl text-md font-bold leading-none md:text-xl xl:text-md">
                 {t2('veterinarySubtitle1')}
-              </h3>
+              </h2>
             </View>
             <View>
               <p className="mb-4 max-w-2xl font-light  lg:mb-8 md:text-lg lg:text-xl ">
@@ -90,9 +90,9 @@ export const FeaturesSections = () => {
               </p>
             </View>
             <View>
-              <h3 className="mb-3 lg:mb-5 max-w-2xl text-md font-bold leading-none md:text-xl xl:text-md">
+              <h2 className="mb-3 lg:mb-5 max-w-2xl text-md font-bold leading-none md:text-xl xl:text-md">
                 {t2('veterinarySubtitle2')}
-              </h3>
+              </h2>
             </View>
             <View>
               <p className="mb-4 max-w-2xl font-light  lg:mb-8 md:text-lg lg:text-xl ">
