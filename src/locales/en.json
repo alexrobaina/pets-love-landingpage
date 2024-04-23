@@ -1,120 +1,129 @@
 {
-    "navbar": {
-        "login": "Login",
-        "appName": "Pet's Love",
-        "github": "Github",
-        "collaborators": "How to colaborate?",
-        "prototype": "Go to Pet's Love",
-        "donate": "Donate"
+  "navbar": {
+    "login": "Login",
+    "appName": "Pet's Love",
+    "github": "Github",
+    "collaborators": "How to colaborate?",
+    "prototype": "Go to Pet's Love",
+    "donate": "Donate"
+  },
+  "hero": {
+    "title": "Discover Pet's Love! A space to connect with pets.",
+    "description": "We want to transform lives through responsible adoptions. Join us to give love and joy to pets in need!",
+    "goToApp": "Go to Pet's Love"
+  },
+  "prototype": {
+    "title": "Visit Pet's Love and start using it with ease.",
+    "description": "Forge sincere connections with Pet’s Love App, an open-source app for pet care. Immerse yourself in a community where love for pets is not just shared, it’s multiplied! A support network dedicated to the happiness and well-being of your four-legged companions.",
+    "goToApp": "Go to Pet’s Love",
+    "tutorials": "Watch Tutorials"
+  },
+  "sponsors": {
+    "title": "Our sponsors"
+  },
+  "features": {
+    "featuresMainTitle": "About Pet's Love",
+    "featuresTitle1": "Open Source Magic ✨",
+    "featuresDescription1": "We are a community project where developers worldwide can collaborate to improve and add value to the platform, benefiting shelters, veterinarians, and adopters.",
+    "featuresTitle2": "Scan QR Code",
+    "featuresDescription2": "When you create a pet, a QR code that contains your pet's profile and contact information will automatically be generated. This feature offers health and safety, facilitating instant connection with the pet for a long-lasting relationship.",
+    "featuresTitle3": "Responsible adoptions 💕",
+    "featuresDescription3": "Shelters can track pets post-adoption, ensuring each animal finds a loving and permanent home.",
+    "featuresTitle4": "Creating community 🐕🐈",
+    "featuresDescription4": "We promote collaboration between shelters, veterinarians, volunteers, and adopters, creating a support network for animal welfare where everyone wins to help.",
+    "featuresTitle5": "Blockchain-Powered Trust 📜",
+    "featuresDescription5": "We will use the blockchain to create smart contracts and keep a public, immutable, and transparent record of each registered pet.",
+    "featuresTitle6": "Empowering Shelters 🏠",
+    "featuresDescription6": "We provide shelters with tools to manage pets, evaluate adopters, and ensure responsible adoptions, focusing on finding loving, permanent homes."
+  },
+  "joinUp": {
+    "joinUpTitle": "🌟 Help us grow! 🌟",
+    "joinUpDescription1": "We assure complete transparency in using donations, which helps us improve the platform and collaborate with experts, benefiting pets in need. Donate now for a better future for animals!"
+  },
+  "donationCard": {
+    "buyATshirtDescription": "If you buy our product, you help us to build more tools for the app",
+    "buyATshirtTitle": "Clothes for save pet's",
+    "goToShowroom": "Go to showroom",
+    "openseaCollection": "Opensea collection",
+    "whatsincluded": "What's included",
+    "total": "Total",
+    "titleAction": "Help us to grow",
+    "email": "Email",
+    "or": "or",
+    "donationMecadoPagoButton": "Donate with Mercado Pago",
+    "donate": "Donate",
+    "emailError": "Please enter a valid email address",
+    "titleModal": "Thank you very much for being part of our team!",
+    "donationCard1": {
+      "title": "Thank you so much",
+      "description1": "Thank you for being a Supporter of Shelters and Ally of Adopters. Your generosity changes furry and human lives, filling our mission with love. You are an essential part of a world with more loving homes!",
+      "description2": "❤️ Thank you for your commitment! ❤",
+      "reward1": "You will receive an exclusive monthly newsletter where we will keep you updated with our application's progress, news, and achievements."
     },
-    "hero": {
-        "title": "Discover Pet's Love! A space to connect with pets.",
-        "description": "We want to transform lives through responsible adoptions. Join us to give love and joy to pets in need!",
-        "donationButton": "Go to Pet's Love"
+    "donationCard2": {
+      "title": "Veterinary care",
+      "description1": "Millions of pets lack essential veterinary care due to economic problems, putting their lives at risk. Every pet deserves medical care.",
+      "description2": "❤️ Thank you for your commitment! ❤️",
+      "reward1": "We select critical cases for veterinary care and communicate the impact of your donation."
     },
-    "sponsors": {
-        "sponsorsTitle": "Our sponsors"
-    },
-    "features": {
-        "featuresMainTitle": "About Pet's Love",
-        "featuresTitle1": "Open Source Magic ✨",
-        "featuresDescription1": "We are a community project where developers worldwide can collaborate to improve and add value to the platform, benefiting shelters, veterinarians, and adopters.",
-        "featuresTitle2": "Scan QR Code",
-        "featuresDescription2": "When you create a pet, a QR code that contains your pet's profile and contact information will automatically be generated. This feature offers health and safety, facilitating instant connection with the pet for a long-lasting relationship.",
-        "featuresTitle3": "Responsible adoptions 💕",
-        "featuresDescription3": "Shelters can track pets post-adoption, ensuring each animal finds a loving and permanent home.",
-        "featuresTitle4": "Creating community 🐕🐈",
-        "featuresDescription4": "We promote collaboration between shelters, veterinarians, volunteers, and adopters, creating a support network for animal welfare where everyone wins to help.",
-        "featuresTitle5": "Blockchain-Powered Trust 📜",
-        "featuresDescription5": "We will use the blockchain to create smart contracts and keep a public, immutable, and transparent record of each registered pet.",
-        "featuresTitle6": "Empowering Shelters 🏠",
-        "featuresDescription6": "We provide shelters with tools to manage pets, evaluate adopters, and ensure responsible adoptions, focusing on finding loving, permanent homes."
-    },
-    "joinUp": {
-        "joinUpTitle": "🌟 Help us grow! 🌟",
-        "joinUpDescription1": "We assure complete transparency in using donations, which helps us improve the platform and collaborate with experts, benefiting pets in need. Donate now for a better future for animals!"
-    },
-    "donationCard": {
-        "openseaCollection": "Opensea collection",
-        "whatsincluded": "What's included",
-        "total": "Total",
-        "titleAction": "Help us to grow",
-        "email": "Email",
-        "or": "or",
-        "donationMecadoPagoButton": "Donate with Mercado Pago",
-        "donate": "Donate",
-        "emailError": "Please enter a valid email address",
-        "titleModal": "Thank you very much for being part of our team!",
-        "donationCard1": {
-            "title": "Thank you so much",
-            "description1": "Thank you for being a Supporter of Shelters and Ally of Adopters. Your generosity changes furry and human lives, filling our mission with love. You are an essential part of a world with more loving homes!",
-            "description2": "❤️ Thank you for your commitment! ❤",
-            "reward1": "You will receive an exclusive monthly newsletter where we will keep you updated with our application's progress, news, and achievements."
-        },
-        "donationCard2": {
-            "title": "Veterinary care",
-            "description1": "Millions of pets lack essential veterinary care due to economic problems, putting their lives at risk. Every pet deserves medical care.",
-            "description2": "❤️ Thank you for your commitment! ❤️",
-            "reward1": "We select critical cases for veterinary care and communicate the impact of your donation."
-        },
-        "donationCard3": {
-            "title": "🍲 Donate 20kg of food 🍲",
-            "description1": "Donate 20kg of Food to Pet's Love and transform the lives of needy pets. Your gesture will fill many furry hearts with joy 🍲",
-            "description2": "❤️ Thank you for your commitment! ❤️",
-            "reward1": "We took 20 kilos of premium Food to nearby shelter",
-            "reward2": "You will receive an exclusive monthly newsletter where we will keep you up to date with the progress, news and achievements of our application."
-        }
-    },
-    "shelter": {
-        "shelterTitle": "Shelters",
-        "shelterSubtitle1": "Guardians of pets in need 🏠",
-        "shelterDescription1": "Shelters are the core of our community, connecting pets with forever homes. They are guardians who offer second chances and love. Your support creates happy love stories for each pet. 💙",
-        "shelterSubtitle2": "Your Shelter with Pet's Love 🐾",
-        "shelterDescription2": "We provide a set of tools for shelters, facilitating the management of medical histories and vaccines and ensuring the well-being and joy of each animal. 🐈"
-    },
-    "adopt": {
-        "adoptTitle": "Adopt",
-        "adoptDescription1": "Adopting means adding a new member to the family and creating unforgettable memories together. 🏠❤️ For each pet, we generate a QR code so you can make a “digital leash,” facilitating your connection and their safety if they get lost. 🐶",
-        "adoptDescription2": "You will be able to generate the history of your pets, as it is key to understanding and satisfying the unique needs of each animal. Pet’s Love is dedicated to generating solutions for the detailed care of our little furry children. 🐾"
-    },
-    "veterinary": {
-        "veterinaryTitle": "Vets",
-        "veterinarySubtitle1": "Health and well-being 🤝🏥",
-        "veterinaryDescription1": "We want to generate donations from users to pets in need from shelters near veterinarians to provide medical assistance. 🐈",
-        "veterinarySubtitle2": "Medical records",
-        "veterinaryDescription2": "Get easy access to complete medical histories, from vaccinations to previous treatments, to make informed decisions and ensure the best care for your patients. 🏥"
-    },
-    "voluntaries": {
-        "voluntariesTitle": "Volunteers",
-        "voluntariesSubtitle1": "Passion meets purpose 🤝",
-        "voluntariesDescription1": "You are at the heart of the pet-loving world. Pet's Love bridges your dedication to shelters and vets, smoothing the way for transitions and information exchange. Your compassionate efforts have a paw-sitive, tail-wagging impact on every animal's life. 💙🐕🐈",
-        "voluntariesSubtitle2": "Manage with heart 🐶🐱🏠",
-        "voluntariesDescription2": "Easily update information for the pets you have lovingly cared for. Shelters and vets can even grant you permission to add vital details. Your commitment brightens the future for each furry companion. 🏠🌟"
-    },
-    "collaborate": {
-        "collaborateButton": "Donate",
-        "gitHubCollaborators": "GitHub collaborators",
-        "collaborateTitle": " Join our open-source platform 💻",
-        "collaborateDescription1": "Improving the lives of the little ones is a team task. Help improve the world of animals with a bit of code.",
-        "collaborateDescription2": "You can help us improve the user experience or create a new feature. We want your collaboration to drive changes in the welfare of animals in the world. 🚀"
-    },
-    "succesDonation": {
-        "title": "Thank you very much for colaborate with our team!",
-        "description1": "We appreciate your invaluable support at Pet's Love. You will receive our exclusive monthly newsletter, keeping you abreast of progress, news and achievements. Together, we create a positive impact in the world of pets.🐾🌟",
-        "backToHome": "Back to home"
-    },
-    "errorDonation": {
-        "title": "Thank you very much for try to colaborate with our team!",
-        "description": "Please try again later. something went wrong.",
-        "backToHome": "Back to home"
-    },
-    "footer": {
-        "privacy": "Privacy Policy",
-        "terms": "Terms & Conditions",
-        "rights": "All rights Reserved.",
-        "followUs": "Follow us"
-    },
-    "terms&conditions": {
-        "backToHome": "Back to home"
+    "donationCard3": {
+      "title": "🍲 Donate 20kg of food 🍲",
+      "description1": "Donate 20kg of Food to Pet's Love and transform the lives of needy pets. Your gesture will fill many furry hearts with joy 🍲",
+      "description2": "❤️ Thank you for your commitment! ❤️",
+      "reward1": "We took 20 kilos of premium Food to nearby shelter",
+      "reward2": "You will receive an exclusive monthly newsletter where we will keep you up to date with the progress, news and achievements of our application."
     }
+  },
+  "shelter": {
+    "shelterTitle": "Shelters",
+    "shelterSubtitle1": "Guardians of pets in need 🏠",
+    "shelterDescription1": "Shelters are the core of our community, connecting pets with forever homes. They are guardians who offer second chances and love. Your support creates happy love stories for each pet. 💙",
+    "shelterSubtitle2": "Your Shelter with Pet's Love 🐾",
+    "shelterDescription2": "We provide a set of tools for shelters, facilitating the management of medical histories and vaccines and ensuring the well-being and joy of each animal. 🐈"
+  },
+  "adopt": {
+    "adoptTitle": "Adopt",
+    "adoptDescription1": "Adopting means adding a new member to the family and creating unforgettable memories together. 🏠❤️ For each pet, we generate a QR code so you can make a “digital leash,” facilitating your connection and their safety if they get lost. 🐶",
+    "adoptDescription2": "You will be able to generate the history of your pets, as it is key to understanding and satisfying the unique needs of each animal. Pet’s Love is dedicated to generating solutions for the detailed care of our little furry children. 🐾"
+  },
+  "veterinary": {
+    "veterinaryTitle": "Vets",
+    "veterinarySubtitle1": "Health and well-being 🤝🏥",
+    "veterinaryDescription1": "We want to generate donations from users to pets in need from shelters near veterinarians to provide medical assistance. 🐈",
+    "veterinarySubtitle2": "Medical records",
+    "veterinaryDescription2": "Get easy access to complete medical histories, from vaccinations to previous treatments, to make informed decisions and ensure the best care for your patients. 🏥"
+  },
+  "voluntaries": {
+    "voluntariesTitle": "Volunteers",
+    "voluntariesSubtitle1": "Passion meets purpose 🤝",
+    "voluntariesDescription1": "You are at the heart of the pet-loving world. Pet's Love bridges your dedication to shelters and vets, smoothing the way for transitions and information exchange. Your compassionate efforts have a paw-sitive, tail-wagging impact on every animal's life. 💙🐕🐈",
+    "voluntariesSubtitle2": "Manage with heart 🐶🐱🏠",
+    "voluntariesDescription2": "Easily update information for the pets you have lovingly cared for. Shelters and vets can even grant you permission to add vital details. Your commitment brightens the future for each furry companion. 🏠🌟"
+  },
+  "collaborate": {
+    "collaborateButton": "Donate",
+    "gitHubCollaborators": "GitHub collaborators",
+    "collaborateTitle": " Join our open-source platform 💻",
+    "collaborateDescription1": "Improving the lives of the little ones is a team task. Help improve the world of animals with a bit of code.",
+    "collaborateDescription2": "You can help us improve the user experience or create a new feature. We want your collaboration to drive changes in the welfare of animals in the world. 🚀"
+  },
+  "succesDonation": {
+    "title": "Thank you very much for colaborate with our team!",
+    "description1": "We appreciate your invaluable support at Pet's Love. You will receive our exclusive monthly newsletter, keeping you abreast of progress, news and achievements. Together, we create a positive impact in the world of pets.🐾🌟",
+    "backToHome": "Back to home"
+  },
+  "errorDonation": {
+    "title": "Thank you very much for try to colaborate with our team!",
+    "description": "Please try again later. something went wrong.",
+    "backToHome": "Back to home"
+  },
+  "footer": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "rights": "All rights Reserved.",
+    "followUs": "Follow us"
+  },
+  "terms&conditions": {
+    "backToHome": "Back to home"
+  }
 }

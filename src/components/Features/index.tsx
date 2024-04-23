@@ -20,7 +20,6 @@ export const Features = () => {
         <h2 className="mb-4 text-3xl font-bold tracking-tight leading-tight text-center lg:mb-16 text-primary-950 md:text-4xl">
           {t('featuresMainTitle')}
         </h2>
-
         <View>
           <article className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 text-primary-950">
             <div>
