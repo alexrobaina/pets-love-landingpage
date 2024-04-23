@@ -2,27 +2,16 @@ import axios from 'axios'
 
 export const getLocation = async () => {
   try {
-    if ('geolocation' in navigator) {
-      window.navigator.geolocation.getCurrentPosition(position => {
-        fetch(
-          `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${position.coords.latitude}&longitude=${position.coords.longitude}&localityLanguage=en`,
-          )
-          .then(res => res.json())
-          .then(data => {
-            localStorage.setItem('country', data.countryCode)
-            localStorage.setItem('city', data.principalSubdivision)
-            return
-          })
-        })
-      }
-      if (!localStorage.getItem('country')) {
-        const result = await axios.get('/api/country')
-        localStorage.setItem('country', result.data.country)
-        localStorage.setItem('city', result.data.city)
-      }
-      
-    } catch (error) {
-    console.log(error);
-    return error
+    // Check if geolocation data is already stored
+    const storedCountry = localStorage.getItem('country')
+    const storedCity = localStorage.getItem('city')
+    if (storedCountry && storedCity) {
+      return { country: storedCountry, city: storedCity }
+    } else {
+      throw new Error('Unable to fetch location data')
+    }
+  } catch (error) {
+    console.error('Error fetching location data:', error)
+    throw error // Rethrow or handle as needed
   }
 }

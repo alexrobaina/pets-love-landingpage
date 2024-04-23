@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl'
 import { PaymentModal } from './PaymentModal'
 import Button from '../../Button'
 import Image from 'next/image'
+import { MercadoPagoButton } from '@/components/MercadopagoButton'
 
 interface Props {
   id: string

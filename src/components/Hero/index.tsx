@@ -21,6 +21,10 @@ const Hero = () => {
     }
   }
 
+  const goToApp = () => {
+    window.open('https://petslove.app', '_blank')
+  }
+
   return (
     <section className="mt-20" id="hero">
       <div className="lg:grid py-8 mx-auto lg:max-w-screen-xl lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
@@ -37,11 +41,7 @@ const Hero = () => {
           </View>
           <View direction={true}>
             <div className="pb-5">
-              <Button
-                type="primary"
-                text={t('donationButton')}
-                onClick={(e) => scrollToSection(e, '#donate')}
-              />
+              <Button type="primary" text={t('goToApp')} onClick={goToApp} />
             </div>
           </View>
         </div>

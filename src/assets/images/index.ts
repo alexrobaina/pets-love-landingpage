@@ -12,10 +12,12 @@ import Dogfood from './dogfood.png'
 import HeroImage from './heroImage.png'
 import Refugy from './refugy.png'
 import ManAdopter from './manAdopter.png'
+import tShirt from './t-shirt.png'
 
 export {
   Vet,
   cats,
+  tShirt,
   Refugy,
   PetFood,
   Dogfood,

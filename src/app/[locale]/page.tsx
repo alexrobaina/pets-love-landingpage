@@ -4,13 +4,16 @@ import { FeaturesSections } from '@/components/FeaturesSections'
 import Collaborate from '@/components/Collaborate'
 import JointUp from '@/components/Joinup'
 import Donation from '@/components/Donation'
+import Prototype from '@/components/Prototype'
+// import { Sponsors } from '@/components/Sponsors'
 
 export default function Home() {
   return (
     <main>
       <Hero />
+      {/* <Sponsors /> */}
       <Features />
-      {/* <Prototype /> */}
+      <Prototype />
       <JointUp />
       <Donation />
       <FeaturesSections />

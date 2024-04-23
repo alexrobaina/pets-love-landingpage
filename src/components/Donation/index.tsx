@@ -6,7 +6,10 @@ import { useTranslations } from 'next-intl'
 import axios from 'axios'
 import { DOLAR_BLUE_URL } from '@/constants/URL'
 import { getLocation } from '@/services/getLocation'
-import { CatComputer, Dogfood, Vet } from '@/assets/images'
+import { CatComputer, Dogfood, tShirt, Vet } from '@/assets/images'
+import Button from '../Button'
+import Image from 'next/image'
+import { Voluntarios } from '@/assets/illustrations'
 
 const donations = [
   {
@@ -55,7 +58,7 @@ const Donation = () => {
   const t = useTranslations('donationCard')
 
   const getLocalstorageCountry = async () => {
-    await getLocation()
+    // await getLocation()
   }
 
   const getDolarBlue = async () => {
@@ -63,6 +66,7 @@ const Donation = () => {
       const result = await axios.get(DOLAR_BLUE_URL)
 
       const dolarBlue = result?.data?.compra
+      localStorage.setItem('dolarblue', result?.data?.compra)
 
       setDolarBlue(dolarBlue)
     } catch (error) {
@@ -73,6 +77,7 @@ const Donation = () => {
   const calculatePrice = (price: number) => {
     if (typeof window !== 'undefined') {
       const country = localStorage.getItem('country')
+
       if (country === 'AR') {
         const arPrice = price * parseInt(dolarBlue)
         return Math.round(arPrice / 100) * 100
@@ -98,6 +103,35 @@ const Donation = () => {
 
   return (
     <section>
+      <div className="shadow-md w-full bg-primary-50 rounded-3xl ring-1 ring-primary-100 mt-10 flex flex-row items-center p-8 space-x-12">
+        <div className="w-64 h-64 bg-gray-200 rounded-md overflow-hidden">
+          <Image
+            src={tShirt} // Replace 'tShirt' with your image path variable
+            alt="T-Shirt"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="flex flex-col flex-grow">
+          <h3 className="text-2xl font-bold tracking-tight text-primary-950">
+            {t('buyATshirtTitle')}
+          </h3>
+          <p className="mt-4 text-base leading-7 text-gray-600">
+            {t('buyATshirtDescription')}
+          </p>
+          <button
+            className="mt-5 py-2 px-4 bg-primary-500 text-white rounded-lg shadow hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"
+            onClick={() => {
+              window.open(
+                'https://www.redbubble.com/es/i/camiseta/Felinos-Surrealistas-Un-Llamado-al-Amor-por-las-Mascotas-de-petsloveapp/160610020.UGYPM',
+                '_blank',
+              )
+            }}
+          >
+            {t('goToShowroom')}
+          </button>
+        </div>
+      </div>
+
       <div className="flex lg:flex-row flex-col gap-2 py-8">
         {donations.map((product: any) => {
           return (

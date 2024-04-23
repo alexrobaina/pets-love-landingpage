@@ -113,12 +113,12 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
                       id="user-menu-button"
                       aria-expanded="false"
                       onClick={() => setOpenMenuLanguages(!isOpenMenuLanguages)}
-                      className="relative flex w-8 h-8 items-center justify-center rounded-full bg-primary-200 text-sm text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-600 hover:bg-primary-300"
+                      className="relative flex w-10 h-10 items-center justify-center rounded-full bg-primary-200 text-sm text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-primary-600 hover:bg-primary-300"
                     >
                       <span className="absolute -inset-1.5"></span>
                       <span className="sr-only">Open user menu</span>
 
-                      <Image className="w-5 h-5" src={lng.flag} alt="icon spanish flag" />
+                      <p className="uppercase text-primary-950">{lng.lng}</p>
                     </button>
                   </div>
                   <div
@@ -137,8 +137,7 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
                       role="menuitem"
                       id="user-menu-item-0"
                     >
-                      <p>Español</p>
-                      <Image width={20} src={IconSpanishFlag} alt="icon spanish flag" />
+                      <p>ES Español</p>
                     </div>
                     <div
                       onClick={() => handleChangeLanguages('en', IconEnglishFlag)}
@@ -148,8 +147,7 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
                       role="menuitem"
                       id="user-menu-item-1"
                     >
-                      <p>English</p>
-                      <Image width={20} src={IconEnglishFlag} alt="icon english flag" />
+                      <p>EN English</p>
                     </div>
                   </div>
                 </div>
