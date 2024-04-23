@@ -142,7 +142,7 @@ const Donation = () => {
               image={product.image}
               reward={product.peaks}
               currency={getCurrency() || 'USD'}
-              price={calculatePrice(product.price) || 0}
+              price={product.price}
               title={t(`donationCard${product.id}.title`)}
               description={t(`donationCard${product.id}.description1`)}
               description2={t(`donationCard${product.id}.description2`)}
