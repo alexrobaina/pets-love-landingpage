@@ -6,7 +6,7 @@ export const siteMetadata = {
   applicationName: 'PetsloveApp',
   openGraphImage: '/opengraph-image.png',
   twitterImage: '/twitter-image.png',
-  siteUrl: 'https://landing.petslove.app/',
+  siteUrl: 'https://landing.petslove.app',
   languages: {
     'en-US': '/en-US',
     'es-ES': '/es-ES',
