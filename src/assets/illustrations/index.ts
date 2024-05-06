@@ -1,8 +1,4 @@
-import AstronautCatSitting from './astronaut-cat-stting.svg'
-import AstronautCatShelter from './astronaut-cat-shelter.svg'
-import AstronautCatAdopt from './astronaut-cat-adopt.svg'
-import AstronautCatVeterinary from './astronaut-cat-veterinary.svg'
-import PrototypeImg from './prototype-img.png'
+import PortraitCat from './portraitCat.png'
 import Avatar from './avatar-alex.png'
 import Logo from './logo.svg'
 import TelegramIcon from './telegram-icon.svg'
@@ -16,6 +12,7 @@ import Adopcion from './adopcion-petlove.svg'
 
 export {
   Logo,
+  PortraitCat,
   Avatar,
   TelegramIcon,
   WhatsappIcon,

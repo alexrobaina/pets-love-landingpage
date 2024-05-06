@@ -9,13 +9,13 @@ import { getLocation } from '@/services/getLocation'
 import { CatComputer, Dogfood, tShirt, Vet } from '@/assets/images'
 import Button from '../Button'
 import Image from 'next/image'
-import { Voluntarios } from '@/assets/illustrations'
+import { PortraitCat, Voluntarios } from '@/assets/illustrations'
 
 const donations = [
   {
     id: 1,
     image: CatComputer,
-    price: 1,
+    price: 2,
     peaks: [''],
     title: 'Muchas gracias',
     description1:
@@ -28,7 +28,7 @@ const donations = [
   {
     id: 2,
     image: Vet,
-    price: 10,
+    price: 15,
     peaks: [''],
     title: 'Atención Veterinaria que Desesperadamente Necesitan',
     description1:
@@ -40,7 +40,7 @@ const donations = [
   {
     id: 3,
     image: Dogfood,
-    price: 25,
+    price: 35,
     peaks: [''],
     title: '🍲 Dona 20kg de Comida 🍲',
     description1:
@@ -103,46 +103,65 @@ const Donation = () => {
 
   return (
     <section>
-      <div className="shadow-md w-full bg-primary-50 rounded-3xl ring-1 ring-primary-100 mt-10 flex flex-row items-center p-8 space-x-12">
-        <div className="w-64 h-64 bg-gray-200 rounded-md overflow-hidden">
-          <Image
-            src={tShirt} // Replace 'tShirt' with your image path variable
-            alt="T-Shirt"
-            className="w-full h-full object-cover"
-          />
+      <div className="flex gap-4 flex-col sm:flex-row">
+        <div className="shadow-md w-full bg-primary-50 rounded-3xl ring-1 ring-primary-100 mt-10 flex flex-col gap-6 items-center p-8">
+          <div className="w-full h-64 flex justify-center bg-gray-200 rounded-md overflow-hidden">
+            <Image src={tShirt} alt="T-Shirt" className="w-full h-full object-cover" />
+          </div>
+          <div className="flex flex-col flex-grow">
+            <h3 className="text-2xl font-bold tracking-tight text-primary-950">
+              {t('donationCard4.title')}
+            </h3>
+            <p className="mt-4 text-base leading-7 text-gray-600">
+              {t('donationCard4.description')}
+            </p>
+            <button
+              className="mt-5 py-2 px-4 bg-primary-500 text-white rounded-lg shadow hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"
+              onClick={() => {
+                window.open('https://pets-love.flashcookie.com/', '_blank')
+              }}
+            >
+              {t('goToShowroom')}
+            </button>
+          </div>
         </div>
-        <div className="flex flex-col flex-grow">
-          <h3 className="text-2xl font-bold tracking-tight text-primary-950">
-            {t('buyATshirtTitle')}
-          </h3>
-          <p className="mt-4 text-base leading-7 text-gray-600">
-            {t('buyATshirtDescription')}
-          </p>
-          <button
-            className="mt-5 py-2 px-4 bg-primary-500 text-white rounded-lg shadow hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"
-            onClick={() => {
-              window.open(
-                'https://www.redbubble.com/es/i/camiseta/Felinos-Surrealistas-Un-Llamado-al-Amor-por-las-Mascotas-de-petsloveapp/160610020.UGYPM',
-                '_blank',
-              )
-            }}
-          >
-            {t('goToShowroom')}
-          </button>
+        <div className="shadow-md w-full bg-primary-50 rounded-3xl ring-1 ring-primary-100 mt-10 flex flex-col gap-6 items-center p-8">
+          <div className="h-64 bg-gray-200 flex w-full justify-center rounded-md overflow-hidden">
+            <Image
+              src={PortraitCat}
+              alt="T-Shirt"
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="flex flex-col flex-grow">
+            <h3 className="text-2xl font-bold tracking-tight text-primary-950">
+              {t('donationCard5.title')}
+            </h3>
+            <p className="mt-4 text-base leading-7 text-gray-600">
+              {t('donationCard5.description')}
+            </p>
+            <button
+              className="mt-5 py-2 px-4 bg-primary-500 text-white rounded-lg shadow hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"
+              onClick={() => {
+                window.open('https://pets-love.flashcookie.com/', '_blank')
+              }}
+            >
+              {t('goToShowroom')}
+            </button>
+          </div>
         </div>
       </div>
-
-      <div className="flex lg:flex-row flex-col gap-2 py-8">
+      <div className="flex lg:flex-row flex-col gap-2">
         {donations.map((product: any) => {
           return (
             <DonationCard
               id={product.id}
               key={product.id}
               icon={CheckIcon}
+              price={product.price}
               image={product.image}
               reward={product.peaks}
               currency={getCurrency() || 'USD'}
-              price={product.price}
               title={t(`donationCard${product.id}.title`)}
               description={t(`donationCard${product.id}.description1`)}
               description2={t(`donationCard${product.id}.description2`)}

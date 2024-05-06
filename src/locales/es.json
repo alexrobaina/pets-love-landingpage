@@ -9,14 +9,14 @@
   },
   "hero": {
     "title": "¡Descubre Pet’s Love! Una app para conectar y cuidar a las mascotas.",
-    "description": "Queremos transformar vidas y verlas felices a través de adopciones responsables. ¡Únete para darle amor y alegría a las mascotas!",
+    "description": "Buscamos transformarles la vida a través de adopciones responsables con historial médico ¡Únete para dar amor y alegría a las mascotas!",
     "goToApp": "Ir a Pet's Love"
   },
   "prototype": {
-    "title": "Visita Pet's Love y comienza a utilizarla fácilmente.",
-    "description": "Juntos podemos crear conexiones sinceras con Pet’s Love App, una app de código abierto en el cuidado de mascotas. Sumérgete en una comunidad donde el amor por las mascotas no solo se comparte, ¡se multiplica! Una red de apoyo dedicada a la felicidad y bienestar de tus compañeros de cuatro patas.",
+    "title": "Utilízala fácilmente y gratis para siempre.",
+    "description": "Juntos podremos crear conexiones sinceras con Pet’s Love App, de código abierto para el cuidado de mascotas. Encuentra mascotas en adopción, gestiona tu refugio o veterinaria con nosotros totalmente gratis y ayúdanos a crear historias felices.",
     "goToApp": "Ir a Pet’s Love",
-    "tutorials": "Mirar tutoriales"
+    "tutorials": "Tutoriales"
   },
   "sponsors": {
     "title": "Nuestros patrocinadores"
@@ -26,23 +26,21 @@
     "featuresTitle1": "Código abierto 🚀",
     "featuresDescription1": "Somos un proyecto comunitario, donde desarrolladores de todo el mundo pueden colaborar para mejorar y agregar valor a la plataforma, beneficiando a refugios, veterinarios y adoptantes.",
     "featuresTitle2": "Código QR",
-    "featuresDescription2": "Al crear una mascota automáticamente se generará un código QR que contiene el perfil de tu mascota y tus datos de contacto. Esta función ofrece salud y seguridad, facilitando la conexión instantánea con la mascota para una relación duradera.",
+    "featuresDescription2": "Al crear una mascota automáticamente se generará un código QR que contiene el perfil de la mascota y tus datos de contacto. Esta función ofrece seguridad, facilitando la conexión instantánea con la mascota para una relación duradera.",
     "featuresTitle3": "Adopciones responsables 📜",
-    "featuresDescription3": "Los refugios podrán hacer el seguimiento de mascotas post-adopción asegurando así que cada animal encuentre un hogar amoroso y permanente.",
+    "featuresDescription3": "Los refugios podrán hacer el seguimiento de mascotas post-adopción asegurando que cada mascota encuentre un hogar amoroso y permanente.",
     "featuresTitle4": "Creando comunidad 🐕🐈",
-    "featuresDescription4": "Promovemos la colaboración entre refugios, veterinarios, voluntarios y adoptantes, creando una red de apoyo para el bienestar animal donde todos ganen para poder ayudar.",
+    "featuresDescription4": "Promovemos la colaboración entre refugios, veterinarios y adoptantes, creando una red de apoyo para el bienestar animal donde todos podemos aportar.",
     "featuresTitle5": "Blockchain 📜🔗",
     "featuresDescription5": "Utilizaremos la blockchain para crear contratos inteligentes y llevar un registro público, inmutable y transparente de cada mascota registrada.",
-    "featuresTitle6": "Para los refúgios 🏠",
-    "featuresDescription6": "Proporcionamos a los refugios herramientas para gestionar las mascotas, evaluar adoptantes y asegurar adopciones responsables, enfocándose en hallar hogares amorosos y permanentes."
+    "featuresTitle6": "Refugios y veterinarios🏠",
+    "featuresDescription6": "Proporcionamos a los refugios y veterinarios herramientas para gestionar las mascotas, asegurar adopciones responsables, enfocándose en el bienestar de cada mascota"
   },
   "joinUp": {
     "joinUpTitle": "🌟¡Ayudanos a crecer! 🌟",
-    "joinUpDescription1": "Garantizamos transparencia total en el uso de las donaciones, que nos ayudan a mejorar la plataforma y colaborar con expertos, beneficiando directamente a las mascotas necesitadas. ¡Dona ahora para un futuro mejor para los animales!"
+    "joinUpDescription1": "Tu donación nos permite continuar trabajando, para seguir mejorando el cuidado y la forma de encontrar hogares amorosos para miles de mascotas necesitadas. Cada aporte cuenta. ¡Colabora hoy y sé parte de muchos corazones solidarios."
   },
   "donationCard": {
-    "buyATshirtDescription": "Si compras nuestros producto nos ayudas a crear nuevas herramientas.",
-    "buyATshirtTitle": "Indumentaria para salvar mascotas",
     "goToShowroom": " Ir a la tienda",
     "openseaCollection": "Colección Opensea",
     "whatsincluded": "Qué está incluido",
@@ -56,49 +54,46 @@
     "titleModal": "¡Muchas gracias por ser parte de nuestro equipo!",
     "donationCard1": {
       "title": "Muchas gracias",
-      "description1": "Gracias por ser un Sostenedor de Refugios y Aliado de Adoptantes. Tu generosidad cambia vidas, peludas y humanas, y llena nuestra misión de amor. ¡Eres parte esencial de un mundo con más hogares amorosos!",
-      "description2": "❤️ ¡Gracias por tu compromiso! ❤️",
-      "reward1": "Recibirás un boletín mensual exclusivo donde te mantendremos al día con el progreso, noticias y logros de nuestra aplicación."
+      "description1": "Tu donación significa mucho para nosotros. Queremos agregar más funcionalidades y que millones de mascotas puedan recibir amor.",
+      "description2": "❤️ ¡Gracias por tu compromiso! ❤️"
     },
     "donationCard2": {
       "title": "Atención veterinaria",
-      "description1": "Millones de mascotas carecen de atención veterinaria esencial por problemas económicos, poniendo en riesgo su vida. Toda mascota merece cuidados médicos.",
-      "description2": "❤️ ¡Gracias por tu compromiso! ❤️",
-      "reward1": "Seleccionamos casos críticos para atención veterinaria y comunicamos el impacto de tu donación."
+      "description1": "Con este aporte vamos a reunir dinero suficiente para brindar  atención veterinaria esencial, a la mayor cantidad de mascotas posibles.",
+      "description2": "❤️ ¡Gracias por tu compromiso! ❤️"
     },
     "donationCard3": {
       "title": "🍲 Dona 20kg de Comida 🍲",
       "description1": "Dona 20kg de comida a Pet's Love y transforma la vida de mascotas necesitadas. Tu gesto llenará de alegría a muchos corazones peludos.. 🍲",
-      "description2": "❤️ ¡Dona hoy y alimentemos el amor! ❤️",
-      "reward1": "Llevaremos 20 kilos de comida premium a refugios cercanos.",
-      "reward2": "Recibirás un boletín mensual exclusivo donde te mantendremos al día con el progreso, noticias y logros de nuestra aplicación.",
-      "reward3": ""
+      "description2": "❤️ ¡Dona hoy y alimentemos el amor! ❤️"
     },
     "donationCard4": {
-      "title": " 🎨 Compranos un NFT y salva una vida 🏠",
-      "description": "Conviértete en un Mantenedor del Refugio y Aliado Adoptante al comprar un NFT exclusivo con temática animal. Tu token digital único contribuye directamente al desarrollo de nuestra aplicación para refugios y al bienestar de las mascotas que esperan ser adoptadas.",
-      "reward1": "Llevaremos 20 kilos de comida premium a refugios cercanos.",
-      "reward2": "Recibirás un boletín mensual exclusivo donde te mantendremos al día con el progreso, noticias y logros de nuestra aplicación."
+      "title": "Si compras nuestros producto nos ayudas a crear nuevas herramientas.",
+      "description": "Con tu aporte nos ayudas a mantener el sueño de crear una aplicación que conecte a las mascotas con hogares amorosos. ¡Gracias por ser parte de este sueño!"
+    },
+    "donationCard5": {
+      "title": " 🎨 Creación de retratos de tu mascota con IA 🏠",
+      "description": "Solo tienes que enviarnos fotos de tu mascota al Whatsapp y nosotros crearemos hasta 4 retratos fantásticos de tu mascota."
     }
   },
   "shelter": {
-    "shelterTitle": "Refugios",
-    "shelterSubtitle1": " Los guardianes de las mascotas! 🏠🐕🐈",
-    "shelterDescription1": "Los refugios son el núcleo de nuestra comunidad, conectando mascotas con hogares para siempre. Son guardianes que ofrecen segundas oportunidades y amor. ¡Tu apoyo crea felices historias de amor hacia los animales!",
+    "shelterTitle": "Tu Refugio con Pet's Love",
+    "shelterSubtitle1": "Adopciones responsables! 🏠🐕🐈",
+    "shelterDescription1": "En Pet’s Love fomentamos la adopción responsable y gracias a nuestro sistema los refugios podran hacer seguimiento de la mascota luego de ser adoptada.",
     "shelterSubtitle2": "Tu Refugio con Pet's Love",
-    "shelterDescription2": "Brindamos un conjunto de herramientas para refugios, facilitando la gestión de historias médicas y vacunas, asegurando el bienestar y alegría de cada animal."
+    "shelterDescription2": "Brindamos un conjunto de herramientas para refugios, facilitando la gestión de historias médicas y vacunas, asegurando el bienestar y alegría de cada mascota."
   },
   "adopt": {
-    "adoptTitle": "Adoptar",
-    "adoptDescription1": "Adoptar significa agregar a un nuevo miembro en la familia, creando juntos recuerdos inolvidables. 🏠❤️ Para cada mascota generamos un codigo QR, para que le hagas una “correa digital”, facilitando tu conexión y su seguridad si se extravían. 📲🐶 ",
-    "adoptDescription2": "Podrás generar la historia de tus mascotas ya que es clave para entender y satisfacer las necesidades únicas de cada animal. Pet’s Love se dedica a generar soluciones para el cuidado detallado de nuestros pequeños hijos peludos. 📋"
+    "adoptTitle": "Adoptar es un acto de amor!",
+    "adoptDescription1": "Abriendote un perfil como adoptante podras agregar a tu mascota y generando un un código QR automaticamente facilitando tu conexión y su seguridad si se extravían. 📲🐶",
+    "adoptDescription2": "También podras generar la historia medica de tus mascotas para entender y satisfacer las necesidades únicas de cada animal. Nos dedicamos a crear soluciones para el cuidado detallado de nuestros pequeños hijos peludos. 📋"
   },
   "veterinary": {
     "veterinaryTitle": "Veterinarios",
     "veterinarySubtitle1": "🤝 Salud y bienestar 🌟",
-    "veterinaryDescription1": "Queremos generar hacer llegar las donaciones de los usuarios a las mascotas necesitadas de refugios cercanos a las veterinarias para brindar asistencia medica. 💙🐕🐈",
-    "veterinarySubtitle2": "📋 Registros Médicos 💕",
-    "veterinaryDescription2": "Obtén fácil acceso a historias médicas completas, desde vacunaciones hasta tratamientos anteriores, para tomar decisiones basadas en información y asegurar los mejores cuidados para tus pacientes. 🏥"
+    "veterinaryDescription1": "Cada veterinario podrá administrar las mascotas que atiende en su veterinaria. Generar el historial medico, subir imagenes de los tratamientos y gestionar la libreta de vacunas. 💙🐕🐈",
+    "veterinarySubtitle2": "📋 Conexiones 💕",
+    "veterinaryDescription2": "Veterinarios dueños de mascotas siempre conectados con información clara y ordenada para garantizar la salud y bienestar de cada mascota 🏥"
   },
   "voluntaries": {
     "voluntariesTitle": "Voluntarios",
@@ -111,7 +106,7 @@
     "collaborateTitle": "Únete a programar por una causa 🤝💻",
     "gitHubCollaborators": "Colaboradores de GitHub",
     "collaborateDescription1": "Mejorar la vida de los más pequeños es una tarea en equipo. Contribuye a mejorar el mundo de los animales con un poco de código.",
-    "collaborateDescription2": "Puedes ayudarnos a mejorar la experiencia de usuario o crear un algún feature nuevo. Queremos que tu colaboración impulse cambios en el bienestar de los animales en el mundo. 🚀🌟🌍🐕🐈"
+    "collaborateDescription2": "Puedes ayudarnos a mejorar la experiencia de usuario, encontrar bugs o crear un algún feature nuevo. Queremos que tu colaboración impulse cambios en el bienestar de los animales en el mundo. 🚀🌟🌍🐕🐈"
   },
   "succesDonation": {
     "collaborateButton": "Donar",
