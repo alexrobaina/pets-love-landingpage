@@ -64,7 +64,7 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
             <section className="flex items-center">
               <div>
                 <a href="./">
-                  <Image width={30} src={Logo} alt="Pets love Logo" />
+                  <Image width={40} src={Logo} alt="Pets love Logo" />
                 </a>
               </div>
               <div className="hidden md:block">

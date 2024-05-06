@@ -10,7 +10,7 @@ export const FeaturesSections = () => {
   const t2 = useTranslations('veterinary')
   const t3 = useTranslations('voluntaries')
   return (
-    <section id="features">
+    <section className="mt-[100px]" id="features">
       {/* SHELTER */}
       <Feature
         flip
