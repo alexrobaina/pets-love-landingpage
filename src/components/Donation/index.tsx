@@ -8,8 +8,9 @@ import { DOLAR_BLUE_URL } from '@/constants/URL'
 import { getLocation } from '@/services/getLocation'
 import { CatComputer, Dogfood, tShirt, Vet } from '@/assets/images'
 import Button from '../Button'
-import Image from 'next/image'
+import human from '@/assets/lottie/humanMountain.json'
 import { PortraitCat, Voluntarios } from '@/assets/illustrations'
+import { LottieAnimation } from '../LottieAnimations'
 
 const donations = [
   {
@@ -103,16 +104,13 @@ const Donation = () => {
 
   return (
     <section>
-      <div className="flex gap-4 flex-col sm:flex-row">
-        <div className="shadow-md w-full bg-primary-50 rounded-3xl ring-1 ring-primary-100 mt-10 flex flex-col gap-6 items-center p-8">
-          <div className="w-full h-64 flex justify-center bg-gray-200 rounded-md overflow-hidden">
-            <Image src={tShirt} alt="T-Shirt" className="w-full h-full object-cover" />
+      <div className="flex gap-4 sm:flex-row">
+        <div className="shadow-md w-full bg-primary-50 rounded-3xl ring-1 ring-primary-100 mt-10 flex-col md:flex-row flex gap-6 items-center p-8">
+          <div className="w-full h-full flex justify-center rounded-md">
+            <LottieAnimation width={200} animation={human} />
           </div>
           <div className="flex flex-col flex-grow">
-            <h3 className="text-2xl font-bold tracking-tight text-primary-950">
-              {t('donationCard4.title')}
-            </h3>
-            <p className="mt-4 text-base leading-7 text-gray-600">
+            <p className="text-base leading-7 text-gray-600">
               {t('donationCard4.description')}
             </p>
             <button
@@ -121,37 +119,12 @@ const Donation = () => {
                 window.open('https://pets-love.flashcookie.com/', '_blank')
               }}
             >
-              {t('goToShowroom')}
-            </button>
-          </div>
-        </div>
-        <div className="shadow-md w-full bg-primary-50 rounded-3xl ring-1 ring-primary-100 mt-10 flex flex-col gap-6 items-center p-8">
-          <div className="h-64 bg-gray-200 flex w-full justify-center rounded-md overflow-hidden">
-            <Image
-              src={PortraitCat}
-              alt="T-Shirt"
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="flex flex-col flex-grow">
-            <h3 className="text-2xl font-bold tracking-tight text-primary-950">
-              {t('donationCard5.title')}
-            </h3>
-            <p className="mt-4 text-base leading-7 text-gray-600">
-              {t('donationCard5.description')}
-            </p>
-            <button
-              className="mt-5 py-2 px-4 bg-primary-500 text-white rounded-lg shadow hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"
-              onClick={() => {
-                window.open('https://pets-love.flashcookie.com/', '_blank')
-              }}
-            >
-              {t('goToShowroom')}
+              {t('donate')}
             </button>
           </div>
         </div>
       </div>
-      <div className="flex lg:flex-row flex-col gap-2">
+      {/* <div className="flex lg:flex-row flex-col gap-2">
         {donations.map((product: any) => {
           return (
             <DonationCard
@@ -168,7 +141,7 @@ const Donation = () => {
             />
           )
         })}
-      </div>
+      </div> */}
     </section>
   )
 }

@@ -27,6 +27,7 @@
     "eslint-config-next": "13.4.7",
     "framer-motion": "^10.15.1",
     "install": "^0.13.0",
+    "lottie-react": "^2.4.0",
     "mercadopago": "^1.5.17",
     "next": "^13.4.13",
     "next-intl": "3.0.0-beta.19",

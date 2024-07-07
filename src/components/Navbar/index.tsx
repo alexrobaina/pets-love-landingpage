@@ -39,6 +39,10 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
     router.replace(language)
   }
 
+  const handleOpenDonationsLink = () => {
+    window.open('https://linktr.ee/petslove.app', '_blank')
+  }
+
   const scrollToSection = (e: any, sectionId: string) => {
     e.preventDefault()
 
@@ -102,7 +106,7 @@ export const Navbar = ({ children }: { children: React.ReactNode }) => {
                   <Button
                     type="secondary"
                     text={NAVIGATION.donate.routeName}
-                    onClick={(e) => scrollToSection(e, '#donate')}
+                    onClick={() => handleOpenDonationsLink()}
                   />
                 </div>
                 <div className="relative ">
