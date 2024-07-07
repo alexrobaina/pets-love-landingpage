@@ -1,58 +1,10 @@
 'use client'
-import { CheckIcon } from '@/assets/icons'
 import React, { useEffect, useState } from 'react'
-import DonationCard from './components/DonationCard'
 import { useTranslations } from 'next-intl'
 import axios from 'axios'
 import { DOLAR_BLUE_URL } from '@/constants/URL'
-import { getLocation } from '@/services/getLocation'
-import { CatComputer, Dogfood, tShirt, Vet } from '@/assets/images'
-import Button from '../Button'
 import human from '@/assets/lottie/humanMountain.json'
-import { PortraitCat, Voluntarios } from '@/assets/illustrations'
 import { LottieAnimation } from '../LottieAnimations'
-
-const donations = [
-  {
-    id: 1,
-    image: CatComputer,
-    price: 2,
-    peaks: [''],
-    title: 'Muchas gracias',
-    description1:
-      'Desde lo más profundo de nuestros corazones y la punta de nuestras colas, GRACIAS por ser un increíble Sostenedor de Refugios y Aliado de Adoptantes. Tu generosidad no solo cambia números; cambia vidas—¡Tanto peludas como humanas! Tu contribución llena nuestra misión de amor y hace posible cada movimiento de cola, ronroneo y pio pio. Gracias por ser parte de este maravilloso viaje hacia un mundo lleno de más colas en movimiento y hogares amorosos.',
-    description2: '❤️ ¡Gracias por tu compromiso! ❤️',
-    reward1:
-      'Recibirás un boletín mensual exclusivo donde te mantendremos al día con el progreso, noticias y logros de nuestra aplicación.',
-    reward2: '',
-  },
-  {
-    id: 2,
-    image: Vet,
-    price: 15,
-    peaks: [''],
-    title: 'Atención Veterinaria que Desesperadamente Necesitan',
-    description1:
-      'Cada año, millones de mascotas no reciben la atención veterinaria necesaria debido a limitaciones económicas. Un problema simple como una pata rota o una afección cutánea puede convertirse en una situación potencialmente mortal si no se trata a tiempo. Cada mascota merece recibir la atención médica que necesita, independientemente de la situación financiera de su dueño.',
-    description2: '❤️ ¡Gracias por tu compromiso! ❤️',
-    reward1:
-      'Elegiremos minuciosamente los casos que requieren atención veterinaria urgente y colaboraremos con veterinarios y clínicas para garantizar tratamientos óptimos. Mantendremos una comunicación abierta sobre cómo tu donación está beneficiando a los animales.',
-  },
-  {
-    id: 3,
-    image: Dogfood,
-    price: 35,
-    peaks: [''],
-    title: '🍲 Dona 20kg de Comida 🍲',
-    description1:
-      "Dona 20kg de comida a los refugios de Pet's Love y marca la diferencia en la vida de las mascotas necesitadas. Tu amor y cuidado se reflejan en cada grano. Únete a llenar corazones peludos de alegría y gratitud. 🐾❤️🍲",
-    description2: '❤️ ¡Dona hoy y alimentemos el amor! ❤️',
-    reward1: 'Llevaremos 20 kilos de comida premium a refugios cercanos.',
-    reward2:
-      'Recibirás un boletín mensual exclusivo donde te mantendremos al día con el progreso, noticias y logros de nuestra aplicación.',
-    reward3: '',
-  },
-]
 
 const Donation = () => {
   const [dolarBlue, setDolarBlue]: any = useState(0)
@@ -106,8 +58,8 @@ const Donation = () => {
     <section>
       <div className="flex gap-4 sm:flex-row">
         <div className="shadow-md w-full bg-primary-50 rounded-3xl ring-1 ring-primary-100 mt-10 flex-col md:flex-row flex gap-6 items-center p-8">
-          <div className="w-full h-full flex justify-center rounded-md">
-            <LottieAnimation width={200} animation={human} />
+          <div className="w-[300] h-[300] flex justify-center rounded-md">
+            <LottieAnimation width={100} animation={human} />
           </div>
           <div className="flex flex-col flex-grow">
             <p className="text-base leading-7 text-gray-600">
