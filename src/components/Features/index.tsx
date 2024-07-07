@@ -52,13 +52,13 @@ export const Features = () => {
               <h3 className="mb-2 text-xl font-bold"> {t('featuresTitle4')}</h3>
               <p>{t('featuresDescription4')}</p>
             </div>
-            <div>
+            {/* <div>
               <View>
                 <Image className="mb-8" src={IconPeople} alt="IconPeople" />
               </View>
               <h3 className="mb-2 text-xl font-bold "> {t('featuresTitle5')}</h3>
               <p>{t('featuresDescription5')}</p>
-            </div>
+            </div> */}
             <div>
               <View>
                 <Image className="mb-1" src={IconFood} alt="IconFood" />

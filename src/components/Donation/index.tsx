@@ -116,7 +116,7 @@ const Donation = () => {
             <button
               className="mt-5 py-2 px-4 bg-primary-500 text-white rounded-lg shadow hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-opacity-50"
               onClick={() => {
-                window.open('https://pets-love.flashcookie.com/', '_blank')
+                window.open('https://linktr.ee/petslove.app', '_blank')
               }}
             >
               {t('donate')}
