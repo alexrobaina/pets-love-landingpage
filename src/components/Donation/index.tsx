@@ -57,11 +57,11 @@ const Donation = () => {
   return (
     <section>
       <div className="flex gap-4 sm:flex-row">
-        <div className="shadow-md w-full bg-primary-50 rounded-3xl ring-1 ring-primary-100 mt-10 flex-col md:flex-row flex gap-6 items-center p-8">
-          <div className="w-[500] h-[500] flex justify-center rounded-md">
+        <div className="shadow-md w-full bg-primary-50 rounded-3xl ring-1 ring-primary-100 mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 items-center p-8">
+          <div className="w-[50%] h-[500] flex justify-center rounded-md">
             <LottieAnimation width={200} animation={human} />
           </div>
-          <div className="flex flex-col flex-grow">
+          <div className="flex flex-col justify-between flex-grow w-[50%]">
             <p className="text-base leading-7 text-gray-600">
               {t('donationCard4.description')}
             </p>
