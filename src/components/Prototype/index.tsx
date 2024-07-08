@@ -19,11 +19,11 @@ const Prototype = () => {
             <h2 className="mb-4 text-4xl font-extrabold ">{t('title')}</h2>
             <p className="mb-4 ">{t('description')}</p>
             <div className="flex gap-3 justify-between">
-              <div className="mb-4 ">
+              {/* <div className="mb-4 ">
                 <a target="_blank" href="https://petslove.app">
                   <Button text={t('tutorials')} type="primary" />
                 </a>
-              </div>
+              </div> */}
               <div className="mb-4">
                 <a target="_blank" href="https://petslove.app">
                   <Button text={t('goToApp')} type="primary" />
