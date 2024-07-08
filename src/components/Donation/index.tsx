@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl'
 import axios from 'axios'
 import { DOLAR_BLUE_URL } from '@/constants/URL'
 import human from '@/assets/lottie/humanMountain.json'
+import cat from '@/assets/lottie/cat.json'
 import { LottieAnimation } from '../LottieAnimations'
 
 const Donation = () => {
@@ -58,8 +59,11 @@ const Donation = () => {
     <section>
       <div className="flex gap-4 sm:flex-row">
         <div className="shadow-md w-full bg-primary-50 rounded-3xl ring-1 ring-primary-100 mt-10 grid grid-cols-2 fr1 md:grid-cols-2 gap-6 items-center p-8">
-          <div className="flex w-full justify-center rounded-md">
+          <div className="relative flex w-full justify-center rounded-md">
             <LottieAnimation width={150} animation={human} />
+            <div className="absolute bottom-0 right-0">
+              <LottieAnimation width={100} animation={cat} />
+            </div>
           </div>
           <div className="flex flex-col w-full flex-grow">
             <p className="text-base leading-7 text-gray-600">
